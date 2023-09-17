@@ -1,0 +1,61 @@
+<aside id="aside" class="hidden absolute inset-0 mt-48 lg:mt-0 lg:mb-8 w-full lg:w-1/5 lg:static lg:block bg-white overflow-y-visible lg:px-0 z-10" >
+  <div class="overflow-y-auto lg:sticky top-0 px-8 lg:px-0">
+    <nav class="text-sm font-semibold pt-8 pb-40 lg:py-12 pr-6 overflow-y-auto h-screen">
+      <ul class="-mt-1 ml-2" data-controller="nav" data-nav-active="{{styles.background.primary.two}} {{styles.text.alt.four}} hover:{{styles.text.alt.four}}">
+        {% for pageLink in meta.leftNavLinks %}
+          {% set tag = pageLink.name | lower %}
+          <li class="mb-4">
+            {% if page
+              .url
+              .split('/')[1] === tag %}
+              <details open>
+                <summary>
+                  <a alt="{{ pageLink.alt }}" href="{{ pageLink.url }}" class="flex items-center my-1 transition duration-100 {{styles.text.primary.one}} hover:{{styles.text.primary.three}} rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="{{ pageLink.viewbox }}" class="w-6 {{styles.text.primary.two}} fill-current">
+                      {{ pageLink.svg | safe}}
+                    </svg>
+                    <span class="ml-2">{{ pageLink.name }}</span>
+                  </a>
+                </summary>
+                {% set sortedList = [] %}
+                {% for post in collections[pageLink.tag] %}
+                
+                {% set
+sortedList = (sortedList.push({title: post.data.title, url: post.url, order: post.data.order}),
+sortedList) %} {% endfor %}
+                <ul>
+                    {% for thing in sortedList | sort(attribute='order')%}
+                      {% set currentPage = thing.url === page.url %}
+                      <li class="list-none">
+                        <a href="{{thing.url | url }}" class="">
+                          {{ thing.title }}
+                          {% if thing.url === page.url %}📌{% endif %}
+                        </a>
+                      </li>
+                    {% endfor %}
+                    {% if pageLink.tag=='property' %}
+                      <!--loop over properties-->
+                      {% for page in snPropertiesLocal %}
+                        <li class="list-none">
+                          <a href="/property/{{page.name | slugify}}/" class="">
+                            {{page.name}}
+                          </a>
+                        </li>
+                      {% endfor %}
+                    {% endif %}
+                </ul>
+              </details>
+            {% else %}
+              <a href="{{ pageLink.url }}" class="flex items-center my-1 transition duration-100 {{styles.text.primary.one}} hover:{{styles.text.primary.three}} rounded">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="{{ pageLink.viewbox }}" class="w-6 {{styles.text.primary.two}} fill-current">
+                  {{ pageLink.svg | safe}}
+                </svg>
+                <span class="ml-2">{{ pageLink.name }}</span>
+              </a>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</aside>

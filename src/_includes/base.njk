@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"              content="width=device-width, initial-scale=1.0">
+  <meta name="description"           content="{{ meta.siteDescription }}">
+  <meta property="og:description"    content="{{ meta.siteDescription }}">
+  <meta property="og:url"            content="{{ meta.siteURL }}">
+  <meta name="twitter:site"          content="{{ meta.twitterHandle }}">
+  <meta name="twitter:card"          content="summary">
+  <meta name="twitter:title"         content="{{ meta.siteTwitterTitle }}">
+  <meta name="twitter:description"   content="{{ meta.siteDescription }}">
+  <meta name="twitter:image"         content="{{ meta.url }}/{{meta.siteImage}}">
+  <title>{{meta.siteName}} - {{meta.siteTwitterTitle}}</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/images/opengraph-256.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atelier-forest-light.min.css">
+<style>
+:root {
+  --color-background-one: {{styles.colors.primary.two}};
+  --color-background-two: {{styles.colors.primary.five}};
+  --color-highlight-add: {{styles.colors.primary.five}};
+  --color-highlight-remove: {{styles.colors.primary.two}};
+}
+ p a,  li a,  blockquote a {
+    --tw-text-opacity: 1;
+    color: {{styles.primaryColor}}
+  }
+
+.highlight-line-isdir {
+  color: #b0b0b0;
+  background-color: #222;
+}
+.highlight-line-active {
+  background-color: #444;
+  background-color: hsla(0, 0%, 27%, .8);
+}
+.highlight-line-add {
+  background-color: hsla(147, 100%, 50%, .2);
+}
+.highlight-line-add::before {
+  content: "+"
+}
+
+.highlight-line-remove::before {
+  content: "-"
+}
+.highlight-line-remove {
+  background-color: hsla(0, 100%, 50%, .2);
+}
+
+.hero {
+  position: relative
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-background-two);
+  /*background-image: url('/images/logo-outline.svg'), linear-gradient(var(--color-background-two), var(--color-background-two));*/
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -1;
+}
+</style>
+
+  <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-solarizedlight.css" rel="stylesheet">
+  <title>{{ title }}{% if page.url != '/' %} | {{ meta.siteName }}{% endif %}</title>
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+  <script>
+  document.addEventListener("DOMContentLoaded", ()=>{
+  let aside = document.querySelector('aside');
+  let ham = document.querySelector('#small-hamburger');
+  ham.addEventListener('click', (e)=>{
+    console.log('show aside');
+    e.preventDefault();
+    aside.classList.toggle('hidden')
+  })
+  });
+  </script>
+</head>
+<body class="relative bg-white {{styles.text.primary.four}} font-sans antialiased h-full flex flex-col">
+  <div class="flex-grow flex-shrink-0 flex-auto">
+  {% include "nav.njk" %}
+  {% block aside %}{{ aside }}{% endblock %}
+  {% block content %}
+  {{ content | safe }}
+  {% endblock %}
+  {% include "footer.njk" %}
+
+</body>
+</html>

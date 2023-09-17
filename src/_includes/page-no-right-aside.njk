@@ -1,0 +1,19 @@
+---
+layout: base.njk
+---
+
+<!--<header>
+  <h1>{{ title }}</h1>
+</header>-->
+<main>
+  <div class="">
+  {% block aside %}
+    {% include "homeleftnav.njk" %}
+  {% endblock %}
+    <div class="flex w-full lg:w-5/5">
+      <article class="w-full xl:w-4/4 lg:mr-auto">
+        {{ content | safe }}
+      </article>
+    </div>
+  </div>
+</main>

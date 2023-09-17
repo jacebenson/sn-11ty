@@ -1,0 +1,17 @@
+---
+layout: page-no-right-aside.njk
+---
+<main>
+  <article>
+  {%include "deploymodal.njk" %}
+    {% include "hero.njk" %}
+    <!--{% include "testimonials.njk" %}-->
+    <!--{% include "calltoaction.njk" %}-->
+    {% include "features.njk" %}
+    {% include "organized.njk" %}
+    {% include "getstarted.njk" %}
+    <!--{% include "usedby.njk" %}-->
+    {{ content | safe }}
+
+  </article>
+</main>

@@ -1,0 +1,6 @@
+<ul>
+{% for video in collections[links.videos.tag] %}
+{{video}}{{video.title}}{{video.description}}
+  <li>{{ video.data.title }}</li>
+{% endfor %}
+</ul>

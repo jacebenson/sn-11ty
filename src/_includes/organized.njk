@@ -1,0 +1,29 @@
+<section id="organized" class="md:flex mt-24 max-w-screen-lg mx-auto">
+  <div class="md:w-2/5 pr-4 text-right">
+    <h3 class="text-2xl {{styles.text.alt.four}} font-bold tracking-tight">Quick Start</h3>
+    <p class="my-3">
+      First, get a database over on Heroku, Railway, or Supabase.
+    </p> 
+    <p class="my-3">
+      Next, copy that database URL into the <code>DATABASE_URL</code> environment variable.
+    </p>
+    <p class="my-3">
+      Something like this.
+    </p>
+  </div>
+  <div class="md:w-3/5 md:pl-4 mt-4 md:mt-0 {{styles.border.primary.one}} rounded-lg">
+{% highlight "shell" %}
+# Clone the repo
+$ git clone {{links.github.url + ".git"}}
+
+# Change directory to the repo
+$ cd Tskr
+
+# install the dependencies
+$ yarn install
+
+# Run it locally
+$ yarn rw dev
+{% endhighlight %}
+</div>
+</section>

@@ -1,0 +1,86 @@
+{% set currentUrl %}{{ page.url }}{% endset %}
+
+<nav>
+<section class="{{styles.background.primary.one}} {{styles.text.alt.six}}" data-target="application.header">
+        <div class="max-w-screen-xl mx-auto px-4 lg:px-8">
+          <header class="flex items-center justify-between py-6">
+            <a class="flex items-center text-2xl text-black font-bold tracking-tight" href="/">
+              <img src="/images/logo.svg" class="lg:hidden w-10" data-target="application.logo" />
+              <h1 class="ml-2">
+                {{ meta.siteName}}
+              </h1>
+            </a>
+            <div class="hidden lg:block flex-1 mx-8">
+              <ul class="font-semibold text-sm {{styles.text.alt.four}} ml-8">
+                {% for page in meta.navLinks%}
+                <li class="inline-block ml-6">
+                  <a href="{{ page.url }}" class="flex items-center">
+                    <span>{{page.name}}</span>
+                    {% if page.url[0] !== "/" %}
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" class="inline-block ml-1 w-4"><g stroke-width="2.1" stroke="{{styles.primaryColor}}" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg>
+                    {% endif %}
+                  </a>
+                </li>
+              {% endfor %}
+              </ul>
+            </div>
+            <div class="flex items-center">
+              <div class="ml-8 lg:hidden w-10 p-2" id="small-hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current {{styles.text.primary.two}}">
+                  <path d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+              </div>
+            </div>
+            <ul class="hidden lg:flex items-center">
+              <li class="mr-1">
+                <a class="block flex" href="{{links.github.url}}" title="{{links.github.alt}}">
+                  <span class="text-xs font-semibold {{styles.background.primary.three}} {{styles.text.alt.three}} px-2 rounded-l">stars</span>
+                  <span class="text-xs font-bold {{styles.background.primary.four}} {{styles.text.alt.one}} pl-2 pr-1" data-target="application.stars">???</span>
+                  <span class="{{styles.border.primary.three}} arrow-right" data-target="application.stars" style="  width: 0;
+  height: 0;
+  border-top: 0.55rem solid transparent;
+  border-bottom: 0.55rem solid transparent;
+  border-left: 0.55rem solid {{styles.primaryColor}}"></span>
+                </a>
+              </li>
+              {% for page in meta.iconLinks %}
+              <li class="mx-2 relative tooltip">
+              <a class="block w-6" href="{{ page.url }}" title="{{links.github.alt}}">
+                {% if page.name == "GitHub" %}
+                <svg viewBox="0 0 32 32" class="transition duration-200 fill-current {{styles.text.alt.two}} hover:{{styles.text.alt.four}}" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.9995 -8.73473e-07C12.198 -0.00275596 8.5196 1.34817 5.62346 3.81077C2.72731 6.27336 0.802616 9.6867 0.194194 13.4393C-0.414229 17.1919 0.333374 21.0385 2.30307 24.29C4.27276 27.5415 7.33584 29.9855 10.9435 31.184C11.7435 31.344 12.0315 30.832 12.0315 30.416L12.0155 27.696C7.56755 28.656 6.62355 25.552 6.62355 25.552C5.88755 23.696 4.84755 23.2 4.84755 23.2C3.40755 22.208 4.95955 22.24 4.95955 22.24C6.55955 22.352 7.40755 23.888 7.40755 23.888C8.84755 26.32 11.1515 25.616 12.0635 25.216C12.2235 24.176 12.6235 23.472 13.0715 23.072C9.51955 22.672 5.79155 21.296 5.79155 15.168C5.79155 13.408 6.41555 11.984 7.43955 10.864C6.95565 9.4866 7.01283 7.97684 7.59955 6.64C7.59955 6.64 8.94355 6.208 11.9995 8.272C14.6192 7.56384 17.3799 7.56384 19.9995 8.272C23.0555 6.192 24.3995 6.64 24.3995 6.64C25.2795 8.832 24.7195 10.48 24.5595 10.864C25.5835 11.984 26.2075 13.424 26.2075 15.168C26.2075 21.312 22.4635 22.656 18.8955 23.056C19.4715 23.552 19.9835 24.528 19.9835 26.016L19.9675 30.416C19.9675 30.832 20.2555 31.344 21.0715 31.184C24.6806 29.985 27.7445 27.5398 29.7141 24.2866C31.6837 21.0334 32.4302 17.185 31.8197 13.4314C31.2092 9.67772 29.2816 6.26427 26.3825 3.80296C23.4835 1.34165 19.8025 -0.00657403 15.9995 -8.73473e-07Z" />
+                  </svg>
+                {% endif %}
+                {% if page.name == "Twitter" %}
+                <svg viewBox="0 0 34 34" class="transition duration-200 fill-current {{styles.text.alt.two}} hover:{{styles.text.alt.four}}" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.693 31.025C23.528 31.025 30.532 20.4 30.532 11.186V10.285C31.892 9.282 33.065 8.075 34 6.664C32.725 7.225 31.382 7.599 29.988 7.769C31.4415 6.89552 32.5288 5.52436 33.048 3.91C31.688 4.726 30.192 5.287 28.628 5.61C27.5817 4.47537 26.1884 3.72011 24.6667 3.46265C23.1449 3.20519 21.5807 3.46011 20.2194 4.18742C18.8582 4.91474 17.7768 6.0733 17.1449 7.48142C16.513 8.88954 16.3664 10.4676 16.728 11.968C13.9549 11.8247 11.243 11.0998 8.76823 9.84043C6.29346 8.58108 4.11117 6.8154 2.363 4.658C1.46192 6.19488 1.18356 8.01846 1.58508 9.75418C1.98661 11.4899 3.03753 13.006 4.522 13.991C3.417 13.94 2.329 13.651 1.36 13.09V13.175C1.35653 14.7901 1.91405 16.3562 2.93729 17.6058C3.96053 18.8554 5.38596 19.7109 6.97 20.026C5.93906 20.3076 4.85718 20.3483 3.808 20.145C4.25151 21.5313 5.11789 22.744 6.2856 23.6129C7.4533 24.4818 8.86372 24.9634 10.319 24.99C8.87328 26.1262 7.21777 26.9662 5.44716 27.4621C3.67654 27.958 1.82554 28.1 0 27.88C3.19039 29.927 6.90238 31.0129 10.693 31.008" />
+                  </svg>
+                {% endif %}
+                {% if page.name == "YouTube" %}
+                <svg class="transition duration-200 fill-current {{styles.text.alt.two}} hover:{{styles.text.alt.four}}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310">
+                    <path d="M297.917, 64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359, 0-61.369, 5.776-72.517, 19.938 C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527 C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991 c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764 c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861	C204.394,157.263,202.325,160.684,199.021,162.41z"/>
+                </svg>
+                {% endif %}
+                {% if page.name == "Community" %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="transition duration-200 fill-current {{styles.text.alt.two}} hover:{{styles.text.alt.four}}">
+                    <path d="M16.1357143,0 C7.37857143,0 0,7.03571429 0,15.7214286 C0,16 0.00714285714,32 0.00714285714,32 L16.1357143,31.9857143 C24.9,31.9857143 32,24.6785714 32,15.9928571 C32,7.30714286 24.9,0 16.1357143,0 Z M16,25.1428571 C14.6142857,25.1428571 13.2928571,24.8357143 12.1142857,24.2785714 L6.32142857,25.7142857 L7.95714286,20.3571429 C7.25714286,19.0642857 6.85714286,17.5785714 6.85714286,16 C6.85714286,10.95 10.95,6.85714286 16,6.85714286 C21.05,6.85714286 25.1428571,10.95 25.1428571,16 C25.1428571,21.05 21.05,25.1428571 16,25.1428571 Z"/>
+                  </svg>
+                {% endif %}
+                {% if page.name == "Discord" %}
+                <svg viewBox="0 0 36 36" class="transition duration-200 fill-current {{styles.text.alt.two}} hover:{{styles.text.alt.four}}" xmlns="http://www.w3.org/2000/svg">
+                    {{ page.svg | safe }}
+                  </svg>
+                {% endif %}
+                </a>
+                <div class="tooltip-text absolute w-48 mt-2 -mr-1 text-white {{styles.background.primary.five}} text-xs rounded py-2 px-3 right-0">
+                  {{ page.tooltip | safe }}
+                  <svg class="absolute {{styles.text.alt.four}} h-2 right-0 mr-3 bottom-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon class="fill-current" points="255,255 127.5,127.5 0,255"/></svg>
+                </div>
+              </li>
+              {% endfor %}
+            </ul>
+          </header>
+        </div>
+      </section>
+</nav>

@@ -1,0 +1,26 @@
+<section id="testimonials" class="py-6 md:py-8 {{styles.background.primary.two}} lg:flex justify-between items-start px-8 -mt-8 h-72 md:h-64">
+  <div class="glide max-w-screen-lg mx-auto h-full">
+    <div class="glide__track h-full" data-glide-el="track">
+      <ul class="glide__slides h-full">
+      {% for testimonial in testimonials | reverse%}
+        <li class="glide__slide h-full">
+          <div class="flex flex-col justify-center items-center max-w-screen-md mx-auto h-full">
+          <div class="-mt-4 text-base md:text-lg text-center">    
+          {% for line in testimonial.quote %}
+            <p class="mt-4">{{ line }}</p>
+          {% endfor %}
+          </div>
+          <div class="flex flex-shrink-0 items-center justify-center text-sm font-semibold mt-4">
+            <img class="rounded-full w-10" src="{{ testimonial.userImage }}" />
+            <span class="ml-2">{{testimonial.userName}} / <a class="{{styles.text.alt.four}} hover:underline" href="{{ testimonial.sourceLink }}">{{ testimonial.sourceTitle }}</a><span>
+          </div>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+    <div class="hidden md:flex glide__arrows justify-between items-center -mt-24" data-glide-el="controls">
+      <button class="absolute left-0 glide__arrow glide__arrow--left text-6xl {{styles.text.alt.one}} hover:{{styles.text.alt.two}} transition:color duration-150 focus:outline-none" data-glide-dir="<">&laquo;</button>
+      <button class="absolute right-0 glide__arrow glide__arrow--right text-6xl {{styles.text.alt.one}} hover:{{styles.text.alt.two}} transition:color duration-150 focus:outline-none" data-glide-dir=">">&raquo;</button>
+    </div>
+  </div>
+</section>

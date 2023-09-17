@@ -1,0 +1,113 @@
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div
+  class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center"
+  id="modal-example-large"
+>
+    <div class="relative w-auto my-6 mx-auto max-w-6xl">
+        <!--content-->
+        <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+            <!--header-->
+            <div class="flex items-start justify-between p-5 border-b border-solid border-gray-200 rounded-t">
+                <h3 class="text-3xl font-semibold">One more thing</h3>
+                <button 
+                   class="p-1 ml-auto bg-transparent border-0 text-gray-300 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                   onclick="toggleModal('modal-example-large')">
+                    <span class="bg-transparent h-6 w-6 text-2xl block outline-none focus:outline-none">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </button>
+            </div>
+            <!--body-->
+            <div class="relative p-6 flex-auto">
+                <p class="my-4 text-gray-500 text-lg leading-relaxed">
+          Not quite a one-click setup as you will need a database, so go to your postgresql provider, if you're not sure what one, try <a href="https://railway.app" target="_blank">Railway</a>
+          These fields just update the link generated
+                </p>
+                <div class="pt-0">
+                <label for="database_url">Database Url</label>
+                    <input type="text"
+                        id="database_url"
+                        placeholder="postgres://user:password@server:port/postgres"
+                        class="px-3 py-4 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-base border border-gray-400 outline-none focus:outline-none focus:ring w-full" />
+                </div>
+                <div class="pt-3">
+                    <label for="session_secret">Session Secret</label>
+                    <input 
+                        id="session_secret"
+                        type="text"
+                        placeholder="Random String (generates on page load)"
+                        class="px-3 py-4 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-base border border-gray-400 outline-none focus:outline-none focus:ring w-full" />
+                        <script>
+                        function randomString(len, charSet) {
+  charSet =
+    charSet || 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+  var randomString = ''
+  for (var i = 0; i < len; i++) {
+    var randomPoz = Math.floor(Math.random() * charSet.length)
+    randomString += charSet.substring(randomPoz, randomPoz + 1)
+  }
+  return randomString
+}
+document.querySelector('#session_secret').value = randomString(64)
+                        </script>
+                </div>
+
+            </div>
+            <!--footer-->
+            <div
+        class="flex items-center justify-between p-6 border-t border-solid border-gray-200 rounded-b">
+                <button
+           class="text-sm font-semibold {{styles.text.alt.four}} -mr-4"
+         type="button"
+          onclick="toggleModal('modal-example-large')"
+        >
+          Close
+        </button>
+        <a
+          class="text-sm font-semibold {{styles.text.alt.four}} -mr-4"
+          href="{{links.netlify.url}}#DATABASE_URL=ReplaceWithConnectionString&SESSION_SECRET=RandonStringOf60+"
+        >
+          Deploy without variables
+        </a>
+                <button
+          class="block mt-2 {{styles.background.primary.five}} text-white px-4 py-3 font-semibold rounded hover:{{styles.background.primary.four}} transition duration-200 text-lg"
+          type="button"
+          onclick="(()=>{
+              let dburl = document.querySelector('#database_url').value;
+              let sessionsecret = document.querySelector('#session_secret').value;
+              toggleModal('modal-example-large')
+              window.open(`{{links.netlify.url}}#DATABASE_URL=${dburl}&SESSION_SECRET=${sessionsecret}`)
+          })()"
+        >
+          Deploy with Variables
+        </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div
+  class="hidden opacity-25 fixed inset-0 z-40 bg-black"
+  id="modal-example-large-backdrop"
+></div>
+<script type="text/javascript">
+    function toggleModal(modalID) {
+        document
+            .getElementById(modalID)
+            .classList
+            .toggle("hidden");
+        document
+            .getElementById(modalID + "-backdrop")
+            .classList
+            .toggle("hidden");
+        document
+            .getElementById(modalID)
+            .classList
+            .toggle("flex");
+        document
+            .getElementById(modalID + "-backdrop")
+            .classList
+            .toggle("flex");
+    }
+</script>

@@ -1,0 +1,17 @@
+<section class="mt-12 py-12 {{styles.background.primary.two}} lg:flex justify-between items-start max-w-screen-xl mx-auto px-8">
+   {% for company in usedby %}
+    <div class="flex flex-col md:flex-row lg:flex-col justify-between lg:w-1/3 text-center px-8">
+      <img src="{{ company.image }}" class="block w-40 mx-auto"/>
+      <div class="ml-0 md:ml-8 lg:ml-0 text-center md:text-left lg:text-center w-full">
+          <h2 class="text-2xl font-bold mt-2 py-2 {{styles.background.primary.five}} {{text.alt.one}} tracking-tight rounded"><a href="{{ company.url }}" class="text">
+            {{ company.name }}
+            </a>
+          </h2>
+        <p class="lg:mt-4 px-2 {{styles.text.alt.five}}">
+          {{ feature.description }}
+        </p>
+        <p></p>
+      </div>
+    </div>
+  {% endfor %}
+</section>
