@@ -36,10 +36,11 @@ sortedList) %} {% endfor %}
                       </li>
                     {% endfor %}
                     {% if pageLink.tag=='property' %}
+                      loading...
                       <script src="/assets/js/properties.js"></script>  
                     {% endif %}                    
                     {% if pageLink.tag=='scriptinclude' %}
-                    LOADING SCRIPT??? for {{pageLink.tag}}
+                      loading...
                       <script src="/assets/js/script-includes.js"></script>  
                     {% endif %}
                 </ul>

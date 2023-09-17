@@ -113,6 +113,13 @@ async function makeSimpleProperties() {
         // names must be equal
         return 0;
     });
+    // filter out duplicates by apiname
+    returnProperties = returnProperties.filter((property, index, self) =>
+        index === self.findIndex((t) => (
+            t.api_name === property.api_name
+        ))
+    )
+
     fs.writeFile("./src/_data/snScriptIncludeLocal.json", JSON.stringify(returnProperties, null, 2), function (err) {
         if (err) {
             return console.log(err);
