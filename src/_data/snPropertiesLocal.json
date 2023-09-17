@@ -1,19 +1,5 @@
 [
   {
-    "name": "CSM_debug_log",
-    "actualName": "CSM_debug_log",
-    "description": "Use this property to log ",
-    "value": "false",
-    "sysid": "1494f673c35522001f1a10c422d3ae81"
-  },
-  {
-    "name": "NotifyAffectedCI.max_rel_level",
-    "actualName": "NotifyAffectedCI.max_rel_level",
-    "description": "This property is used by Affected CI notifications business rule. The business rule will notify parent CIs up-to level defined in this property.",
-    "value": "5",
-    "sysid": "c359d7213733110082a0cc028e41f104"
-  },
-  {
     "name": "ace.content_blocks.fetch.mode.f80203e4c3020110fc869bc8a840dd17",
     "actualName": "ace.content_blocks.fetch.mode.f80203e4c3020110fc869bc8a840dd17",
     "description": "CI Console mode to fetch ACE Content Blocks",
@@ -406,18 +392,18 @@
     "sysid": "9b798400eb30020061fc648d9106fe05"
   },
   {
-    "name": "com.glide.app_insights_utils.cache_metrics_enable",
-    "actualName": "com.glide.app_insights_utils.cache_metrics_enable",
-    "description": "Property to enable the population of the cache_metrics table.",
-    "value": "false",
-    "sysid": "1a05fe530fb011105e78cde2ff767e91"
-  },
-  {
     "name": "com.glide.apps.include_my_schema",
     "actualName": "com.glide.apps.include_my_schema",
     "description": "Determines if schema files in the /author_elective folder of an application should be loaded.",
     "value": "true",
     "sysid": "e0bcb860c72010106c2e45ece8c26012"
+  },
+  {
+    "name": "com.glide.app_insights_utils.cache_metrics_enable",
+    "actualName": "com.glide.app_insights_utils.cache_metrics_enable",
+    "description": "Property to enable the population of the cache_metrics table.",
+    "value": "false",
+    "sysid": "1a05fe530fb011105e78cde2ff767e91"
   },
   {
     "name": "com.glide.attachment.max_size",
@@ -581,6 +567,48 @@
     "sysid": "fe0bcbef1ba47010178aed72604bcb89"
   },
   {
+    "name": "com.glide.cs.autopilot.agent_error_msg",
+    "actualName": "com.glide.cs.autopilot.agent_error_msg",
+    "description": "System message visible only to the agent indicating an autopilot topic is in error state and terminated. ",
+    "value": "The autopilot topic contains one or more errors. Autopilot has now ended.",
+    "sysid": "4198586cc3432010db1d0cf6bb40ddeb"
+  },
+  {
+    "name": "com.glide.cs.autopilot.agent_finished_msg",
+    "actualName": "com.glide.cs.autopilot.agent_finished_msg",
+    "description": "System message visible only to the agent indicating an autopilot topic has finished",
+    "value": "Topic completed successfully. Autopilot is now off.",
+    "sysid": "babc6173c316201046ad4f877840dd6e"
+  },
+  {
+    "name": "com.glide.cs.autopilot.agent_initiated_msg",
+    "actualName": "com.glide.cs.autopilot.agent_initiated_msg",
+    "description": "System message visible to the live agent only that indicates they have initiated an autopilot topic. {0} parameter will be replaced with the name of the autopilot topic.",
+    "value": "{0} has been initiated. Autopilot is now in progress.",
+    "sysid": "254c2d33c316201046ad4f877840dddd"
+  },
+  {
+    "name": "com.glide.cs.autopilot.client_finished_message",
+    "actualName": "com.glide.cs.autopilot.client_finished_message",
+    "description": "System message visible to the chat client only that indicates an autopilot topic has completed. {0} parameter will be replaced with Agent or name of agent if configured to display.",
+    "value": "Task has now ended. You are now interacting with {0}.",
+    "sysid": "a4d3bc0fc362201046ad4f877840ddaf"
+  },
+  {
+    "name": "com.glide.cs.autopilot.client_initiated_header",
+    "actualName": "com.glide.cs.autopilot.client_initiated_header",
+    "description": "This message is sent to the VA client header when a live agent invokes an autopilot topic.",
+    "value": "Virtual Agent is assisting.",
+    "sysid": "d8710832c3733010634cdb450a40ddaa"
+  },
+  {
+    "name": "com.glide.cs.autopilot.client_initiated_message",
+    "actualName": "com.glide.cs.autopilot.client_initiated_message",
+    "description": "System message visible to the chat client only that indicates the agent has initiated an autopilot topic. {0} parameter will be replaced with Agent or name of agent if configured to display.",
+    "value": "{0} has enabled Virtual Agent to help complete this task.",
+    "sysid": "42837c0fc362201046ad4f877840dd7e"
+  },
+  {
     "name": "com.glide.cs.auto_resolution.enable_multi_language_support",
     "actualName": "com.glide.cs.auto_resolution.enable_multi_language_support",
     "description": "This property is used to enable/disable multi language training support for Auto-Resolution.",
@@ -663,48 +691,6 @@
     "description": "whether auto suggest api is enabled",
     "value": "true",
     "sysid": "0b06ad88c3213010634cdb450a40ddae"
-  },
-  {
-    "name": "com.glide.cs.autopilot.agent_error_msg",
-    "actualName": "com.glide.cs.autopilot.agent_error_msg",
-    "description": "System message visible only to the agent indicating an autopilot topic is in error state and terminated. ",
-    "value": "The autopilot topic contains one or more errors. Autopilot has now ended.",
-    "sysid": "4198586cc3432010db1d0cf6bb40ddeb"
-  },
-  {
-    "name": "com.glide.cs.autopilot.agent_finished_msg",
-    "actualName": "com.glide.cs.autopilot.agent_finished_msg",
-    "description": "System message visible only to the agent indicating an autopilot topic has finished",
-    "value": "Topic completed successfully. Autopilot is now off.",
-    "sysid": "babc6173c316201046ad4f877840dd6e"
-  },
-  {
-    "name": "com.glide.cs.autopilot.agent_initiated_msg",
-    "actualName": "com.glide.cs.autopilot.agent_initiated_msg",
-    "description": "System message visible to the live agent only that indicates they have initiated an autopilot topic. {0} parameter will be replaced with the name of the autopilot topic.",
-    "value": "{0} has been initiated. Autopilot is now in progress.",
-    "sysid": "254c2d33c316201046ad4f877840dddd"
-  },
-  {
-    "name": "com.glide.cs.autopilot.client_finished_message",
-    "actualName": "com.glide.cs.autopilot.client_finished_message",
-    "description": "System message visible to the chat client only that indicates an autopilot topic has completed. {0} parameter will be replaced with Agent or name of agent if configured to display.",
-    "value": "Task has now ended. You are now interacting with {0}.",
-    "sysid": "a4d3bc0fc362201046ad4f877840ddaf"
-  },
-  {
-    "name": "com.glide.cs.autopilot.client_initiated_header",
-    "actualName": "com.glide.cs.autopilot.client_initiated_header",
-    "description": "This message is sent to the VA client header when a live agent invokes an autopilot topic.",
-    "value": "Virtual Agent is assisting.",
-    "sysid": "d8710832c3733010634cdb450a40ddaa"
-  },
-  {
-    "name": "com.glide.cs.autopilot.client_initiated_message",
-    "actualName": "com.glide.cs.autopilot.client_initiated_message",
-    "description": "System message visible to the chat client only that indicates the agent has initiated an autopilot topic. {0} parameter will be replaced with Agent or name of agent if configured to display.",
-    "value": "{0} has enabled Virtual Agent to help complete this task.",
-    "sysid": "42837c0fc362201046ad4f877840dd7e"
   },
   {
     "name": "com.glide.cs.available_topics_msg",
@@ -1036,18 +1022,18 @@
     "sysid": "cf7be593c3c511100f24c87af040dd22"
   },
   {
-    "name": "com.glide.cs.collab.enable_link_unfurling",
-    "actualName": "com.glide.cs.collab.enable_link_unfurling",
-    "description": "Indicates whether or not link unfurling is enabled for collaboration chats. Default value is true.",
-    "value": "true",
-    "sysid": "7769a429c3963010fe394f877840dd54"
-  },
-  {
     "name": "com.glide.cs.collab.enabled",
     "actualName": "com.glide.cs.collab.enabled",
     "description": "Set to false to disable collaborative chat",
     "value": "true",
     "sysid": "f5f72077c31101109a481f820c40ddd9"
+  },
+  {
+    "name": "com.glide.cs.collab.enable_link_unfurling",
+    "actualName": "com.glide.cs.collab.enable_link_unfurling",
+    "description": "Indicates whether or not link unfurling is enabled for collaboration chats. Default value is true.",
+    "value": "true",
+    "sysid": "7769a429c3963010fe394f877840dd54"
   },
   {
     "name": "com.glide.cs.collab.event_queue.enabled",
@@ -1617,18 +1603,18 @@
     "sysid": "053aaaa33b21130028fa456993efc43b"
   },
   {
-    "name": "com.glide.cs.link_account_msg",
-    "actualName": "com.glide.cs.link_account_msg",
-    "description": "Instructional message to connect user s account with ServiceNow. ",
-    "value": "Hello ! I'm Now Virtual Agent. I'm here to help you. Let's start by linking your ServiceNow account. In case you don't want to connect your account, please enter your request.",
-    "sysid": "f59e243a9fe310100d74d46d842e7089"
-  },
-  {
     "name": "com.glide.cs.linking_account.message",
     "actualName": "com.glide.cs.linking_account.message",
     "description": "Confirmation message when user s account is linked with ServiceNow",
     "value": "Thanks for linking your ServiceNow account!",
     "sysid": "d27e27049f3210100d74d46d842e7050"
+  },
+  {
+    "name": "com.glide.cs.link_account_msg",
+    "actualName": "com.glide.cs.link_account_msg",
+    "description": "Instructional message to connect user s account with ServiceNow. ",
+    "value": "Hello ! I'm Now Virtual Agent. I'm here to help you. Let's start by linking your ServiceNow account. In case you don't want to connect your account, please enter your request.",
+    "sysid": "f59e243a9fe310100d74d46d842e7089"
   },
   {
     "name": "com.glide.cs.live_agent_only",
@@ -1799,20 +1785,6 @@
     "sysid": "730cee09533a51101fdbddeeff7b1208"
   },
   {
-    "name": "com.glide.cs.no_topic_found_message",
-    "actualName": "com.glide.cs.no_topic_found_message",
-    "description": "No Topic Found Message",
-    "value": "Please try giving me your request in a different way. I'm currently better at understanding short sentences.",
-    "sysid": "a04c64aa3b1123009cbbcea234efc4e5"
-  },
-  {
-    "name": "com.glide.cs.no_topic_sorry_message",
-    "actualName": "com.glide.cs.no_topic_sorry_message",
-    "description": "No Topic Found Sorry Message",
-    "value": "I am sorry but I didn't understand your request.",
-    "sysid": "bf6ca8aa3b1123009cbbcea234efc463"
-  },
-  {
     "name": "com.glide.cs.notification_batch_user_size",
     "actualName": "com.glide.cs.notification_batch_user_size",
     "description": "This property defines the number of notifications per batch for recipients and destination combination.",
@@ -1848,11 +1820,18 @@
     "sysid": "b5cbdbe777b3b010f14a24f1cd5a9933"
   },
   {
-    "name": "com.glide.cs.on_error_connect_to_agent",
-    "actualName": "com.glide.cs.on_error_connect_to_agent",
-    "description": "If enabled, erroneous LA conversation will be transferred to another Live Agent",
-    "value": "true",
-    "sysid": "29c4c4f2c3733010634cdb450a40dd9d"
+    "name": "com.glide.cs.no_topic_found_message",
+    "actualName": "com.glide.cs.no_topic_found_message",
+    "description": "No Topic Found Message",
+    "value": "Please try giving me your request in a different way. I'm currently better at understanding short sentences.",
+    "sysid": "a04c64aa3b1123009cbbcea234efc4e5"
+  },
+  {
+    "name": "com.glide.cs.no_topic_sorry_message",
+    "actualName": "com.glide.cs.no_topic_sorry_message",
+    "description": "No Topic Found Sorry Message",
+    "value": "I am sorry but I didn't understand your request.",
+    "sysid": "bf6ca8aa3b1123009cbbcea234efc463"
   },
   {
     "name": "com.glide.cs.one.api.disabled",
@@ -1860,13 +1839,6 @@
     "description": "No description available",
     "value": "false",
     "sysid": "b677663247872110b7c73e7d826d43b4"
-  },
-  {
-    "name": "com.glide.cs.one_extend.disabled",
-    "actualName": "com.glide.cs.one_extend.disabled",
-    "description": "No description available",
-    "value": "false",
-    "sysid": "cf10e2ff47947110b7c73e7d826d43b1"
   },
   {
     "name": "com.glide.cs.oneextend.sensitive_data_handling.capability_id",
@@ -1883,11 +1855,18 @@
     "sysid": "755d0672eba21110c27601c7c15228f2"
   },
   {
-    "name": "com.glide.cs.per_notification_user_limit",
-    "actualName": "com.glide.cs.per_notification_user_limit",
-    "description": "This property defines number of recipients per notification. Maximum is 1000.",
-    "value": "100000",
-    "sysid": "034df7a353131010657addeeff7b122d"
+    "name": "com.glide.cs.one_extend.disabled",
+    "actualName": "com.glide.cs.one_extend.disabled",
+    "description": "No description available",
+    "value": "false",
+    "sysid": "cf10e2ff47947110b7c73e7d826d43b1"
+  },
+  {
+    "name": "com.glide.cs.on_error_connect_to_agent",
+    "actualName": "com.glide.cs.on_error_connect_to_agent",
+    "description": "If enabled, erroneous LA conversation will be transferred to another Live Agent",
+    "value": "true",
+    "sysid": "29c4c4f2c3733010634cdb450a40dd9d"
   },
   {
     "name": "com.glide.cs.performance_logging_enabled",
@@ -1904,6 +1883,13 @@
     "sysid": "932fa2e2533220101fdbddeeff7b123d"
   },
   {
+    "name": "com.glide.cs.per_notification_user_limit",
+    "actualName": "com.glide.cs.per_notification_user_limit",
+    "description": "This property defines number of recipients per notification. Maximum is 1000.",
+    "value": "100000",
+    "sysid": "034df7a353131010657addeeff7b122d"
+  },
+  {
     "name": "com.glide.cs.picker_page_limit",
     "actualName": "com.glide.cs.picker_page_limit",
     "description": "Indicates the number of picker items that will be displayed per page",
@@ -1911,11 +1897,88 @@
     "sysid": "873975245f130010691e2115a373137d"
   },
   {
-    "name": "com.glide.cs.portal_url_mapping._default._default",
-    "actualName": "com.glide.cs.portal_url_mapping._default._default",
-    "description": "DEPRECATED - no longer used. Refer to Default Fallback for all the other records mapping in sys_cs_portal_url_mapping.",
-    "value": "/{{portal}}?sys_id={{data.sys_id}}&id=form&table={{data.table_name}}",
-    "sysid": "fe880c373b2123009cbbcea234efc4e4"
+    "name": "com.glide.cs.portal_url_mapping.csm.kb_knowledge",
+    "actualName": "com.glide.cs.portal_url_mapping.csm.kb_knowledge",
+    "description": "CSM Knowledge Base URL Mapping",
+    "value": "/csm?id=kb_article&sys_id={{data.sys_id}}",
+    "sysid": "32d5d8b73b2123009cbbcea234efc4e8"
+  },
+  {
+    "name": "com.glide.cs.portal_url_mapping.csm.sn_customerservice_case",
+    "actualName": "com.glide.cs.portal_url_mapping.csm.sn_customerservice_case",
+    "description": "CSM Customer Service Case Record Mapping",
+    "value": "/csm?id=csm_ticket&table=sn_customerservice_case&sys_id={{data.sys_id}}&view=csp",
+    "sysid": "3ce604f33b2123009cbbcea234efc47a"
+  },
+  {
+    "name": "com.glide.cs.portal_url_mapping.csm.sn_publications_publication",
+    "actualName": "com.glide.cs.portal_url_mapping.csm.sn_publications_publication",
+    "description": "CSM Publications Mapping URL",
+    "value": "/csm?id=publication&table=sn_publications_publication&sys_id={{data.sys_id}}",
+    "sysid": "13cf507b3b2123009cbbcea234efc4b7"
+  },
+  {
+    "name": "com.glide.cs.portal_url_mapping.csm._default",
+    "actualName": "com.glide.cs.portal_url_mapping.csm._default",
+    "description": "CSM Default Record Mapping URL",
+    "value": "/csm?id=form&table={{data.table_name}}&sys_id={{data.sys_id}}&view=csp",
+    "sysid": "97c700373b2123009cbbcea234efc49c"
+  },
+  {
+    "name": "com.glide.cs.portal_url_mapping.csp.kb_knowledge",
+    "actualName": "com.glide.cs.portal_url_mapping.csp.kb_knowledge",
+    "description": "CSP Knowledge Base URL Mapping",
+    "value": "/csp?id=kb_article&sys_id={{data.sys_id}}",
+    "sysid": "7d56dcb73b2123009cbbcea234efc4d3"
+  },
+  {
+    "name": "com.glide.cs.portal_url_mapping.csp.sn_customerservice_case",
+    "actualName": "com.glide.cs.portal_url_mapping.csp.sn_customerservice_case",
+    "description": "CSP Customer Service Case Record Mapping",
+    "value": "/csp?id=csm_ticket&table=sn_customerservice_case&sys_id={{data.sys_id}}&view=css",
+    "sysid": "c437c4f33b2123009cbbcea234efc4e5"
+  },
+  {
+    "name": "com.glide.cs.portal_url_mapping.csp.sn_publications_publication",
+    "actualName": "com.glide.cs.portal_url_mapping.csp.sn_publications_publication",
+    "description": "CSP Publications Mapping URL",
+    "value": "/csp?id=publication&table=sn_publications_publication&sys_id={{data.sys_id}}",
+    "sysid": "b730647b3b2123009cbbcea234efc479"
+  },
+  {
+    "name": "com.glide.cs.portal_url_mapping.csp._default",
+    "actualName": "com.glide.cs.portal_url_mapping.csp._default",
+    "description": "CSP Default Record URL Mapping",
+    "value": "/csp?id=form&table={{data.table_name}}&sys_id={{data.sys_id}}&view=css",
+    "sysid": "ddf780373b2123009cbbcea234efc4f9"
+  },
+  {
+    "name": "com.glide.cs.portal_url_mapping.esc.sys_user",
+    "actualName": "com.glide.cs.portal_url_mapping.esc.sys_user",
+    "description": "Url Mapping for user on sys_user",
+    "value": "/esc?id=hri_user_profile&sys_id={{data.sys_id}}",
+    "sysid": "d31786d1536020101865ddeeff7b1276"
+  },
+  {
+    "name": "com.glide.cs.portal_url_mapping.portal.kb_knowledge",
+    "actualName": "com.glide.cs.portal_url_mapping.portal.kb_knowledge",
+    "description": "DEPRECATED - no longer used. Refer to Default portal context to use for kb_article in sys_cs_portal_url_mapping.",
+    "value": "sp",
+    "sysid": "04f11456530120103296ddeeff7b1203"
+  },
+  {
+    "name": "com.glide.cs.portal_url_mapping.portal.sc_cat_item",
+    "actualName": "com.glide.cs.portal_url_mapping.portal.sc_cat_item",
+    "description": "DEPRECATED - no longer used. Refer to Default portal context to use for sc_cat_item in sys_cs_portal_url_mapping.",
+    "value": "sp",
+    "sysid": "3e454452530120103296ddeeff7b12cd"
+  },
+  {
+    "name": "com.glide.cs.portal_url_mapping.portal.sys_user",
+    "actualName": "com.glide.cs.portal_url_mapping.portal.sys_user",
+    "description": "DEPRECATED - no longer used. Refer to Default portal context to use for sys_user in sys_cs_portal_url_mapping.",
+    "value": "esc",
+    "sysid": "8ba9649a534120103296ddeeff7b1294"
   },
   {
     "name": "com.glide.cs.portal_url_mapping._default.kb_knowledge",
@@ -1953,88 +2016,11 @@
     "sysid": "796888373b2123009cbbcea234efc49b"
   },
   {
-    "name": "com.glide.cs.portal_url_mapping.csm._default",
-    "actualName": "com.glide.cs.portal_url_mapping.csm._default",
-    "description": "CSM Default Record Mapping URL",
-    "value": "/csm?id=form&table={{data.table_name}}&sys_id={{data.sys_id}}&view=csp",
-    "sysid": "97c700373b2123009cbbcea234efc49c"
-  },
-  {
-    "name": "com.glide.cs.portal_url_mapping.csm.kb_knowledge",
-    "actualName": "com.glide.cs.portal_url_mapping.csm.kb_knowledge",
-    "description": "CSM Knowledge Base URL Mapping",
-    "value": "/csm?id=kb_article&sys_id={{data.sys_id}}",
-    "sysid": "32d5d8b73b2123009cbbcea234efc4e8"
-  },
-  {
-    "name": "com.glide.cs.portal_url_mapping.csm.sn_customerservice_case",
-    "actualName": "com.glide.cs.portal_url_mapping.csm.sn_customerservice_case",
-    "description": "CSM Customer Service Case Record Mapping",
-    "value": "/csm?id=csm_ticket&table=sn_customerservice_case&sys_id={{data.sys_id}}&view=csp",
-    "sysid": "3ce604f33b2123009cbbcea234efc47a"
-  },
-  {
-    "name": "com.glide.cs.portal_url_mapping.csm.sn_publications_publication",
-    "actualName": "com.glide.cs.portal_url_mapping.csm.sn_publications_publication",
-    "description": "CSM Publications Mapping URL",
-    "value": "/csm?id=publication&table=sn_publications_publication&sys_id={{data.sys_id}}",
-    "sysid": "13cf507b3b2123009cbbcea234efc4b7"
-  },
-  {
-    "name": "com.glide.cs.portal_url_mapping.csp._default",
-    "actualName": "com.glide.cs.portal_url_mapping.csp._default",
-    "description": "CSP Default Record URL Mapping",
-    "value": "/csp?id=form&table={{data.table_name}}&sys_id={{data.sys_id}}&view=css",
-    "sysid": "ddf780373b2123009cbbcea234efc4f9"
-  },
-  {
-    "name": "com.glide.cs.portal_url_mapping.csp.kb_knowledge",
-    "actualName": "com.glide.cs.portal_url_mapping.csp.kb_knowledge",
-    "description": "CSP Knowledge Base URL Mapping",
-    "value": "/csp?id=kb_article&sys_id={{data.sys_id}}",
-    "sysid": "7d56dcb73b2123009cbbcea234efc4d3"
-  },
-  {
-    "name": "com.glide.cs.portal_url_mapping.csp.sn_customerservice_case",
-    "actualName": "com.glide.cs.portal_url_mapping.csp.sn_customerservice_case",
-    "description": "CSP Customer Service Case Record Mapping",
-    "value": "/csp?id=csm_ticket&table=sn_customerservice_case&sys_id={{data.sys_id}}&view=css",
-    "sysid": "c437c4f33b2123009cbbcea234efc4e5"
-  },
-  {
-    "name": "com.glide.cs.portal_url_mapping.csp.sn_publications_publication",
-    "actualName": "com.glide.cs.portal_url_mapping.csp.sn_publications_publication",
-    "description": "CSP Publications Mapping URL",
-    "value": "/csp?id=publication&table=sn_publications_publication&sys_id={{data.sys_id}}",
-    "sysid": "b730647b3b2123009cbbcea234efc479"
-  },
-  {
-    "name": "com.glide.cs.portal_url_mapping.esc.sys_user",
-    "actualName": "com.glide.cs.portal_url_mapping.esc.sys_user",
-    "description": "Url Mapping for user on sys_user",
-    "value": "/esc?id=hri_user_profile&sys_id={{data.sys_id}}",
-    "sysid": "d31786d1536020101865ddeeff7b1276"
-  },
-  {
-    "name": "com.glide.cs.portal_url_mapping.portal.kb_knowledge",
-    "actualName": "com.glide.cs.portal_url_mapping.portal.kb_knowledge",
-    "description": "DEPRECATED - no longer used. Refer to Default portal context to use for kb_article in sys_cs_portal_url_mapping.",
-    "value": "sp",
-    "sysid": "04f11456530120103296ddeeff7b1203"
-  },
-  {
-    "name": "com.glide.cs.portal_url_mapping.portal.sc_cat_item",
-    "actualName": "com.glide.cs.portal_url_mapping.portal.sc_cat_item",
-    "description": "DEPRECATED - no longer used. Refer to Default portal context to use for sc_cat_item in sys_cs_portal_url_mapping.",
-    "value": "sp",
-    "sysid": "3e454452530120103296ddeeff7b12cd"
-  },
-  {
-    "name": "com.glide.cs.portal_url_mapping.portal.sys_user",
-    "actualName": "com.glide.cs.portal_url_mapping.portal.sys_user",
-    "description": "DEPRECATED - no longer used. Refer to Default portal context to use for sys_user in sys_cs_portal_url_mapping.",
-    "value": "esc",
-    "sysid": "8ba9649a534120103296ddeeff7b1294"
+    "name": "com.glide.cs.portal_url_mapping._default._default",
+    "actualName": "com.glide.cs.portal_url_mapping._default._default",
+    "description": "DEPRECATED - no longer used. Refer to Default Fallback for all the other records mapping in sys_cs_portal_url_mapping.",
+    "value": "/{{portal}}?sys_id={{data.sys_id}}&id=form&table={{data.table_name}}",
+    "sysid": "fe880c373b2123009cbbcea234efc4e4"
   },
   {
     "name": "com.glide.cs.preserve_requester_language_on_refresh",
@@ -2317,18 +2303,18 @@
     "sysid": "2be2845373033010a2601f8afaf6a7c6"
   },
   {
-    "name": "com.glide.cs.unlink_account.confirmation_message",
-    "actualName": "com.glide.cs.unlink_account.confirmation_message",
-    "description": "Message displayed to confirm user s action to unlink their account.",
-    "value": "Are you sure you want to unlink your ServiceNow account?",
-    "sysid": "4d3077449f3210100d74d46d842e7074"
-  },
-  {
     "name": "com.glide.cs.unlinking_account.message",
     "actualName": "com.glide.cs.unlinking_account.message",
     "description": " Unlinking ServiceNow account message.",
     "value": "You have unlinked your ServiceNow account.",
     "sysid": "603d67c09f3210100d74d46d842e7015"
+  },
+  {
+    "name": "com.glide.cs.unlink_account.confirmation_message",
+    "actualName": "com.glide.cs.unlink_account.confirmation_message",
+    "description": "Message displayed to confirm user s action to unlink their account.",
+    "value": "Are you sure you want to unlink your ServiceNow account?",
+    "sysid": "4d3077449f3210100d74d46d842e7074"
   },
   {
     "name": "com.glide.cs.upload.attachment.max_count",
@@ -2520,18 +2506,18 @@
     "sysid": "7ef740d03b00030007a0832b44efc411"
   },
   {
-    "name": "com.glide.embedded_help.enable_video",
-    "actualName": "com.glide.embedded_help.enable_video",
-    "description": "Shows or hides a video contained in a help topic. If true, the video shows in the embedded help pane. If false, the video is hidden in the pane, but not removed from the help topic. Note All videos must be wrapped in a class=video style to disable videos from rendering in the help panel. The client may cache the property.",
-    "value": "true",
-    "sysid": "6ff51ee33b033200188dede393efc43b"
-  },
-  {
     "name": "com.glide.embedded_help.enabled",
     "actualName": "com.glide.embedded_help.enabled",
     "description": "Active status of Embedded Help. Set to false to disable Embedded Help.",
     "value": "true",
     "sysid": "56cea93d53411200d45f0f0c36dc34b2"
+  },
+  {
+    "name": "com.glide.embedded_help.enable_video",
+    "actualName": "com.glide.embedded_help.enable_video",
+    "description": "Shows or hides a video contained in a help topic. If true, the video shows in the embedded help pane. If false, the video is hidden in the pane, but not removed from the help topic. Note All videos must be wrapped in a class=video style to disable videos from rendering in the help panel. The client may cache the property.",
+    "value": "true",
+    "sysid": "6ff51ee33b033200188dede393efc43b"
   },
   {
     "name": "com.glide.embedded_help.fallback_to_default_language",
@@ -2548,18 +2534,18 @@
     "sysid": "bf8720b253211200d45f0f0c36dc34e0"
   },
   {
-    "name": "com.glide.embedded_help.log_interval",
-    "actualName": "com.glide.embedded_help.log_interval",
-    "description": "Determines the interval(hours) when Embedded Help should generate logs.",
-    "value": "6",
-    "sysid": "b4dd1142e77013005a4b84f903f6a9a0"
-  },
-  {
     "name": "com.glide.embedded_help.logging_enabled",
     "actualName": "com.glide.embedded_help.logging_enabled",
     "description": "Determines whether Embedded Help should generate logs.",
     "value": "true",
     "sysid": "22bc9d02e77013005a4b84f903f6a9e5"
+  },
+  {
+    "name": "com.glide.embedded_help.log_interval",
+    "actualName": "com.glide.embedded_help.log_interval",
+    "description": "Determines the interval(hours) when Embedded Help should generate logs.",
+    "value": "6",
+    "sysid": "b4dd1142e77013005a4b84f903f6a9a0"
   },
   {
     "name": "com.glide.embedded_help.seismic_content_version",
@@ -2653,20 +2639,6 @@
     "sysid": "df8d0f070a0a0b590086437a9f874d37"
   },
   {
-    "name": "com.glide.event_handler.CollabNotificationEventHandler",
-    "actualName": "com.glide.event_handler.CollabNotificationEventHandler",
-    "description": "Define the handler to process the events for Sidebar.",
-    "value": "com.glide.cs.collab.responders.CollabNotificationEventHandler",
-    "sysid": "1d6f7d1043e22110d1064006fbb8f2d8"
-  },
-  {
-    "name": "com.glide.event_handler.VANotificationEventHandler",
-    "actualName": "com.glide.event_handler.VANotificationEventHandler",
-    "description": "This is the Java class that handles processing of va.notification sysevent ",
-    "value": "com.glide.cs.qlue.module.worker.VANotificationEventHandler",
-    "sysid": "02bf10d6531210106e61ddeeff7b1293"
-  },
-  {
     "name": "com.glide.event_handler.ais_config_changes",
     "actualName": "com.glide.event_handler.ais_config_changes",
     "description": "Name of class to process AIS configuration changes like new relevancy model, zing to AIS",
@@ -2721,6 +2693,13 @@
     "description": "This property defines the Event Handler that ensures customers newly enabling code signing are configured to be as secure as possible",
     "value": "com.glide.codesigning.tracking.CodeSigningSecurePropertiesHandler",
     "sysid": "0261c1484ff51110cd9020cc32ce0b10"
+  },
+  {
+    "name": "com.glide.event_handler.CollabNotificationEventHandler",
+    "actualName": "com.glide.event_handler.CollabNotificationEventHandler",
+    "description": "Define the handler to process the events for Sidebar.",
+    "value": "com.glide.cs.collab.responders.CollabNotificationEventHandler",
+    "sysid": "1d6f7d1043e22110d1064006fbb8f2d8"
   },
   {
     "name": "com.glide.event_handler.flow_engine",
@@ -2791,6 +2770,13 @@
     "description": "Name of class to process text indexing events. This class must implement the IFlushActionHandler interface.",
     "value": "com.glide.ts.event.TSActionHandler",
     "sysid": "a284e12c0a000526680a5a1fcf70fa39"
+  },
+  {
+    "name": "com.glide.event_handler.VANotificationEventHandler",
+    "actualName": "com.glide.event_handler.VANotificationEventHandler",
+    "description": "This is the Java class that handles processing of va.notification sysevent ",
+    "value": "com.glide.cs.qlue.module.worker.VANotificationEventHandler",
+    "sysid": "02bf10d6531210106e61ddeeff7b1293"
   },
   {
     "name": "com.glide.event_handler.va_click_metrics",
@@ -3227,13 +3213,6 @@
     "sysid": "91bea332cb320000dada1bc9ff16ae2e"
   },
   {
-    "name": "com.glide.service_portal.exclude_chat_portal_list",
-    "actualName": "com.glide.service_portal.exclude_chat_portal_list",
-    "description": "No description available",
-    "value": "26f2fffb77322300454792718a1061e5,fe5506d03b0203008ed00d8044efc45d",
-    "sysid": "b16ce94777332300454792718a106159"
-  },
-  {
     "name": "com.glide.servicecatalog.item_creator.factory.log",
     "actualName": "com.glide.servicecatalog.item_creator.factory.log",
     "description": "Logging level for the item creator",
@@ -3269,6 +3248,27 @@
     "sysid": "09a93523d7121100b9a5c7400e6103aa"
   },
   {
+    "name": "com.glide.service_portal.exclude_chat_portal_list",
+    "actualName": "com.glide.service_portal.exclude_chat_portal_list",
+    "description": "No description available",
+    "value": "26f2fffb77322300454792718a1061e5,fe5506d03b0203008ed00d8044efc45d",
+    "sysid": "b16ce94777332300454792718a106159"
+  },
+  {
+    "name": "com.glide.snap.enable_scan",
+    "actualName": "com.glide.snap.enable_scan",
+    "description": "Enable Antivirus scanning",
+    "value": "true",
+    "sysid": "2881e673536203002325ddeeff7b120f"
+  },
+  {
+    "name": "com.glide.snap.infected_download_allowed",
+    "actualName": "com.glide.snap.infected_download_allowed",
+    "description": "Allow attachments to be downloaded when Antivirus scanner is unavailable",
+    "value": "true",
+    "sysid": "2c05e6cb871313009361c077f6cb0b65"
+  },
+  {
     "name": "com.glide.sn_help.empty_panel.message",
     "actualName": "com.glide.sn_help.empty_panel.message",
     "description": "Configure empty panel message for right side help panel in seismic applications.",
@@ -3295,20 +3295,6 @@
     "description": "Shows or hides search icon in help panel header.",
     "value": "true",
     "sysid": "fda72ea25b1130109779b9a23381c714"
-  },
-  {
-    "name": "com.glide.snap.enable_scan",
-    "actualName": "com.glide.snap.enable_scan",
-    "description": "Enable Antivirus scanning",
-    "value": "true",
-    "sysid": "2881e673536203002325ddeeff7b120f"
-  },
-  {
-    "name": "com.glide.snap.infected_download_allowed",
-    "actualName": "com.glide.snap.infected_download_allowed",
-    "description": "Allow attachments to be downloaded when Antivirus scanner is unavailable",
-    "value": "true",
-    "sysid": "2c05e6cb871313009361c077f6cb0b65"
   },
   {
     "name": "com.glide.soap.guest_user",
@@ -3402,55 +3388,6 @@
     "sysid": "ed701862d7330100f2d224837e6103f7"
   },
   {
-    "name": "com.sn_flow_diagram.config.schema_version",
-    "actualName": "com.sn_flow_diagram.config.schema_version",
-    "description": "Flow Diagramming API schema version",
-    "value": "21.0.0",
-    "sysid": "1d9d76f4ff6430104ef14ee9453bf10f"
-  },
-  {
-    "name": "com.sn_rf.incident.footer_visible",
-    "actualName": "com.sn_rf.incident.footer_visible",
-    "description": "Show or hide footer on recommendations component for incident table",
-    "value": "true",
-    "sysid": "8a340c15534101103953ddeeff7b12f9"
-  },
-  {
-    "name": "com.sn_rf.rule.52bbd85c07450110b34ce06b0fd30008.active",
-    "actualName": "com.sn_rf.rule.52bbd85c07450110b34ce06b0fd30008.active",
-    "description": "Enable repeated alerts​ for alerts",
-    "value": "true",
-    "sysid": "0fc114194f410110b34cb38b43ce0b94"
-  },
-  {
-    "name": "com.sn_rf.rule.6760441a07050110b34ce06b0fd3009f.active",
-    "actualName": "com.sn_rf.rule.6760441a07050110b34ce06b0fd3009f.active",
-    "description": "Enable incidents on related CIs​ for alerts",
-    "value": "true",
-    "sysid": "d972d0594f410110b34cb38b43ce0b2d"
-  },
-  {
-    "name": "com.sn_rf.rule.7db9989807450110b34ce06b0fd300c4.active",
-    "actualName": "com.sn_rf.rule.7db9989807450110b34ce06b0fd300c4.active",
-    "description": "Enable similar alerts​ for alerts",
-    "value": "true",
-    "sysid": "3d2298194f410110b34cb38b43ce0b1c"
-  },
-  {
-    "name": "com.sn_rf.rule.89faa84007010110b34ce06b0fd3008a.active",
-    "actualName": "com.sn_rf.rule.89faa84007010110b34ce06b0fd3008a.active",
-    "description": "Enable KB for alerts",
-    "value": "true",
-    "sysid": "776c84914f410110b34cb38b43ce0b2d"
-  },
-  {
-    "name": "com.sn_rf.rule.cdebdc5c07450110b34ce06b0fd30044.active",
-    "actualName": "com.sn_rf.rule.cdebdc5c07450110b34ce06b0fd30044.active",
-    "description": "Enable incidents on CI​ for alerts",
-    "value": "true",
-    "sysid": "834210594f410110b34cb38b43ce0bfd"
-  },
-  {
     "name": "com.snc.actsub.activities.api.fetch.limit",
     "actualName": "com.snc.actsub.activities.api.fetch.limit",
     "description": "Enter a numeric value to specify the limit on activities while fetching from the REST API, /api/now/v1/actsub/activities",
@@ -3542,6 +3479,13 @@
     "sysid": "772da50d67a25010b3d782f45685eff1"
   },
   {
+    "name": "com.snc.apps.publish.maxrows",
+    "actualName": "com.snc.apps.publish.maxrows",
+    "description": "Maximum number of records included from each table in an application when the application is published with the Include Data option",
+    "value": "1000",
+    "sysid": "73a8b4f8ef123000a61d5a3615c0fb6f"
+  },
+  {
     "name": "com.snc.app_templates.allow_unsupported_records",
     "actualName": "com.snc.app_templates.allow_unsupported_records",
     "description": "Determines whether an app with records of an unknown support level can be saved as an application template.",
@@ -3561,13 +3505,6 @@
     "description": "A comma-separated list of tables that have a field named script that is a String type.",
     "value": "sysrule_assignment,sysrule_approvals,sys_wizard_answer,task_rel_allowed",
     "sysid": "7920bd9053523010c249ddeeff7b1285"
-  },
-  {
-    "name": "com.snc.apps.publish.maxrows",
-    "actualName": "com.snc.apps.publish.maxrows",
-    "description": "Maximum number of records included from each table in an application when the application is published with the Include Data option",
-    "value": "1000",
-    "sysid": "73a8b4f8ef123000a61d5a3615c0fb6f"
   },
   {
     "name": "com.snc.assessment.collect.stats",
@@ -3927,6 +3864,13 @@
     "sysid": "044b05d187033300d503caf736cb0b6c"
   },
   {
+    "name": "com.snc.csf.signature.number_of_records_in_slushbucket",
+    "actualName": "com.snc.csf.signature.number_of_records_in_slushbucket",
+    "description": "This property determines the number of records that can appear in slush bucket for Sign Specific Records and Sign Specific Attachments job types. The minimum and maximum number of record supported is 10 and 5000, slushbucket does not support records beyond this range.",
+    "value": "3000",
+    "sysid": "c6d834d1c3022110de5da585b140dd43"
+  },
+  {
     "name": "com.snc.cs_base.last.generated.code.tree.path",
     "actualName": "com.snc.cs_base.last.generated.code.tree.path",
     "description": "Code used to generate next account code",
@@ -3939,13 +3883,6 @@
     "description": "Code Search log verbosity for CSM Base project. Set to 1 representing info by default. Options are 0 Show information that may be useful while debugging the application, like the values of queries run. Also includes info, warn, and error messages. 1 Show progress messages as the Code Search application searches for results. Also shows warnings and error messages. 2 Show warning which indicates possible unexpected changes in behavior while searching, in addition to any errors. 3 Show only critical errors which may prevent the search from completing will be shown.",
     "value": "1",
     "sysid": "32eb369653e2030097a2ddeeff7b1299"
-  },
-  {
-    "name": "com.snc.csf.signature.number_of_records_in_slushbucket",
-    "actualName": "com.snc.csf.signature.number_of_records_in_slushbucket",
-    "description": "This property determines the number of records that can appear in slush bucket for Sign Specific Records and Sign Specific Attachments job types. The minimum and maximum number of record supported is 10 and 5000, slushbucket does not support records beyond this range.",
-    "value": "3000",
-    "sysid": "c6d834d1c3022110de5da585b140dd43"
   },
   {
     "name": "com.snc.document.conversion.pdf2image.maxpages",
@@ -4781,18 +4718,18 @@
     "sysid": "7c616e02eb221100ba98ac6aa206feef"
   },
   {
-    "name": "com.snc.pa.scores_migration.log_invalid_scores",
-    "actualName": "com.snc.pa.scores_migration.log_invalid_scores",
-    "description": "No description available",
-    "value": "false",
-    "sysid": "f8aacbf6c3032200782db348b1d3aec9"
-  },
-  {
     "name": "com.snc.pa.scoresheet.max_elements",
     "actualName": "com.snc.pa.scoresheet.max_elements",
     "description": "Maximum number of elements of a breakdown in Scoresheet",
     "value": "500",
     "sysid": "884e2630eb121100ba98ac6aa206fe91"
+  },
+  {
+    "name": "com.snc.pa.scores_migration.log_invalid_scores",
+    "actualName": "com.snc.pa.scores_migration.log_invalid_scores",
+    "description": "No description available",
+    "value": "false",
+    "sysid": "f8aacbf6c3032200782db348b1d3aec9"
   },
   {
     "name": "com.snc.pa.show_welcome_page_href",
@@ -5523,6 +5460,55 @@
     "sysid": "73b2e457c0a80a6c3a8d2a112b528328"
   },
   {
+    "name": "com.sn_flow_diagram.config.schema_version",
+    "actualName": "com.sn_flow_diagram.config.schema_version",
+    "description": "Flow Diagramming API schema version",
+    "value": "21.0.0",
+    "sysid": "1d9d76f4ff6430104ef14ee9453bf10f"
+  },
+  {
+    "name": "com.sn_rf.incident.footer_visible",
+    "actualName": "com.sn_rf.incident.footer_visible",
+    "description": "Show or hide footer on recommendations component for incident table",
+    "value": "true",
+    "sysid": "8a340c15534101103953ddeeff7b12f9"
+  },
+  {
+    "name": "com.sn_rf.rule.52bbd85c07450110b34ce06b0fd30008.active",
+    "actualName": "com.sn_rf.rule.52bbd85c07450110b34ce06b0fd30008.active",
+    "description": "Enable repeated alerts​ for alerts",
+    "value": "true",
+    "sysid": "0fc114194f410110b34cb38b43ce0b94"
+  },
+  {
+    "name": "com.sn_rf.rule.6760441a07050110b34ce06b0fd3009f.active",
+    "actualName": "com.sn_rf.rule.6760441a07050110b34ce06b0fd3009f.active",
+    "description": "Enable incidents on related CIs​ for alerts",
+    "value": "true",
+    "sysid": "d972d0594f410110b34cb38b43ce0b2d"
+  },
+  {
+    "name": "com.sn_rf.rule.7db9989807450110b34ce06b0fd300c4.active",
+    "actualName": "com.sn_rf.rule.7db9989807450110b34ce06b0fd300c4.active",
+    "description": "Enable similar alerts​ for alerts",
+    "value": "true",
+    "sysid": "3d2298194f410110b34cb38b43ce0b1c"
+  },
+  {
+    "name": "com.sn_rf.rule.89faa84007010110b34ce06b0fd3008a.active",
+    "actualName": "com.sn_rf.rule.89faa84007010110b34ce06b0fd3008a.active",
+    "description": "Enable KB for alerts",
+    "value": "true",
+    "sysid": "776c84914f410110b34cb38b43ce0b2d"
+  },
+  {
+    "name": "com.sn_rf.rule.cdebdc5c07450110b34ce06b0fd30044.active",
+    "actualName": "com.sn_rf.rule.cdebdc5c07450110b34ce06b0fd30044.active",
+    "description": "Enable incidents on CI​ for alerts",
+    "value": "true",
+    "sysid": "834210594f410110b34cb38b43ce0bfd"
+  },
+  {
     "name": "command.validation.probe.batch.count",
     "actualName": "command.validation.probe.batch.count",
     "description": "This property determines the batch size of the number of Command Validation Probes will be launched, when command validation tool is run for range of ip addresses.",
@@ -5565,18 +5551,18 @@
     "sysid": "ce2d462ab70133000e993018ee11a9b5"
   },
   {
-    "name": "contract_compliance_check_job.batchSize",
-    "actualName": "contract_compliance_check_job.batchSize",
-    "description": "If batching is enabled for the Contract compliance check job, this property defines the size of batch.",
-    "value": "5000",
-    "sysid": "338ede64933e2d944309ff3b1bba10d3"
-  },
-  {
     "name": "contract_compliance_check_job.batching",
     "actualName": "contract_compliance_check_job.batching",
     "description": "Enable batching while processing contract compliance checks",
     "value": "true",
     "sysid": "7ced0ec8937261144309ff3b1bba1051"
+  },
+  {
+    "name": "contract_compliance_check_job.batchSize",
+    "actualName": "contract_compliance_check_job.batchSize",
+    "description": "If batching is enabled for the Contract compliance check job, this property defines the size of batch.",
+    "value": "5000",
+    "sysid": "338ede64933e2d944309ff3b1bba10d3"
   },
   {
     "name": "csdm.lifecycle.migration.activated",
@@ -5598,6 +5584,13 @@
     "description": "When enabled, it considers customer_visible column on cmdb_model acl",
     "value": "true",
     "sysid": "107ec736eb133200a51a63fba206fea1"
+  },
+  {
+    "name": "CSM_debug_log",
+    "actualName": "CSM_debug_log",
+    "description": "Use this property to log ",
+    "value": "false",
+    "sysid": "1494f673c35522001f1a10c422d3ae81"
   },
   {
     "name": "css.$accent-color",
@@ -6440,6 +6433,27 @@
     "sysid": "a9cda64e7336101091dfde0baaf6a73a"
   },
   {
+    "name": "evt_mgmt.eventrule_composition_fallback_withoutregex",
+    "actualName": "evt_mgmt.eventrule_composition_fallback_withoutregex",
+    "description": "Event Rule Composition fallback option to be used when there is StackOverflow Error during Event Rule Compose filed processing without using regular expressions",
+    "value": "true",
+    "sysid": "bfa15caa1b7e8110725721b8b04bcb19"
+  },
+  {
+    "name": "evt_mgmt.eventrule_composition_using_regex",
+    "actualName": "evt_mgmt.eventrule_composition_using_regex",
+    "description": "Event Rule Compose Field Processing using regular expression patterns",
+    "value": "true",
+    "sysid": "ddcc84e21b7e8110725721b8b04bcbab"
+  },
+  {
+    "name": "evt_mgmt.events_processing_delay_sec",
+    "actualName": "evt_mgmt.events_processing_delay_sec",
+    "description": "Delay (seconds) before processing events that arrive to the DB. The events processing job processes all events in ready state whose created on value is older than current time less this delay. ",
+    "value": "5",
+    "sysid": "4c20b0fe93d03200b200b9ab357ffb72"
+  },
+  {
     "name": "evt_mgmt.event_processor_enable_multi_node",
     "actualName": "evt_mgmt.event_processor_enable_multi_node",
     "description": "Enable multi node event processing",
@@ -6466,27 +6480,6 @@
     "description": "Number of events to handle for event rules processes",
     "value": "50000",
     "sysid": "952ad5107f001200f59f72a3cefa915f"
-  },
-  {
-    "name": "evt_mgmt.eventrule_composition_fallback_withoutregex",
-    "actualName": "evt_mgmt.eventrule_composition_fallback_withoutregex",
-    "description": "Event Rule Composition fallback option to be used when there is StackOverflow Error during Event Rule Compose filed processing without using regular expressions",
-    "value": "true",
-    "sysid": "bfa15caa1b7e8110725721b8b04bcb19"
-  },
-  {
-    "name": "evt_mgmt.eventrule_composition_using_regex",
-    "actualName": "evt_mgmt.eventrule_composition_using_regex",
-    "description": "Event Rule Compose Field Processing using regular expression patterns",
-    "value": "true",
-    "sysid": "ddcc84e21b7e8110725721b8b04bcbab"
-  },
-  {
-    "name": "evt_mgmt.events_processing_delay_sec",
-    "actualName": "evt_mgmt.events_processing_delay_sec",
-    "description": "Delay (seconds) before processing events that arrive to the DB. The events processing job processes all events in ready state whose created on value is older than current time less this delay. ",
-    "value": "5",
-    "sysid": "4c20b0fe93d03200b200b9ab357ffb72"
   },
   {
     "name": "evt_mgmt.fetch_limit",
@@ -6720,18 +6713,18 @@
     "sysid": "6bae88c0934c1200b200b9ab357ffbbe"
   },
   {
-    "name": "evt_mgmt.remote_self_monitor_credentials",
-    "actualName": "evt_mgmt.remote_self_monitor_credentials",
-    "description": "Name of credentials to be used for remote event alert generation in self monitoring",
-    "value": "admin2",
-    "sysid": "c4007ee3674003007af5c44d2685ef57"
-  },
-  {
     "name": "evt_mgmt.remote_self_monitoring_url",
     "actualName": "evt_mgmt.remote_self_monitoring_url",
     "description": "URL of the instance for self monitoring event/ alert creation",
     "value": "",
     "sysid": "75133267674003007af5c44d2685ef81"
+  },
+  {
+    "name": "evt_mgmt.remote_self_monitor_credentials",
+    "actualName": "evt_mgmt.remote_self_monitor_credentials",
+    "description": "Name of credentials to be used for remote event alert generation in self monitoring",
+    "value": "admin2",
+    "sysid": "c4007ee3674003007af5c44d2685ef57"
   },
   {
     "name": "evt_mgmt.rule_based_manual_closure",
@@ -7308,6 +7301,20 @@
     "sysid": "a29e2faa733e3300616ca9843cf6a7fd"
   },
   {
+    "name": "glide.approvals.restrict_by_record",
+    "actualName": "glide.approvals.restrict_by_record",
+    "description": "Restrict the ability to view an approval record to only those where the user can view the record being approved",
+    "value": "false",
+    "sysid": "50c6b3c7c3102100c8b837659bba8ff2"
+  },
+  {
+    "name": "glide.approvals.restrict_delete",
+    "actualName": "glide.approvals.restrict_delete",
+    "description": "Prevent non-admin users with itil or catalog role from deleting approvals",
+    "value": "true",
+    "sysid": "9bff0681c3433010f5bfea1c8d40dd44"
+  },
+  {
     "name": "glide.approval_engine.change_request",
     "actualName": "glide.approval_engine.change_request",
     "description": "Change Requests approval engine ",
@@ -7369,20 +7376,6 @@
     "description": "The default approval engine to use on task tables. Override this value by creating a property named glide.approval_engine.<table_name>. Or going to page Approval Engines and setting the desired approval engine to use on that table.",
     "value": "off",
     "sysid": "16d2d2121b0102008de2b9088f0713f1"
-  },
-  {
-    "name": "glide.approvals.restrict_by_record",
-    "actualName": "glide.approvals.restrict_by_record",
-    "description": "Restrict the ability to view an approval record to only those where the user can view the record being approved",
-    "value": "false",
-    "sysid": "50c6b3c7c3102100c8b837659bba8ff2"
-  },
-  {
-    "name": "glide.approvals.restrict_delete",
-    "actualName": "glide.approvals.restrict_delete",
-    "description": "Prevent non-admin users with itil or catalog role from deleting approvals",
-    "value": "true",
-    "sysid": "9bff0681c3433010f5bfea1c8d40dd44"
   },
   {
     "name": "glide.asset.create_ci_with_ire",
@@ -7637,18 +7630,18 @@
     "sysid": "0914560d734020104a905ee515f6a7d1"
   },
   {
-    "name": "glide.awa.enable_routing_subflow",
-    "actualName": "glide.awa.enable_routing_subflow",
-    "description": "Enables the execution of subflows defined on the AWA queues when work items are routed.",
-    "value": "false",
-    "sysid": "4c9091c0537141106751ddeeff7b1209"
-  },
-  {
     "name": "glide.awa.enabled",
     "actualName": "glide.awa.enabled",
     "description": "No description available",
     "value": "true",
     "sysid": "2aec594fb33313002e7b6e5f26a8dce1"
+  },
+  {
+    "name": "glide.awa.enable_routing_subflow",
+    "actualName": "glide.awa.enable_routing_subflow",
+    "description": "Enables the execution of subflows defined on the AWA queues when work items are routed.",
+    "value": "false",
+    "sysid": "4c9091c0537141106751ddeeff7b1209"
   },
   {
     "name": "glide.awa.openframe.dial_on_accept",
@@ -8064,18 +8057,18 @@
     "sysid": "98a1da15f32232008e31301e73612b94"
   },
   {
-    "name": "glide.cache.provider.syscache_metric_retention_policy",
-    "actualName": "glide.cache.provider.syscache_metric_retention_policy",
-    "description": "No description available",
-    "value": "com.glide.sys.cache.SingletonCache",
-    "sysid": "a1936ad2c3201300e9e31f3292d3ae52"
-  },
-  {
     "name": "glide.cache.provider.syscache_metrics",
     "actualName": "glide.cache.provider.syscache_metrics",
     "description": "No description available",
     "value": "com.snc.clotho.definitions.MetricsCache",
     "sysid": "1f686992c3201300e9e31f3292d3ae8d"
+  },
+  {
+    "name": "glide.cache.provider.syscache_metric_retention_policy",
+    "actualName": "glide.cache.provider.syscache_metric_retention_policy",
+    "description": "No description available",
+    "value": "com.glide.sys.cache.SingletonCache",
+    "sysid": "a1936ad2c3201300e9e31f3292d3ae52"
   },
   {
     "name": "glide.cache.record_change.storage.max_size.amb_processor_cache",
@@ -8090,13 +8083,6 @@
     "description": "Limits the maximum entries in any scoped cache",
     "value": "1000",
     "sysid": "cbb3611353510110e5f7ddeeff7b122a"
-  },
-  {
-    "name": "glide.cache.size.TopicTypeCacheServiceImpl",
-    "actualName": "glide.cache.size.TopicTypeCacheServiceImpl",
-    "description": "This property defines max cache size for topic types and it must always be greater than number of active topics in the system",
-    "value": "1000",
-    "sysid": "b234d27053113010f0e4ddeeff7b126e"
   },
   {
     "name": "glide.cache.size.com.snc.sla.sla_def_sla_breakdown_cache",
@@ -8125,6 +8111,13 @@
     "description": "Number of schedule cache entries. (WARNING Increasing this value will increase the memory overhead)",
     "value": "5",
     "sysid": "e61ff8009333020064f572edb67ffbbe"
+  },
+  {
+    "name": "glide.cache.size.TopicTypeCacheServiceImpl",
+    "actualName": "glide.cache.size.TopicTypeCacheServiceImpl",
+    "description": "This property defines max cache size for topic types and it must always be greater than number of active topics in the system",
+    "value": "1000",
+    "sysid": "b234d27053113010f0e4ddeeff7b126e"
   },
   {
     "name": "glide.cache.translations.legacy_flush",
@@ -8421,18 +8414,18 @@
     "sysid": "90c0165d2c4a3010f87703637da94866"
   },
   {
-    "name": "glide.cmdb.logger.source.Duplicate_Merger",
-    "actualName": "glide.cmdb.logger.source.Duplicate_Merger",
-    "description": "No description available",
-    "value": "info,warn,error,debug",
-    "sysid": "67ebc1820b101300ca804e8e93673a84"
-  },
-  {
     "name": "glide.cmdb.logger.source.cmdb_dedup_template",
     "actualName": "glide.cmdb.logger.source.cmdb_dedup_template",
     "description": "A comma-separated list that controls the level of logging of De-Duplication templates.",
     "value": "info,warn,error,debug",
     "sysid": "a49572ad5bd7211006447da52d81c761"
+  },
+  {
+    "name": "glide.cmdb.logger.source.Duplicate_Merger",
+    "actualName": "glide.cmdb.logger.source.Duplicate_Merger",
+    "description": "No description available",
+    "value": "info,warn,error,debug",
+    "sysid": "67ebc1820b101300ca804e8e93673a84"
   },
   {
     "name": "glide.cmdb.logger.use_syslog.CMDBDependentCIProcessor",
@@ -8449,6 +8442,13 @@
     "sysid": "3c61a3b6d7911200c1ed0fbc5e6103f5"
   },
   {
+    "name": "glide.cmdb.logger.use_syslog.cmdb_dedup_template",
+    "actualName": "glide.cmdb.logger.use_syslog.cmdb_dedup_template",
+    "description": "A comma-separated list that controls the level of logging to be logged in the system logs for De-Duplication templates. ",
+    "value": "info,warn,error",
+    "sysid": "0fe6bead5bd7211006447da52d81c72d"
+  },
+  {
     "name": "glide.cmdb.logger.use_syslog.Duplicate_Merger",
     "actualName": "glide.cmdb.logger.use_syslog.Duplicate_Merger",
     "description": "No description available",
@@ -8461,13 +8461,6 @@
     "description": "No description available",
     "value": "info,warn,error",
     "sysid": "910e8d820b101300ca804e8e93673ac6"
-  },
-  {
-    "name": "glide.cmdb.logger.use_syslog.cmdb_dedup_template",
-    "actualName": "glide.cmdb.logger.use_syslog.cmdb_dedup_template",
-    "description": "A comma-separated list that controls the level of logging to be logged in the system logs for De-Duplication templates. ",
-    "value": "info,warn,error",
-    "sysid": "0fe6bead5bd7211006447da52d81c72d"
   },
   {
     "name": "glide.cmdb.makeandmodel.use_model_number_lookup",
@@ -9142,13 +9135,6 @@
     "sysid": "a2eafcaa0a0a0b17005a0a3f24905be4"
   },
   {
-    "name": "glide.discovery.L3_mapping",
-    "actualName": "glide.discovery.L3_mapping",
-    "description": "<b>Map servers and network devices to routers and layer-3 switches </b> If the L3 mapping property is enabled, it will map servers and network gears to its associated routers and layer-3 switches",
-    "value": "true",
-    "sysid": "5f3f0008ef52210098d5925495c0fbca"
-  },
-  {
     "name": "glide.discovery.accelerator.router_access_test_timeout",
     "actualName": "glide.discovery.accelerator.router_access_test_timeout",
     "description": "The timeout for the router access test in the Subnet Accelerator.",
@@ -9275,6 +9261,13 @@
     "sysid": "f66bc251ff33210000d3ffffffffff96"
   },
   {
+    "name": "glide.discovery.discoverable.network.max.netmask.bits",
+    "actualName": "glide.discovery.discoverable.network.max.netmask.bits",
+    "description": "<b>Maximum netmask size for discoverable networks (bits) </b> The maximum number of bits in a regular netmask for networks that will be discovered by Network Discovery. By regular netmask we mean a netmask that can be expressed in binary as a string of ones followed by a string of zeroes (255.255.255.0 is regular, 255.255.255.64 is irregular). Regular networks are commonly expressed like this 10.0.0.0/24, which means a network address of 10.0.0.0 with a netmask of 255.255.255.0. Larger bit numbers mean networks with smaller numbers of addresses in them. For example, the network 10.128.0.128/30 has four addresses in it one network address (10.128.0.128), one broadcast address (10.128.0.131), and two usable addresses (10.128.0.129 and 10.128.0.130). Small networks like this are commonly configured in netowrk gear to provide loopback addresses or networks used strictly by point-to-point connections. Since these sorts of networks generally don t need to be discovered by Network Discovery, it would be useful to filter them out. By setting this property to a value of 1 through 32, you can limit the sizes of regular networks that are discovered. Setting it to any other value will cause all networks to be discovered. Irregular networks are always discovered. The default value is 28, which means that regular networks with 8 or fewer addresses will not be discovered.",
+    "value": "28",
+    "sysid": "de1758510a0a0b02002e836ce6d1702d"
+  },
+  {
     "name": "glide.discovery.discover_aws_ec2_host_metadata",
     "actualName": "glide.discovery.discover_aws_ec2_host_metadata",
     "description": "When doing IP-based discovery against a given host, also run probes that retrieve AWS EC2 metadata.",
@@ -9294,13 +9287,6 @@
     "description": "<b>Discover software packages </b> Enable the discovery of software packages.",
     "value": "true",
     "sysid": "f1543eb90a0a0b2e00a958855021f974"
-  },
-  {
-    "name": "glide.discovery.discoverable.network.max.netmask.bits",
-    "actualName": "glide.discovery.discoverable.network.max.netmask.bits",
-    "description": "<b>Maximum netmask size for discoverable networks (bits) </b> The maximum number of bits in a regular netmask for networks that will be discovered by Network Discovery. By regular netmask we mean a netmask that can be expressed in binary as a string of ones followed by a string of zeroes (255.255.255.0 is regular, 255.255.255.64 is irregular). Regular networks are commonly expressed like this 10.0.0.0/24, which means a network address of 10.0.0.0 with a netmask of 255.255.255.0. Larger bit numbers mean networks with smaller numbers of addresses in them. For example, the network 10.128.0.128/30 has four addresses in it one network address (10.128.0.128), one broadcast address (10.128.0.131), and two usable addresses (10.128.0.129 and 10.128.0.130). Small networks like this are commonly configured in netowrk gear to provide loopback addresses or networks used strictly by point-to-point connections. Since these sorts of networks generally don t need to be discovered by Network Discovery, it would be useful to filter them out. By setting this property to a value of 1 through 32, you can limit the sizes of regular networks that are discovered. Setting it to any other value will cause all networks to be discovered. Irregular networks are always discovered. The default value is 28, which means that regular networks with 8 or fewer addresses will not be discovered.",
-    "value": "28",
-    "sysid": "de1758510a0a0b02002e836ce6d1702d"
   },
   {
     "name": "glide.discovery.domain.name.nbt",
@@ -9366,18 +9352,18 @@
     "sysid": "7e2e777ac3803200adce9624a1d3ae01"
   },
   {
-    "name": "glide.discovery.file_tracking.max_file_size",
-    "actualName": "glide.discovery.file_tracking.max_file_size",
-    "description": "<b>File Tracking </b> Maximal file size for tracked configuration file content (B)",
-    "value": "500000",
-    "sysid": "a955f24ac3d03200adce9624a1d3ae61"
-  },
-  {
     "name": "glide.discovery.file_tracking.max_files_per_ci",
     "actualName": "glide.discovery.file_tracking.max_files_per_ci",
     "description": "<b>File Tracking </b> Maximal number of tracked configuration files per CI",
     "value": "50",
     "sysid": "0b00470ec3d03200adce9624a1d3ae77"
+  },
+  {
+    "name": "glide.discovery.file_tracking.max_file_size",
+    "actualName": "glide.discovery.file_tracking.max_file_size",
+    "description": "<b>File Tracking </b> Maximal file size for tracked configuration file content (B)",
+    "value": "500000",
+    "sysid": "a955f24ac3d03200adce9624a1d3ae61"
   },
   {
     "name": "glide.discovery.file_tracking.min_file_size_for_simplified_comparison",
@@ -9469,6 +9455,13 @@
     "description": "This property is used to exclude logging insignificant IRE errors to pattern log. Format Provide the standard IRE Error Enums in comma separated format",
     "value": "ABANDONED,INSERT_FAILED,UPDATE_FAILED,NO_IDENTIFIER_KEYS_GENERATED",
     "sysid": "40832c1643122110d7ebbb44cab8f233"
+  },
+  {
+    "name": "glide.discovery.L3_mapping",
+    "actualName": "glide.discovery.L3_mapping",
+    "description": "<b>Map servers and network devices to routers and layer-3 switches </b> If the L3 mapping property is enabled, it will map servers and network gears to its associated routers and layer-3 switches",
+    "value": "true",
+    "sysid": "5f3f0008ef52210098d5925495c0fbca"
   },
   {
     "name": "glide.discovery.log_message_length",
@@ -10010,18 +10003,18 @@
     "sysid": "a3e1097fc6112275008fc7a7eb4129c2"
   },
   {
-    "name": "glide.email.user_password",
-    "actualName": "glide.email.user_password",
-    "description": "SMTP account password",
-    "value": "",
-    "sysid": "a3e283b2c611227500ba81803e64a3cd"
-  },
-  {
     "name": "glide.email.username",
     "actualName": "glide.email.username",
     "description": "Outgoing mail display name (e.g. Help Desk )",
     "value": "IT Service Desk",
     "sysid": "f290a941c611227b001d318f777145cc"
+  },
+  {
+    "name": "glide.email.user_password",
+    "actualName": "glide.email.user_password",
+    "description": "SMTP account password",
+    "value": "",
+    "sysid": "a3e283b2c611227500ba81803e64a3cd"
   },
   {
     "name": "glide.email.watermark.generate_random",
@@ -10745,6 +10738,13 @@
     "sysid": "ba189b005b001010953330ad5981c755"
   },
   {
+    "name": "glide.importlog.info.allowed_sources",
+    "actualName": "glide.importlog.info.allowed_sources",
+    "description": "A comma separated list of sources that are allowed to have information level logs in import log table",
+    "value": "INTEGRATION_STUDIO",
+    "sysid": "f4239604531b301087b1ddeeff7b1205"
+  },
+  {
     "name": "glide.import_set_insert_serialized_when_no_coalesce",
     "actualName": "glide.import_set_insert_serialized_when_no_coalesce",
     "description": "Controls the processing of web service import sets which have no coalesce field(s) defined. When this property is set to false (default), the instance will perform transformations concurrently from the source to the target table. When this property is set to true, the instance will perform transformations one at a time for a given staging table. This property can be overridden by the table-specific property glide.import_set_insert_serialized.<table name>.",
@@ -10757,13 +10757,6 @@
     "description": "A list of fields that will be ignored when a record is imported with the Easy Import feature.",
     "value": "table_name, order_index, collection, user_image, video, timer, translated_field, conditions, field_name, sys_class_name, journal, journal_input, due_date, user_input, image, workflow, template_value, domain_id, documentation_field, user_roles, glide_list, file_attachment",
     "sysid": "3fae8051bf320100e628555b3f07392c"
-  },
-  {
-    "name": "glide.importlog.info.allowed_sources",
-    "actualName": "glide.importlog.info.allowed_sources",
-    "description": "A comma separated list of sources that are allowed to have information level logs in import log table",
-    "value": "INTEGRATION_STUDIO",
-    "sysid": "f4239604531b301087b1ddeeff7b1205"
   },
   {
     "name": "glide.index.suggestion.job.desired_suggestion_count",
@@ -10780,18 +10773,18 @@
     "sysid": "d47681ffc32032009f1d3e5474d3ae0c"
   },
   {
-    "name": "glide.index.suggestion.job.min_average_runtime",
-    "actualName": "glide.index.suggestion.job.min_average_runtime",
-    "description": "Minimum average runtime (ms)",
-    "value": "250",
-    "sysid": "974601ffc32032009f1d3e5474d3ae53"
-  },
-  {
     "name": "glide.index.suggestion.job.minimum_query_execution_count",
     "actualName": "glide.index.suggestion.job.minimum_query_execution_count",
     "description": "Minimum query execution count",
     "value": "15",
     "sysid": "74c645ffc32032009f1d3e5474d3ae58"
+  },
+  {
+    "name": "glide.index.suggestion.job.min_average_runtime",
+    "actualName": "glide.index.suggestion.job.min_average_runtime",
+    "description": "Minimum average runtime (ms)",
+    "value": "250",
+    "sysid": "974601ffc32032009f1d3e5474d3ae53"
   },
   {
     "name": "glide.index_suggestion.evaluation.wait_period",
@@ -13083,18 +13076,18 @@
     "sysid": "f49c7053c7313010a5efa0736cc26074"
   },
   {
-    "name": "glide.report_summary_engine",
-    "actualName": "glide.report_summary_engine",
-    "description": "Use the Summary Sets reporting engine for all reports.",
-    "value": "true",
-    "sysid": "602b6e9d0a0a0b9e004ae1b6d49b76e4"
-  },
-  {
     "name": "glide.reporting.formatting.enabled",
     "actualName": "glide.reporting.formatting.enabled",
     "description": "System property to enable formatting for charts.",
     "value": "true",
     "sysid": "b73655735b131010dc0bfe3dda81c709"
+  },
+  {
+    "name": "glide.report_summary_engine",
+    "actualName": "glide.report_summary_engine",
+    "description": "Use the Summary Sets reporting engine for all reports.",
+    "value": "true",
+    "sysid": "602b6e9d0a0a0b9e004ae1b6d49b76e4"
   },
   {
     "name": "glide.request_manager.always_cancel",
@@ -13391,13 +13384,6 @@
     "sysid": "f867340987013300e0ef0cf888cb0b64"
   },
   {
-    "name": "glide.sc.cat_view_use_popup_for_details",
-    "actualName": "glide.sc.cat_view_use_popup_for_details",
-    "description": "When browsing a category use the popup icon to show item details ",
-    "value": "false",
-    "sysid": "f332c8b73710300054b6a3549dbe5dab"
-  },
-  {
     "name": "glide.sc.catalogs.home.filter",
     "actualName": "glide.sc.catalogs.home.filter",
     "description": "List of content types (comma-separated) to allow on the catalogs homepage. Blank allows all content types.",
@@ -13410,6 +13396,13 @@
     "description": "List of roles (comma-separated) that override entitlements so that they can view any category within the service catalog.",
     "value": "admin,catalog_admin",
     "sysid": "b56650123732300054b6a3549dbe5d71"
+  },
+  {
+    "name": "glide.sc.cat_view_use_popup_for_details",
+    "actualName": "glide.sc.cat_view_use_popup_for_details",
+    "description": "When browsing a category use the popup icon to show item details ",
+    "value": "false",
+    "sysid": "f332c8b73710300054b6a3549dbe5dab"
   },
   {
     "name": "glide.sc.checkbox_width",
@@ -13748,18 +13741,18 @@
     "sysid": "ae30e012eb2201003623666cd206fe46"
   },
   {
-    "name": "glide.sc.multi_line_text_width",
-    "actualName": "glide.sc.multi_line_text_width",
-    "description": "Multi Line Text",
-    "value": "100",
-    "sysid": "7bebc08967831200d22b794717415ac4"
-  },
-  {
     "name": "glide.sc.multiple_choice_width",
     "actualName": "glide.sc.multiple_choice_width",
     "description": "Multiple Choice",
     "value": "50",
     "sysid": "ea6dba8167031200d22b794717415ae2"
+  },
+  {
+    "name": "glide.sc.multi_line_text_width",
+    "actualName": "glide.sc.multi_line_text_width",
+    "description": "Multi Line Text",
+    "value": "100",
+    "sysid": "7bebc08967831200d22b794717415ac4"
   },
   {
     "name": "glide.sc.order_status.hide.back",
@@ -13839,25 +13832,18 @@
     "sysid": "e08bb3936701120097eeff5557415a63"
   },
   {
-    "name": "glide.sc.req_for.roles",
-    "actualName": "glide.sc.req_for.roles",
-    "description": "List of roles (comma-separated) that can update the Requested for widget in the service catalog. Blank means all users. If the user does not have privilege to change requested for, they will not have ability to get other user address details",
-    "value": "",
-    "sysid": "dd2d5db3c0a8017c01e07f4b39205093"
-  },
-  {
-    "name": "glide.sc.req_for.roles.default",
-    "actualName": "glide.sc.req_for.roles.default",
-    "description": "This property defines a default behavior when there are no roles given in property glide.sc.req_for.roles . When the value is allow and the value of glide.sc.req_for.roles is empty, then any user can request items for other users. While the value is deny and the value of glide.sc.req_for.roles is empty then no user can request items for other users.",
-    "value": "deny",
-    "sysid": "d27e754053302010bddaddeeff7b120e"
-  },
-  {
     "name": "glide.sc.request.add_item_write_access",
     "actualName": "glide.sc.request.add_item_write_access",
     "description": "Property to check write access on add_catalog_item UI page",
     "value": "false",
     "sysid": "a868069077322110910428e47a5a9951"
+  },
+  {
+    "name": "glide.sc.requested_for_width",
+    "actualName": "glide.sc.requested_for_width",
+    "description": "Requested for",
+    "value": "50",
+    "sysid": "859df7590fa20010e54d6b198b767e3a"
   },
   {
     "name": "glide.sc.request_for.columns",
@@ -13881,11 +13867,18 @@
     "sysid": "4d36620397222000e2af770ddd297577"
   },
   {
-    "name": "glide.sc.requested_for_width",
-    "actualName": "glide.sc.requested_for_width",
-    "description": "Requested for",
-    "value": "50",
-    "sysid": "859df7590fa20010e54d6b198b767e3a"
+    "name": "glide.sc.req_for.roles",
+    "actualName": "glide.sc.req_for.roles",
+    "description": "List of roles (comma-separated) that can update the Requested for widget in the service catalog. Blank means all users. If the user does not have privilege to change requested for, they will not have ability to get other user address details",
+    "value": "",
+    "sysid": "dd2d5db3c0a8017c01e07f4b39205093"
+  },
+  {
+    "name": "glide.sc.req_for.roles.default",
+    "actualName": "glide.sc.req_for.roles.default",
+    "description": "This property defines a default behavior when there are no roles given in property glide.sc.req_for.roles . When the value is allow and the value of glide.sc.req_for.roles is empty, then any user can request items for other users. While the value is deny and the value of glide.sc.req_for.roles is empty then no user can request items for other users.",
+    "value": "deny",
+    "sysid": "d27e754053302010bddaddeeff7b120e"
   },
   {
     "name": "glide.sc.reset_cascade",
@@ -14049,6 +14042,13 @@
     "sysid": "8e070a7147031200e0ef563dbb9a71f3"
   },
   {
+    "name": "glide.sc.user_criteria_migration",
+    "actualName": "glide.sc.user_criteria_migration",
+    "description": "Enable both User Criteria and Entitlement related lists for catalog items and categories when migrating from entitlements",
+    "value": "false",
+    "sysid": "4ab64713c3212100c8b837659bba8ffe"
+  },
+  {
     "name": "glide.sc.use_breadcrumb_links.cms",
     "actualName": "glide.sc.use_breadcrumb_links.cms",
     "description": "Use links for breadcrumbs rendered in service catalog pages accessed via a CMS site",
@@ -14082,13 +14082,6 @@
     "description": "Use User Criteria to define access to catalog items and categories",
     "value": "true",
     "sysid": "f3d65982c3202100c8b837659bba8fe3"
-  },
-  {
-    "name": "glide.sc.user_criteria_migration",
-    "actualName": "glide.sc.user_criteria_migration",
-    "description": "Enable both User Criteria and Entitlement related lists for catalog items and categories when migrating from entitlements",
-    "value": "false",
-    "sysid": "4ab64713c3212100c8b837659bba8ffe"
   },
   {
     "name": "glide.sc.va.reference_question_choices.limit",
@@ -14539,6 +14532,13 @@
     "sysid": "f8425363c321201039fc14cb3c40dd3b"
   },
   {
+    "name": "glide.services.status.ping_url",
+    "actualName": "glide.services.status.ping_url",
+    "description": "No description available",
+    "value": "https://signaldc.service-now.com/api/x_snc_dish/gcs_ia_request_check",
+    "sysid": "5c46592b2f311110bd54d5f62799b602"
+  },
+  {
     "name": "glide.service_creator.auto_add_to_category",
     "actualName": "glide.service_creator.auto_add_to_category",
     "description": "Automatically add new Services to the Departmental Services category (in addition to the Department or Group-specific category)",
@@ -14819,13 +14819,6 @@
     "sysid": "546b58a857a41010a9ad48e1a9552977"
   },
   {
-    "name": "glide.services.status.ping_url",
-    "actualName": "glide.services.status.ping_url",
-    "description": "No description available",
-    "value": "https://signaldc.service-now.com/api/x_snc_dish/gcs_ia_request_check",
-    "sysid": "5c46592b2f311110bd54d5f62799b602"
-  },
-  {
     "name": "glide.servlet.static_content.cdn_enabled",
     "actualName": "glide.servlet.static_content.cdn_enabled",
     "description": "No description available",
@@ -14861,18 +14854,18 @@
     "sysid": "a811d553c3330010ce53bb62ef40dd90"
   },
   {
-    "name": "glide.sg.allow_rooted_jailbroken_device",
-    "actualName": "glide.sg.allow_rooted_jailbroken_device",
-    "description": "Allow mobile users to access ServiceNow s mobile application when the mobile device is hacked (rooted Android or jailbroken iOS)",
-    "value": "false",
-    "sysid": "6f6bf74d735223009b147a2f1bf6a77e"
-  },
-  {
     "name": "glide.sg.allowed_external_deeplinks",
     "actualName": "glide.sg.allowed_external_deeplinks",
     "description": "By default, the ServiceNow native clients will prevent deeplinking to the external mobile apps. This property serves as a comma-separated whitelist, where the ServiceNow mobile clients will allow deeplinking to each of the external apps listed in the value field below Type the app name into the Value field with a comma between each desired allowed app. Example of available Deeplink-able External Mobile Apps - Slack - LinkedIn - Fidelity - Zoom - Tableau - Teams",
     "value": "",
     "sysid": "45c7e8c07303101002ef7a2f1bf6a797"
+  },
+  {
+    "name": "glide.sg.allow_rooted_jailbroken_device",
+    "actualName": "glide.sg.allow_rooted_jailbroken_device",
+    "description": "Allow mobile users to access ServiceNow s mobile application when the mobile device is hacked (rooted Android or jailbroken iOS)",
+    "value": "false",
+    "sysid": "6f6bf74d735223009b147a2f1bf6a77e"
   },
   {
     "name": "glide.sg.block_mobile_attachments_sharing",
@@ -15015,18 +15008,18 @@
     "sysid": "996f326d87203300e0ef0cf888cb0b6d"
   },
   {
-    "name": "glide.sg.image.default.v_st_sc_cat_item",
-    "actualName": "glide.sg.image.default.v_st_sc_cat_item",
-    "description": "No description available",
-    "value": "placeholder_image.png",
-    "sysid": "4b0db73c87203300e0ef0cf888cb0bba"
-  },
-  {
     "name": "glide.sg.image.default.v_st_sc_category",
     "actualName": "glide.sg.image.default.v_st_sc_category",
     "description": "No description available",
     "value": "placeholder_image.png",
     "sysid": "0896800587603300e0ef0cf888cb0b3e"
+  },
+  {
+    "name": "glide.sg.image.default.v_st_sc_cat_item",
+    "actualName": "glide.sg.image.default.v_st_sc_cat_item",
+    "description": "No description available",
+    "value": "placeholder_image.png",
+    "sysid": "4b0db73c87203300e0ef0cf888cb0bba"
   },
   {
     "name": "glide.sg.list.max_items_number",
@@ -15106,13 +15099,6 @@
     "sysid": "9bf36df373003300ed095a7b1bf6a770"
   },
   {
-    "name": "glide.sg.universal_link_default_view_template",
-    "actualName": "glide.sg.universal_link_default_view_template",
-    "description": "No description available",
-    "value": "b3dacf23b7312010a17565efce11a920",
-    "sysid": "f2207791b7322010a17565efce11a9c6"
-  },
-  {
     "name": "glide.sg.universal_links.enabled",
     "actualName": "glide.sg.universal_links.enabled",
     "description": "When false, this disables the universal links feature in mobile.",
@@ -15132,6 +15118,13 @@
     "description": "A system property that stores the default native client for all unsupported links and the default value is agent . The system property will drive the target destination app when the admin has the glide.sg.universal_links.open_unsupported_links system property set to true. All links can target Mobile Agent. ",
     "value": "agent",
     "sysid": "1c6e0354b723201096aa25efce11a930"
+  },
+  {
+    "name": "glide.sg.universal_link_default_view_template",
+    "actualName": "glide.sg.universal_link_default_view_template",
+    "description": "No description available",
+    "value": "b3dacf23b7312010a17565efce11a920",
+    "sysid": "f2207791b7322010a17565efce11a9c6"
   },
   {
     "name": "glide.sg.writeback_submit_label",
@@ -15302,6 +15295,20 @@
     "sysid": "cef0545e0a0a0bc20ca1bbd028a7f285"
   },
   {
+    "name": "glide.sourcecontrol.changed_files_display_limit",
+    "actualName": "glide.sourcecontrol.changed_files_display_limit",
+    "description": "This property sets a limit for how many files are shown in the list of changed files during a Studio Source Control commit. After the limit is reached, the changed files list will be hidden and the user will see a dialog that allows them to make a commit that will include all changes files as well as changes not tracked by the Customer Update sys_update_xml table from all developers for the application. ",
+    "value": "1000",
+    "sysid": "b939de865b3301107c7899b8b681c7d8"
+  },
+  {
+    "name": "glide.sourcecontrol.default_commit_mode",
+    "actualName": "glide.sourcecontrol.default_commit_mode",
+    "description": "The default mode of commit to Source Control. The include_untracked mode commits updates to the application that do not generate sys_update_xml, as well as any user-selected updates. The exclude_untracked mode commits only updates selected by the user in the Select files to commit to source control dialog. The legacy mode (pre-Rome) is include_untracked mode. This property is always ignored and the commit occurs in include_untracked mode in the following cases Linking to Source Control for the first time. Publishing an app that s linked to Source Control from Studio. Selective commit mode is disabled. The default value set in this property can be overwritten by the check box on the Select files to commit to source control dialog. To disable the check box and use the value of this property, create the sn_devstudio.vcs.allow_commit_mode_selection property and set it to false.",
+    "value": "exclude_untracked",
+    "sysid": "d8a90751ff2220105e978ef7d53bf169"
+  },
+  {
     "name": "glide.source_control.allow_delta_loading_in_scopedapp",
     "actualName": "glide.source_control.allow_delta_loading_in_scopedapp",
     "description": "No description available",
@@ -15370,20 +15377,6 @@
     "description": "The default protocol setting for establishing source control connections",
     "value": "https",
     "sysid": "c7b17b04c72110105b9c9c7988c2607b"
-  },
-  {
-    "name": "glide.sourcecontrol.changed_files_display_limit",
-    "actualName": "glide.sourcecontrol.changed_files_display_limit",
-    "description": "This property sets a limit for how many files are shown in the list of changed files during a Studio Source Control commit. After the limit is reached, the changed files list will be hidden and the user will see a dialog that allows them to make a commit that will include all changes files as well as changes not tracked by the Customer Update sys_update_xml table from all developers for the application. ",
-    "value": "1000",
-    "sysid": "b939de865b3301107c7899b8b681c7d8"
-  },
-  {
-    "name": "glide.sourcecontrol.default_commit_mode",
-    "actualName": "glide.sourcecontrol.default_commit_mode",
-    "description": "The default mode of commit to Source Control. The include_untracked mode commits updates to the application that do not generate sys_update_xml, as well as any user-selected updates. The exclude_untracked mode commits only updates selected by the user in the Select files to commit to source control dialog. The legacy mode (pre-Rome) is include_untracked mode. This property is always ignored and the commit occurs in include_untracked mode in the following cases Linking to Source Control for the first time. Publishing an app that s linked to Source Control from Studio. Selective commit mode is disabled. The default value set in this property can be overwritten by the check box on the Select files to commit to source control dialog. To disable the check box and use the value of this property, create the sn_devstudio.vcs.allow_commit_mode_selection property and set it to false.",
-    "value": "exclude_untracked",
-    "sysid": "d8a90751ff2220105e978ef7d53bf169"
   },
   {
     "name": "glide.sp.cache.enabled",
@@ -16205,6 +16198,41 @@
     "sysid": "b0388de80700201017b703767cd300e0"
   },
   {
+    "name": "glide.ui.cmdb_ci_application_software_activity.fields",
+    "actualName": "glide.ui.cmdb_ci_application_software_activity.fields",
+    "description": "No description available",
+    "value": "skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
+    "sysid": "0538cde80700201017b703767cd30074"
+  },
+  {
+    "name": "glide.ui.cmdb_ci_appl_activity.fields",
+    "actualName": "glide.ui.cmdb_ci_appl_activity.fields",
+    "description": "No description available",
+    "value": "skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
+    "sysid": "2138cde80700201017b703767cd300e2"
+  },
+  {
+    "name": "glide.ui.cmdb_ci_appl_generic_activity.fields",
+    "actualName": "glide.ui.cmdb_ci_appl_generic_activity.fields",
+    "description": "No description available",
+    "value": "skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
+    "sysid": "f538012c0700201017b703767cd3005b"
+  },
+  {
+    "name": "glide.ui.cmdb_ci_appl_sap_bo_activity.fields",
+    "actualName": "glide.ui.cmdb_ci_appl_sap_bo_activity.fields",
+    "description": "No description available",
+    "value": "skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
+    "sysid": "0e38012c0700201017b703767cd300e1"
+  },
+  {
+    "name": "glide.ui.cmdb_ci_appl_sharepoint_activity.fields",
+    "actualName": "glide.ui.cmdb_ci_appl_sharepoint_activity.fields",
+    "description": "No description available",
+    "value": "skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
+    "sysid": "e638412c0700201017b703767cd30011"
+  },
+  {
     "name": "glide.ui.cmdb_ci_app_server_activity.fields",
     "actualName": "glide.ui.cmdb_ci_app_server_activity.fields",
     "description": "No description available",
@@ -16252,41 +16280,6 @@
     "description": "No description available",
     "value": "skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
     "sysid": "4748452c0700201017b703767cd300fa"
-  },
-  {
-    "name": "glide.ui.cmdb_ci_appl_activity.fields",
-    "actualName": "glide.ui.cmdb_ci_appl_activity.fields",
-    "description": "No description available",
-    "value": "skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
-    "sysid": "2138cde80700201017b703767cd300e2"
-  },
-  {
-    "name": "glide.ui.cmdb_ci_appl_generic_activity.fields",
-    "actualName": "glide.ui.cmdb_ci_appl_generic_activity.fields",
-    "description": "No description available",
-    "value": "skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
-    "sysid": "f538012c0700201017b703767cd3005b"
-  },
-  {
-    "name": "glide.ui.cmdb_ci_appl_sap_bo_activity.fields",
-    "actualName": "glide.ui.cmdb_ci_appl_sap_bo_activity.fields",
-    "description": "No description available",
-    "value": "skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
-    "sysid": "0e38012c0700201017b703767cd300e1"
-  },
-  {
-    "name": "glide.ui.cmdb_ci_appl_sharepoint_activity.fields",
-    "actualName": "glide.ui.cmdb_ci_appl_sharepoint_activity.fields",
-    "description": "No description available",
-    "value": "skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
-    "sysid": "e638412c0700201017b703767cd30011"
-  },
-  {
-    "name": "glide.ui.cmdb_ci_application_software_activity.fields",
-    "actualName": "glide.ui.cmdb_ci_application_software_activity.fields",
-    "description": "No description available",
-    "value": "skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
-    "sysid": "0538cde80700201017b703767cd30074"
   },
   {
     "name": "glide.ui.cmdb_ci_business_app_activity.fields",
@@ -17178,6 +17171,20 @@
     "sysid": "48f885ec0700201017b703767cd3008f"
   },
   {
+    "name": "glide.ui.cmdb_ci_vmware_instance_activity.fields",
+    "actualName": "glide.ui.cmdb_ci_vmware_instance_activity.fields",
+    "description": "No description available",
+    "value": "vm_instance_uuid,vm_inst_id,state,bios_uuid,vcenter_uuid,terminated_on,object_id,vcenter_ref,guest_reconciled,template,server,memory,disks,guest_id,termination_protection,nics,cpus,image_path,disks_size,skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
+    "sysid": "10f8c5ec0700201017b703767cd3000a"
+  },
+  {
+    "name": "glide.ui.cmdb_ci_vmware_template_activity.fields",
+    "actualName": "glide.ui.cmdb_ci_vmware_template_activity.fields",
+    "description": "No description available",
+    "value": "vm_instance_uuid,vm_inst_id,state,bios_uuid,vcenter_uuid,terminated_on,object_id,vcenter_ref,guest_reconciled,template,server,memory,disks,guest_id,termination_protection,nics,cpus,image_path,disks_size,skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
+    "sysid": "24f8c5ec0700201017b703767cd3009d"
+  },
+  {
     "name": "glide.ui.cmdb_ci_vm_activity.fields",
     "actualName": "glide.ui.cmdb_ci_vm_activity.fields",
     "description": "No description available",
@@ -17197,20 +17204,6 @@
     "description": "No description available",
     "value": "vm_instance_uuid,vm_inst_id,state,bios_uuid,vcenter_uuid,terminated_on,object_id,vcenter_ref,guest_reconciled,template,server,memory,disks,guest_id,termination_protection,nics,cpus,image_path,disks_size,skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
     "sysid": "71f849ec0700201017b703767cd3000b"
-  },
-  {
-    "name": "glide.ui.cmdb_ci_vmware_instance_activity.fields",
-    "actualName": "glide.ui.cmdb_ci_vmware_instance_activity.fields",
-    "description": "No description available",
-    "value": "vm_instance_uuid,vm_inst_id,state,bios_uuid,vcenter_uuid,terminated_on,object_id,vcenter_ref,guest_reconciled,template,server,memory,disks,guest_id,termination_protection,nics,cpus,image_path,disks_size,skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
-    "sysid": "10f8c5ec0700201017b703767cd3000a"
-  },
-  {
-    "name": "glide.ui.cmdb_ci_vmware_template_activity.fields",
-    "actualName": "glide.ui.cmdb_ci_vmware_template_activity.fields",
-    "description": "No description available",
-    "value": "vm_instance_uuid,vm_inst_id,state,bios_uuid,vcenter_uuid,terminated_on,object_id,vcenter_ref,guest_reconciled,template,server,memory,disks,guest_id,termination_protection,nics,cpus,image_path,disks_size,skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
-    "sysid": "24f8c5ec0700201017b703767cd3009d"
   },
   {
     "name": "glide.ui.cmdb_ci_wap_network_activity.fields",
@@ -17360,13 +17353,6 @@
     "sysid": "24cda03047311100ba13a5554ee490ca"
   },
   {
-    "name": "glide.ui.em_alert_activity.fields",
-    "actualName": "glide.ui.em_alert_activity.fields",
-    "description": "Alert activity formatter fields",
-    "value": "acknowledged,cmdb_ci,severity,state,work_notes,incident,kb,last_event_time,*Attachments*",
-    "sysid": "5dfb0811eb1211004d7763fba206fe68"
-  },
-  {
     "name": "glide.ui.email_client.autocomplete.count",
     "actualName": "glide.ui.email_client.autocomplete.count",
     "description": "Maximum number of autocomplete matches to return to the email client. Applies separately to users and groups.",
@@ -17407,6 +17393,13 @@
     "description": "Use HTML mode in the Email Client",
     "value": "true",
     "sysid": "40d7be93eb001100469a20425206fe95"
+  },
+  {
+    "name": "glide.ui.em_alert_activity.fields",
+    "actualName": "glide.ui.em_alert_activity.fields",
+    "description": "Alert activity formatter fields",
+    "value": "acknowledged,cmdb_ci,severity,state,work_notes,incident,kb,last_event_time,*Attachments*",
+    "sysid": "5dfb0811eb1211004d7763fba206fe68"
   },
   {
     "name": "glide.ui.enforce.mandatory.on.update",
@@ -17479,6 +17472,13 @@
     "sysid": "f478d7f187f62110804165b50cbb3518"
   },
   {
+    "name": "glide.ui.format_phone",
+    "actualName": "glide.ui.format_phone",
+    "description": "Format the phone number fields if they do not begin with + . Note this is in the US format. Example (999) 999-9999",
+    "value": "true",
+    "sysid": "f6de453b0a0a0b39003bcdc1396910e5"
+  },
+  {
     "name": "glide.ui.form_annotations",
     "actualName": "glide.ui.form_annotations",
     "description": "Enable form annotations",
@@ -17491,13 +17491,6 @@
     "description": "Allow multiple splits within a single form section",
     "value": "true",
     "sysid": "00e9aa360a0a0b4400d5584cd2264205"
-  },
-  {
-    "name": "glide.ui.format_phone",
-    "actualName": "glide.ui.format_phone",
-    "description": "Format the phone number fields if they do not begin with + . Note this is in the US format. Example (999) 999-9999",
-    "value": "true",
-    "sysid": "f6de453b0a0a0b39003bcdc1396910e5"
   },
   {
     "name": "glide.ui.gauge.view",
@@ -17836,18 +17829,18 @@
     "sysid": "c48d56570a0004df4ee50f28db6230a1"
   },
   {
-    "name": "glide.ui.js_include_once",
-    "actualName": "glide.ui.js_include_once",
-    "description": "If false, //include_once comments, in static JS files, would behave like //include. If true, //include_once would insert the referenced JS file if it hasn t been included before.",
-    "value": "true",
-    "sysid": "6bf302320b1322007bfba12cf6673a11"
-  },
-  {
     "name": "glide.ui.js_includes",
     "actualName": "glide.ui.js_includes",
     "description": "Package a number of JS files as one for fewer round trips to the server.",
     "value": "true",
     "sysid": "54455698c0a80169006b3fc7d90188f4"
+  },
+  {
+    "name": "glide.ui.js_include_once",
+    "actualName": "glide.ui.js_include_once",
+    "description": "If false, //include_once comments, in static JS files, would behave like //include. If true, //include_once would insert the referenced JS file if it hasn t been included before.",
+    "value": "true",
+    "sysid": "6bf302320b1322007bfba12cf6673a11"
   },
   {
     "name": "glide.ui.kb_feedback_task_activity.fields",
@@ -18004,18 +17997,18 @@
     "sysid": "81e903259f112200804fbd2e052e7010"
   },
   {
-    "name": "glide.ui.m.native_app_ids",
-    "actualName": "glide.ui.m.native_app_ids",
-    "description": "A comma-separated allow list of ServiceNow mobile application bundle IDs. An empty value allows all ServiceNow mobile applications.",
-    "value": "",
-    "sysid": "336c5b9053300300804fa3fc9ec587e9"
-  },
-  {
     "name": "glide.ui.m.native_apps_enabled",
     "actualName": "glide.ui.m.native_apps_enabled",
     "description": "Enable native mobile applications (Android, iOS)",
     "value": "true",
     "sysid": "0feb5b3253120200601fa3fc9ec587ec"
+  },
+  {
+    "name": "glide.ui.m.native_app_ids",
+    "actualName": "glide.ui.m.native_app_ids",
+    "description": "A comma-separated allow list of ServiceNow mobile application bundle IDs. An empty value allows all ServiceNow mobile applications.",
+    "value": "",
+    "sysid": "336c5b9053300300804fa3fc9ec587e9"
   },
   {
     "name": "glide.ui.m.offline.cache_ttl",
@@ -18065,20 +18058,6 @@
     "description": "Show New button for many-to-many lists",
     "value": "true",
     "sysid": "0f64308fc611227a0039a867300fbcda"
-  },
-  {
-    "name": "glide.ui.m_agents",
-    "actualName": "glide.ui.m_agents",
-    "description": "Use the mobile web UI if one of these strings (comma-separated) appears in the browser s User Agent",
-    "value": "iphone,android_phone,IEMobile,Windows Phone,iPod,Windows CE,BlackBerry,BB10,android,mobile",
-    "sysid": "13aa4241eb310100d2d5abf11206fe1f"
-  },
-  {
-    "name": "glide.ui.m_enabled",
-    "actualName": "glide.ui.m_enabled",
-    "description": "Enable mobile web UI",
-    "value": "true",
-    "sysid": "c48c8201eb310100d2d5abf11206fe38"
   },
   {
     "name": "glide.ui.max.alt.chars",
@@ -18165,6 +18144,20 @@
     "sysid": "a7a50e00eb1331001c13abf11206fe38"
   },
   {
+    "name": "glide.ui.m_agents",
+    "actualName": "glide.ui.m_agents",
+    "description": "Use the mobile web UI if one of these strings (comma-separated) appears in the browser s User Agent",
+    "value": "iphone,android_phone,IEMobile,Windows Phone,iPod,Windows CE,BlackBerry,BB10,android,mobile",
+    "sysid": "13aa4241eb310100d2d5abf11206fe1f"
+  },
+  {
+    "name": "glide.ui.m_enabled",
+    "actualName": "glide.ui.m_enabled",
+    "description": "Enable mobile web UI",
+    "value": "true",
+    "sysid": "c48c8201eb310100d2d5abf11206fe38"
+  },
+  {
     "name": "glide.ui.nav.colors",
     "actualName": "glide.ui.nav.colors",
     "description": "Colors available for the nav favorites.",
@@ -18221,13 +18214,6 @@
     "sysid": "501682aa0a0a0b1800ff3be50946b905"
   },
   {
-    "name": "glide.ui.per_page",
-    "actualName": "glide.ui.per_page",
-    "description": " Items per page drop-down options (comma separated, no spaces) ",
-    "value": "10,15,20,50,100",
-    "sysid": "fc794773c0a80169017b5179c629af26"
-  },
-  {
     "name": "glide.ui.performance_monitoring.enabled",
     "actualName": "glide.ui.performance_monitoring.enabled",
     "description": "Enable Performance Monitoring for Classic Workspace",
@@ -18268,6 +18254,13 @@
     "description": "No description available",
     "value": "itil,personalize_form",
     "sysid": "e4595200d7032100b0b044580e6103d4"
+  },
+  {
+    "name": "glide.ui.per_page",
+    "actualName": "glide.ui.per_page",
+    "description": " Items per page drop-down options (comma separated, no spaces) ",
+    "value": "10,15,20,50,100",
+    "sysid": "fc794773c0a80169017b5179c629af26"
   },
   {
     "name": "glide.ui.polaris.ais_ready",
@@ -18431,18 +18424,18 @@
     "sysid": "74666f62c611227200ec12f38e565b8c"
   },
   {
-    "name": "glide.ui.ref_ac.startswith",
-    "actualName": "glide.ui.ref_ac.startswith",
-    "description": "Disable contains searches for reference autocompleters whether done with a wildcard (*) or the autocomplete.contains user preferences.",
-    "value": "true",
-    "sysid": "a582e41f07321000e2bb5720e1021e73"
-  },
-  {
     "name": "glide.ui.reference.readonly.clickthrough",
     "actualName": "glide.ui.reference.readonly.clickthrough",
     "description": "Enable click-through of a reference field when the reference field is read-only.",
     "value": "false",
     "sysid": "860992a0c0a8006400d98b009b9b17c0"
+  },
+  {
+    "name": "glide.ui.ref_ac.startswith",
+    "actualName": "glide.ui.ref_ac.startswith",
+    "description": "Disable contains searches for reference autocompleters whether done with a wildcard (*) or the autocomplete.contains user preferences.",
+    "value": "true",
+    "sysid": "a582e41f07321000e2bb5720e1021e73"
   },
   {
     "name": "glide.ui.related_list_mechanic",
@@ -18760,18 +18753,18 @@
     "sysid": "0a1d6357b7490110bded618dce11a9a8"
   },
   {
-    "name": "glide.ui.sn_grc_profile_class_rule_filter_activity.fields",
-    "actualName": "glide.ui.sn_grc_profile_class_rule_filter_activity.fields",
-    "description": "Entity class rule filter activity formatter fields",
-    "value": "condition,filter_priority,sub_class,comments",
-    "sysid": "5343f93877ab0110bdedaa087b5a9909"
-  },
-  {
     "name": "glide.ui.sn_grc_profile_class_rules_activity.fields",
     "actualName": "glide.ui.sn_grc_profile_class_rules_activity.fields",
     "description": "Entity Class Rule activity formatter fields",
     "value": "table,profile_class,comments",
     "sysid": "dea9d1b0776b0110bdedaa087b5a99f3"
+  },
+  {
+    "name": "glide.ui.sn_grc_profile_class_rule_filter_activity.fields",
+    "actualName": "glide.ui.sn_grc_profile_class_rule_filter_activity.fields",
+    "description": "Entity class rule filter activity formatter fields",
+    "value": "condition,filter_priority,sub_class,comments",
+    "sysid": "5343f93877ab0110bdedaa087b5a9909"
   },
   {
     "name": "glide.ui.sn_hr_core_case_activity.fields",
@@ -18942,18 +18935,18 @@
     "sysid": "7fd52268ff20310015abffffffffff62"
   },
   {
-    "name": "glide.ui.sys_app_template_definition_activity.fields",
-    "actualName": "glide.ui.sys_app_template_definition_activity.fields",
-    "description": "Template Definition activity formatter fields",
-    "value": "name,description,version,active,sys_scope,template,author,metadata_list,catalog_item,sys_class_name,sys_created_on,sys_created_by,custom_ui,sys_name,form,function_type_list,details,icon,additional_uses,sys_package,sys_policy,screenshot,short_description,table,sys_tags,title,url,ux_framework_component,sys_update_name,sys_updated_on,sys_updated_by,sys_mod_count,worknotes,*Email*,*Relations*,*Attachments*",
-    "sysid": "8cf4c3c2c310101007123af10f40dd13"
-  },
-  {
     "name": "glide.ui.sysapproval_approver_activity.fields",
     "actualName": "glide.ui.sysapproval_approver_activity.fields",
     "description": "Approval activity formatter fields",
     "value": "approver,state,comments,*Email*,*Attachments*",
     "sysid": "55bd296e0a00070411826faeeebcfc2b"
+  },
+  {
+    "name": "glide.ui.sys_app_template_definition_activity.fields",
+    "actualName": "glide.ui.sys_app_template_definition_activity.fields",
+    "description": "Template Definition activity formatter fields",
+    "value": "name,description,version,active,sys_scope,template,author,metadata_list,catalog_item,sys_class_name,sys_created_on,sys_created_by,custom_ui,sys_name,form,function_type_list,details,icon,additional_uses,sys_package,sys_policy,screenshot,short_description,table,sys_tags,title,url,ux_framework_component,sys_update_name,sys_updated_on,sys_updated_by,sys_mod_count,worknotes,*Email*,*Relations*,*Attachments*",
+    "sysid": "8cf4c3c2c310101007123af10f40dd13"
   },
   {
     "name": "glide.ui.table.labels",
@@ -18998,6 +18991,27 @@
     "sysid": "42c3f43d7f721200348ef0d8adfa91ba"
   },
   {
+    "name": "glide.ui.textarea.character_counter",
+    "actualName": "glide.ui.textarea.character_counter",
+    "description": "Character counter for textarea (journal and multi line text fields). When set to true, the character counter will appear under the textarea, which instructs user the number of characters left. Once the limit is reached, user should reduce the amount of text to ensure that the entire text will be saved. ",
+    "value": "false",
+    "sysid": "76d88821ef213000e7ec732fa6c0fb11"
+  },
+  {
+    "name": "glide.ui.textarea_initial_rows",
+    "actualName": "glide.ui.textarea_initial_rows",
+    "description": "Number of rows used to initially display multiline elements. When the element is selected for editing, it is automatically expanded. Set to 0 or blank to ignore this property.",
+    "value": "0",
+    "sysid": "7812e2c6c0a86466007247aca1e50e36"
+  },
+  {
+    "name": "glide.ui.textarea_sizer",
+    "actualName": "glide.ui.textarea_sizer",
+    "description": "Enable multi-line text box resizer (+ and -)",
+    "value": "true",
+    "sysid": "2d1d2977c6112289004127cfd7ac7768"
+  },
+  {
     "name": "glide.ui.text_search.enable",
     "actualName": "glide.ui.text_search.enable",
     "description": "Enable Global Text Search.",
@@ -19031,27 +19045,6 @@
     "description": "List and form view to use for Global Text Search results. Blank means default view.",
     "value": "text_search",
     "sysid": "19bc4f4c0a0a0b4401a88d4068270998"
-  },
-  {
-    "name": "glide.ui.textarea.character_counter",
-    "actualName": "glide.ui.textarea.character_counter",
-    "description": "Character counter for textarea (journal and multi line text fields). When set to true, the character counter will appear under the textarea, which instructs user the number of characters left. Once the limit is reached, user should reduce the amount of text to ensure that the entire text will be saved. ",
-    "value": "false",
-    "sysid": "76d88821ef213000e7ec732fa6c0fb11"
-  },
-  {
-    "name": "glide.ui.textarea_initial_rows",
-    "actualName": "glide.ui.textarea_initial_rows",
-    "description": "Number of rows used to initially display multiline elements. When the element is selected for editing, it is automatically expanded. Set to 0 or blank to ignore this property.",
-    "value": "0",
-    "sysid": "7812e2c6c0a86466007247aca1e50e36"
-  },
-  {
-    "name": "glide.ui.textarea_sizer",
-    "actualName": "glide.ui.textarea_sizer",
-    "description": "Enable multi-line text box resizer (+ and -)",
-    "value": "true",
-    "sysid": "2d1d2977c6112289004127cfd7ac7768"
   },
   {
     "name": "glide.ui.timer.started",
@@ -19110,20 +19103,6 @@
     "sysid": "430e29a09f3113007291f727c42e700b"
   },
   {
-    "name": "glide.ui.use_jelly_stream_entries",
-    "actualName": "glide.ui.use_jelly_stream_entries",
-    "description": "No description available",
-    "value": "false",
-    "sysid": "4b14fd417f113200348ef0d8adfa9163"
-  },
-  {
-    "name": "glide.ui.use_magellan_navigator",
-    "actualName": "glide.ui.use_magellan_navigator",
-    "description": "Enable the Magellan navigator replacement.",
-    "value": "true",
-    "sysid": "08e60832d7223100b0b044580e610309"
-  },
-  {
     "name": "glide.ui.user_cookie.life_span_in_days",
     "actualName": "glide.ui.user_cookie.life_span_in_days",
     "description": "Upon successful authentication, the generated user cookie will be expired after this duration in days",
@@ -19136,6 +19115,20 @@
     "description": "The user cookie is honored for this duration in days, starting when the cookie was first issued.",
     "value": "30",
     "sysid": "78af8ea2870023008f64bd6ec7cb0b25"
+  },
+  {
+    "name": "glide.ui.use_jelly_stream_entries",
+    "actualName": "glide.ui.use_jelly_stream_entries",
+    "description": "No description available",
+    "value": "false",
+    "sysid": "4b14fd417f113200348ef0d8adfa9163"
+  },
+  {
+    "name": "glide.ui.use_magellan_navigator",
+    "actualName": "glide.ui.use_magellan_navigator",
+    "description": "Enable the Magellan navigator replacement.",
+    "value": "true",
+    "sysid": "08e60832d7223100b0b044580e610309"
   },
   {
     "name": "glide.ui.vcs.collision_avoidance",
@@ -19362,13 +19355,6 @@
     "sysid": "388f2b7b757411108c8b143dd0c59f5a"
   },
   {
-    "name": "glide.use_tiny_urls",
-    "actualName": "glide.use_tiny_urls",
-    "description": "Use tiny URLs when a redirect URL becomes too large. This ensures that URLs that are too large for IE (greater than 2083) are not used. Instead, they are converted to a tiny URL to work around the IE issue.",
-    "value": "true",
-    "sysid": "22173f7ac0a801432cb95af98228f0f3"
-  },
-  {
     "name": "glide.user.default_notification",
     "actualName": "glide.user.default_notification",
     "description": "Default notification value when new user is created during incoming email. When auto create users is enabled, this is the default notification value for the newly created user. 1 - Do not notify, 2 - Send Email, 3 - Telephone",
@@ -19402,6 +19388,13 @@
     "description": "This property enables the UserAuthenticationGate checks for the external authentication mechanisms as well.",
     "value": "true",
     "sysid": "6fa9e9b3c3131100f0d95b787dba8f4e"
+  },
+  {
+    "name": "glide.use_tiny_urls",
+    "actualName": "glide.use_tiny_urls",
+    "description": "Use tiny URLs when a redirect URL becomes too large. This ensures that URLs that are too large for IE (greater than 2083) are not used. Instead, they are converted to a tiny URL to work around the IE issue.",
+    "value": "true",
+    "sysid": "22173f7ac0a801432cb95af98228f0f3"
   },
   {
     "name": "glide.util.xml.transformer.donot_strip.utf16_surrogate_pairs",
@@ -19495,13 +19488,6 @@
     "sysid": "29c602a00f00201080f8a86935767e0e"
   },
   {
-    "name": "glide.uxf.lib._restricted_.ux_scripts.allow_compat_mode",
-    "actualName": "glide.uxf.lib._restricted_.ux_scripts.allow_compat_mode",
-    "description": "No description available",
-    "value": "false",
-    "sysid": "e5e9e04023302010778fc50947bf65cb"
-  },
-  {
     "name": "glide.uxf.lib.performance.monitoring.enabled",
     "actualName": "glide.uxf.lib.performance.monitoring.enabled",
     "description": "Enable the Performance Monitoring sending from the client ",
@@ -19542,6 +19528,13 @@
     "description": "global metric level for uxf instrumentation for seismic metrics library (choices of 0,1,2,3,4,5) ",
     "value": "4",
     "sysid": "949b8f02731320107d804c9885f6a77a"
+  },
+  {
+    "name": "glide.uxf.lib._restricted_.ux_scripts.allow_compat_mode",
+    "actualName": "glide.uxf.lib._restricted_.ux_scripts.allow_compat_mode",
+    "description": "No description available",
+    "value": "false",
+    "sysid": "e5e9e04023302010778fc50947bf65cb"
   },
   {
     "name": "glide.uxf.minimum_content_client_cache.enabled",
@@ -19761,6 +19754,13 @@
     "sysid": "cb08e00c37403100b2cf04368e41f120"
   },
   {
+    "name": "glide.workflow.stages.show_gating_approver_in_title",
+    "actualName": "glide.workflow.stages.show_gating_approver_in_title",
+    "description": "Show gating approver in title of gating approver stage",
+    "value": "false",
+    "sysid": "8bb4907673212300d70877186bf6a755"
+  },
+  {
     "name": "glide.workflow.stage_display.bypass_wf_context",
     "actualName": "glide.workflow.stage_display.bypass_wf_context",
     "description": "Set to True to not use the stage value from the context record, use the one from the record.",
@@ -19773,13 +19773,6 @@
     "description": "Stages have been fixed.",
     "value": "true",
     "sysid": "04b5d28d1b0131008de2b9088f0713eb"
-  },
-  {
-    "name": "glide.workflow.stages.show_gating_approver_in_title",
-    "actualName": "glide.workflow.stages.show_gating_approver_in_title",
-    "description": "Show gating approver in title of gating approver stage",
-    "value": "false",
-    "sysid": "8bb4907673212300d70877186bf6a755"
   },
   {
     "name": "glide.workflow.user_approval_history",
@@ -20251,6 +20244,13 @@
     "sysid": "03a544be83bded106b7455a6feaad3b0"
   },
   {
+    "name": "NotifyAffectedCI.max_rel_level",
+    "actualName": "NotifyAffectedCI.max_rel_level",
+    "description": "This property is used by Affected CI notifications business rule. The business rule will notify parent CIs up-to level defined in this property.",
+    "value": "5",
+    "sysid": "c359d7213733110082a0cc028e41f104"
+  },
+  {
     "name": "openaiKey",
     "actualName": "openaiKey",
     "description": "No description available",
@@ -20321,18 +20321,18 @@
     "sysid": "06995515bf300100710071a7bf0739c9"
   },
   {
-    "name": "password_reset.enroll_reminder.email_template",
-    "actualName": "password_reset.enroll_reminder.email_template",
-    "description": "Email template for enrollment reminder emails. The instance can send email reminders to users who are not yet enrolled in the Password Reset process.",
-    "value": "Password reset enrollment reminder",
-    "sysid": "06b87c550b92030031a567bff6673a32"
-  },
-  {
     "name": "password_reset.enrollment_reminder.email_batch_size",
     "actualName": "password_reset.enrollment_reminder.email_batch_size",
     "description": "No description available",
     "value": "500",
     "sysid": "c5b33efd0b16030031a567bff6673a72"
+  },
+  {
+    "name": "password_reset.enroll_reminder.email_template",
+    "actualName": "password_reset.enroll_reminder.email_template",
+    "description": "Email template for enrollment reminder emails. The instance can send email reminders to users who are not yet enrolled in the Password Reset process.",
+    "value": "Password reset enrollment reminder",
+    "sysid": "06b87c550b92030031a567bff6673a32"
   },
   {
     "name": "password_reset.history.limit",
@@ -20510,18 +20510,18 @@
     "sysid": "e457cdb5874023000e3dd61e36cb0bde"
   },
   {
-    "name": "problem.closed.can_create_tasks",
-    "actualName": "problem.closed.can_create_tasks",
-    "description": "Can create a Problem Task on a Closed Problem?",
-    "value": "false",
-    "sysid": "7bd5071e530c23004247ddeeff7b1267"
-  },
-  {
     "name": "problem.closed.cancel_open_tasks",
     "actualName": "problem.closed.cancel_open_tasks",
     "description": "Cancel open Problem Tasks when closing a Problem",
     "value": "true",
     "sysid": "6cb745f5874023000e3dd61e36cb0bc8"
+  },
+  {
+    "name": "problem.closed.can_create_tasks",
+    "actualName": "problem.closed.can_create_tasks",
+    "description": "Can create a Problem Task on a Closed Problem?",
+    "value": "false",
+    "sysid": "7bd5071e530c23004247ddeeff7b1267"
   },
   {
     "name": "problem.closed.role.reanalyze_from_canceled",
@@ -20720,6 +20720,20 @@
     "sysid": "880f6f69c3131200b5be1962c1d3aedc"
   },
   {
+    "name": "sa.map.auto_grouping_host_name_regex",
+    "actualName": "sa.map.auto_grouping_host_name_regex",
+    "description": "Comma separted list of RegEx that will be used to find common parts in host name when auto-grouping CIs on map. All capturing groups in regex define the common part of host name that will be evaluated in auto-grouping algorithm. RegEx on top of list has higher priority and executed before the following RegEx in the list. List format /regex1/,/regex2/,/regex3/,... Default value /^( w- +?)(? d+ a-z ?)?$/ Sometimes it s required to logically group elements in regex, but not to include the group in common part of host name. In such cases use non-capturing group. The syntax is (? <content of group>) Example in default value (? d+ a-z ?)",
+    "value": "/^([\\w-]+?)(?:\\d+[a-z]?)?$/",
+    "sysid": "b3179ff0c3313200b5be1962c1d3ae2d"
+  },
+  {
+    "name": "sa.map.enable_auto_grouping",
+    "actualName": "sa.map.enable_auto_grouping",
+    "description": "Enable grouping of CIs on map. (Default true)",
+    "value": "true",
+    "sysid": "41159fb0c3313200b5be1962c1d3aed3"
+  },
+  {
     "name": "sa.map.INDICATORS_REFRESH_INTERVAL",
     "actualName": "sa.map.INDICATORS_REFRESH_INTERVAL",
     "description": "Interval (in sec) of refresh requests for indicators on business service maps. Default 20. ",
@@ -20741,6 +20755,13 @@
     "sysid": "5dc5ac2e87111200b5bea18dd0e3ece2"
   },
   {
+    "name": "sa.map.max_connections_in_properties_panel",
+    "actualName": "sa.map.max_connections_in_properties_panel",
+    "description": "Maximal amount of connection properties to be shown at once when connection line selected on service map. If selected line contains more connections than defined here, then properties panel will have notification about cut-off connections. Default 50.",
+    "value": "50",
+    "sysid": "43ea6ae5c3123200b5be1962c1d3aea0"
+  },
+  {
     "name": "sa.map.MAX_EDGES_FOR_FULL_LAYOUT",
     "actualName": "sa.map.MAX_EDGES_FOR_FULL_LAYOUT",
     "description": "Maximal number of displayable edges on application service map before spanning tree view applied. Default 1000.",
@@ -20760,27 +20781,6 @@
     "description": "Maximal number of displayable nodes on business service map. Maps with larger values will not be displayed. Default 5000. Increasing the default value may reduce performance in maps for large services.",
     "value": "5000",
     "sysid": "d8556c2e87111200b5bea18dd0e3ec1c"
-  },
-  {
-    "name": "sa.map.auto_grouping_host_name_regex",
-    "actualName": "sa.map.auto_grouping_host_name_regex",
-    "description": "Comma separted list of RegEx that will be used to find common parts in host name when auto-grouping CIs on map. All capturing groups in regex define the common part of host name that will be evaluated in auto-grouping algorithm. RegEx on top of list has higher priority and executed before the following RegEx in the list. List format /regex1/,/regex2/,/regex3/,... Default value /^( w- +?)(? d+ a-z ?)?$/ Sometimes it s required to logically group elements in regex, but not to include the group in common part of host name. In such cases use non-capturing group. The syntax is (? <content of group>) Example in default value (? d+ a-z ?)",
-    "value": "/^([\\w-]+?)(?:\\d+[a-z]?)?$/",
-    "sysid": "b3179ff0c3313200b5be1962c1d3ae2d"
-  },
-  {
-    "name": "sa.map.enable_auto_grouping",
-    "actualName": "sa.map.enable_auto_grouping",
-    "description": "Enable grouping of CIs on map. (Default true)",
-    "value": "true",
-    "sysid": "41159fb0c3313200b5be1962c1d3aed3"
-  },
-  {
-    "name": "sa.map.max_connections_in_properties_panel",
-    "actualName": "sa.map.max_connections_in_properties_panel",
-    "description": "Maximal amount of connection properties to be shown at once when connection line selected on service map. If selected line contains more connections than defined here, then properties panel will have notification about cut-off connections. Default 50.",
-    "value": "50",
-    "sysid": "43ea6ae5c3123200b5be1962c1d3aea0"
   },
   {
     "name": "sa.map.min_nodes_for_auto_grouping",
@@ -20881,18 +20881,18 @@
     "sysid": "0cebe7060b3020105a534b1eb4673abb"
   },
   {
-    "name": "sa.service.batch_manual_service_population.exp_delay_base",
-    "actualName": "sa.service.batch_manual_service_population.exp_delay_base",
-    "description": "Property to specify retry time in manual service update from cmdb in batch using identification engine in cases of identification engine timeout failures in milliseconds",
-    "value": "500",
-    "sysid": "ad7cef060b3020105a534b1eb4673a8e"
-  },
-  {
     "name": "sa.service.batch_manual_service_population.expand_cis_under_service",
     "actualName": "sa.service.batch_manual_service_population.expand_cis_under_service",
     "description": "No description available",
     "value": "cmdb_ci_service, cmdb_ci_service_technical, cmdb_ci_service_group, cmdb_ci_service_auto, service_offering, cmdb_ci_query_based_service, cmdb_ci_service_discovered, cmdb_ci_service_calculated, cmdb_ci_service_by_tags",
     "sysid": "5788da00b7232010e62a8e55ce11a9d4"
+  },
+  {
+    "name": "sa.service.batch_manual_service_population.exp_delay_base",
+    "actualName": "sa.service.batch_manual_service_population.exp_delay_base",
+    "description": "Property to specify retry time in manual service update from cmdb in batch using identification engine in cases of identification engine timeout failures in milliseconds",
+    "value": "500",
+    "sysid": "ad7cef060b3020105a534b1eb4673a8e"
   },
   {
     "name": "sa.service.batch_manual_service_population.max_batch_size",
@@ -21462,6 +21462,41 @@
     "sysid": "1144f97b53320110bea5ddeeff7b1228"
   },
   {
+    "name": "sncCommonMap.NODE_LABEL_WIDTH",
+    "actualName": "sncCommonMap.NODE_LABEL_WIDTH",
+    "description": "Maximal width of CI node labels in pixels. Relevant for any kind of labels (CI name, host name, cluster label etc.) This size also modifies horizontal space between CI elements. Applied to map view and exported PDF view. Not applicable to network/storage path maps. Default value 95. Minimal value is 20. Maximal value is 1000.",
+    "value": "95",
+    "sysid": "923ae183c30113008ebd1962c1d3aea5"
+  },
+  {
+    "name": "sncCommonMap.RENDER_FULL_LABELS",
+    "actualName": "sncCommonMap.RENDER_FULL_LABELS",
+    "description": "Render full labels on CIs on map. Applicable to all CI labels (CI name, host name, cluster label, etc.) Enabling this will disable labels truncation, and labels will most probably overlap with other map elements. Not applicable to network/storage path maps. Default disabled.",
+    "value": "none",
+    "sysid": "2d4ef50fc34113008ebd1962c1d3aeff"
+  },
+  {
+    "name": "snd_xplore.history.limit",
+    "actualName": "snd_xplore.history.limit",
+    "description": "The number of Xplore sessions to automatically store for historic backup per person. Default is 50.",
+    "value": "50",
+    "sysid": "c33775fddbb5a410d78869091396199d"
+  },
+  {
+    "name": "snd_xplore.log_request",
+    "actualName": "snd_xplore.log_request",
+    "description": "Log server side scripts that are run using /snd_xplore.do much the same that background scripts do.",
+    "value": "true",
+    "sysid": "7ab919cb0fee420094f3c09ce1050e41"
+  },
+  {
+    "name": "snd_xplore.production_access",
+    "actualName": "snd_xplore.production_access",
+    "description": "Allow Xplore server scripts to be executed in Production instances. Set this to false for real Production instances to be safe. This does not affect the read-only utilities in Xplore which will always work.",
+    "value": "true",
+    "sysid": "28f0585edb08d700b1307b5b8c961939"
+  },
+  {
     "name": "sn_ace.ace-whitelisted-experiences",
     "actualName": "sn_ace.ace-whitelisted-experiences",
     "description": "No description available",
@@ -21665,41 +21700,6 @@
     "sysid": "a8aa4ee7c39230102920b8889d40ddd4"
   },
   {
-    "name": "sn_app_eng_studio.app_template_email_user_limit",
-    "actualName": "sn_app_eng_studio.app_template_email_user_limit",
-    "description": "System property which controls how many users at max at a time will be sent emails associated with app template sharing, revocation of access and deactivation.",
-    "value": "300",
-    "sysid": "b966b4cac3334110a9f5e548fa40dd12"
-  },
-  {
-    "name": "sn_app_eng_studio.glide.sc.builder.aes_catalog_builder_template",
-    "actualName": "sn_app_eng_studio.glide.sc.builder.aes_catalog_builder_template",
-    "description": "No description available",
-    "value": "211f71ca73202010ae42d31ee2f6a785",
-    "sysid": "20748e86736020109538d31ee2f6a706"
-  },
-  {
-    "name": "sn_app_eng_studio.illustration_supported_content_types",
-    "actualName": "sn_app_eng_studio.illustration_supported_content_types",
-    "description": "A comma separated list (no spaces between types) of supported content types for the Taxonomy and Taxonomy Category illustrations and icons. See sys_attachment --> content_type for example content types.",
-    "value": "image/svg+xml",
-    "sysid": "3df6a35577f3330001fb4311a810612a"
-  },
-  {
-    "name": "sn_app_intake.instance_can_provision_users",
-    "actualName": "sn_app_intake.instance_can_provision_users",
-    "description": "True/False property to determine if the current instance can support the provisioning of users. The users on this instance will be provisioned to another instance",
-    "value": "false",
-    "sysid": "bd2087ee53d40110b846ddeeff7b1207"
-  },
-  {
-    "name": "sn_appauthor.all_company_keys",
-    "actualName": "sn_appauthor.all_company_keys",
-    "description": "Persisting all store keys for a company.",
-    "value": "8821",
-    "sysid": "c3d06d1a73d32300359ba4038bf6a794"
-  },
-  {
     "name": "sn_appauthor.allow_customization_upload",
     "actualName": "sn_appauthor.allow_customization_upload",
     "description": "Indicates if the Publish Customizations To My App Repo ui action is displayed",
@@ -21719,6 +21719,13 @@
     "description": "Indicates if the Publish to Store ui action is displayed",
     "value": "false",
     "sysid": "5e4c8201d710310092610eca5e6103c9"
+  },
+  {
+    "name": "sn_appauthor.all_company_keys",
+    "actualName": "sn_appauthor.all_company_keys",
+    "description": "Persisting all store keys for a company.",
+    "value": "8821",
+    "sysid": "c3d06d1a73d32300359ba4038bf6a794"
   },
   {
     "name": "sn_appauthor.logging.destination",
@@ -21749,18 +21756,18 @@
     "sysid": "426a662b93032300ebd4f157b67ffbe4"
   },
   {
-    "name": "sn_appclient.app_convert_enabled",
-    "actualName": "sn_appclient.app_convert_enabled",
-    "description": "Admins can use this property to disable the sys_app Convert to Application Repository Mode feature in ALL development instances so that they do not accidentally convert a sys_app to a sys_store_app record",
-    "value": "true",
-    "sysid": "f80fe2785b7130107c7899b8b681c72d"
-  },
-  {
     "name": "sn_appclient.apps_last_sync_time",
     "actualName": "sn_appclient.apps_last_sync_time",
     "description": "No description available",
     "value": "2023-09-12 23:23:35",
     "sysid": "531455a177712110b61ec1bfbd5a99eb"
+  },
+  {
+    "name": "sn_appclient.app_convert_enabled",
+    "actualName": "sn_appclient.app_convert_enabled",
+    "description": "Admins can use this property to disable the sys_app Convert to Application Repository Mode feature in ALL development instances so that they do not accidentally convert a sys_app to a sys_store_app record",
+    "value": "true",
+    "sysid": "f80fe2785b7130107c7899b8b681c72d"
   },
   {
     "name": "sn_appclient.auto_update",
@@ -21880,6 +21887,34 @@
     "description": "Flag to enable/disable queued installation ",
     "value": "true",
     "sysid": "9b3bd15477602110c918256a5b5a9945"
+  },
+  {
+    "name": "sn_app_eng_studio.app_template_email_user_limit",
+    "actualName": "sn_app_eng_studio.app_template_email_user_limit",
+    "description": "System property which controls how many users at max at a time will be sent emails associated with app template sharing, revocation of access and deactivation.",
+    "value": "300",
+    "sysid": "b966b4cac3334110a9f5e548fa40dd12"
+  },
+  {
+    "name": "sn_app_eng_studio.glide.sc.builder.aes_catalog_builder_template",
+    "actualName": "sn_app_eng_studio.glide.sc.builder.aes_catalog_builder_template",
+    "description": "No description available",
+    "value": "211f71ca73202010ae42d31ee2f6a785",
+    "sysid": "20748e86736020109538d31ee2f6a706"
+  },
+  {
+    "name": "sn_app_eng_studio.illustration_supported_content_types",
+    "actualName": "sn_app_eng_studio.illustration_supported_content_types",
+    "description": "A comma separated list (no spaces between types) of supported content types for the Taxonomy and Taxonomy Category illustrations and icons. See sys_attachment --> content_type for example content types.",
+    "value": "image/svg+xml",
+    "sysid": "3df6a35577f3330001fb4311a810612a"
+  },
+  {
+    "name": "sn_app_intake.instance_can_provision_users",
+    "actualName": "sn_app_intake.instance_can_provision_users",
+    "description": "True/False property to determine if the current instance can support the provisioning of users. The users on this instance will be provisioned to another instance",
+    "value": "false",
+    "sysid": "bd2087ee53d40110b846ddeeff7b1207"
   },
   {
     "name": "sn_atf.atf_test_runner.screenshot_timeout",
@@ -22029,18 +22064,18 @@
     "sysid": "f6c09cdc77f220103fe4b5b26810613e"
   },
   {
-    "name": "sn_atf.headless.user_field_id",
-    "actualName": "sn_atf.headless.user_field_id",
-    "description": "The element ID of the username input field on the login page",
-    "value": "user_name",
-    "sysid": "aec86b4d777e20103fe4b5b26810610f"
-  },
-  {
     "name": "sn_atf.headless.username",
     "actualName": "sn_atf.headless.username",
     "description": "The user account used to login from the headless client test runner and begin the tests. Default (blank)",
     "value": "",
     "sysid": "ec9e8b3b776220103fe4b5b26810617f"
+  },
+  {
+    "name": "sn_atf.headless.user_field_id",
+    "actualName": "sn_atf.headless.user_field_id",
+    "description": "The element ID of the username input field on the login page",
+    "value": "user_name",
+    "sysid": "aec86b4d777e20103fe4b5b26810610f"
   },
   {
     "name": "sn_atf.jasmine.versions",
@@ -22428,69 +22463,6 @@
     "sysid": "8bfe1b50c3c013009f93dfdc64d3ae9a"
   },
   {
-    "name": "sn_ci_analytics.analytic_conversation_completed_states",
-    "actualName": "sn_ci_analytics.analytic_conversation_completed_states",
-    "description": "No description available",
-    "value": "completed,faulted",
-    "sysid": "50dbd06977b20110c23e1f130e5a9953"
-  },
-  {
-    "name": "sn_ci_analytics.ca.allow_broadcast",
-    "actualName": "sn_ci_analytics.ca.allow_broadcast",
-    "description": "This property determines whether or not to allow broadcast conversations.",
-    "value": "false",
-    "sysid": "2adef14053c020101dccddeeff7b120d"
-  },
-  {
-    "name": "sn_ci_analytics.ca.hide_customization",
-    "actualName": "sn_ci_analytics.ca.hide_customization",
-    "description": "No description available",
-    "value": "true",
-    "sysid": "51c36302737020107d804c9885f6a7fe"
-  },
-  {
-    "name": "sn_ci_analytics.ca.job_max_conversation_count",
-    "actualName": "sn_ci_analytics.ca.job_max_conversation_count",
-    "description": "No description available",
-    "value": "3000",
-    "sysid": "9e7b521d73a020107d804c9885f6a7aa"
-  },
-  {
-    "name": "sn_ci_analytics.ca.processing_enabled",
-    "actualName": "sn_ci_analytics.ca.processing_enabled",
-    "description": "No description available",
-    "value": "true",
-    "sysid": "289d7760c3f8f0104b8e88c7c840ddfc"
-  },
-  {
-    "name": "sn_ci_analytics.dashboard.enable_legacy_query_builder",
-    "actualName": "sn_ci_analytics.dashboard.enable_legacy_query_builder",
-    "description": "No description available",
-    "value": "false",
-    "sysid": "1331ff40c301b010a86b4fb9c840ddc7"
-  },
-  {
-    "name": "sn_ci_analytics.dashboard.export_limit",
-    "actualName": "sn_ci_analytics.dashboard.export_limit",
-    "description": "Maximum number of records that can be exported from the lists in VA Dashboard",
-    "value": "1000",
-    "sysid": "8a460ff0c32130104b8e88c7c840dd17"
-  },
-  {
-    "name": "sn_ci_analytics.logging.verbosity",
-    "actualName": "sn_ci_analytics.logging.verbosity",
-    "description": "Logging level - debug, info, warn, error",
-    "value": "warn",
-    "sysid": "16cb2358535520101dccddeeff7b12b7"
-  },
-  {
-    "name": "sn_ci_analytics.on_hold_conversations_wait_time",
-    "actualName": "sn_ci_analytics.on_hold_conversations_wait_time",
-    "description": "ETL wait time to process conversations that are in On Hold status. Time in milliseconds.",
-    "value": "600000",
-    "sysid": "ba208cfb771e0110c23e1f130e5a990b"
-  },
-  {
     "name": "sn_cicd.apprepo.enabled",
     "actualName": "sn_cicd.apprepo.enabled",
     "description": "CI/CD App Repo API publish enabled setting",
@@ -22552,6 +22524,69 @@
     "description": "This property will control all the outbound calls made by the spokes. If the property is disabled, then CICD cannot make any REST calls on the instances. The property is enabled by default.",
     "value": "true",
     "sysid": "c1c0f4047700001038e286a268106123"
+  },
+  {
+    "name": "sn_ci_analytics.analytic_conversation_completed_states",
+    "actualName": "sn_ci_analytics.analytic_conversation_completed_states",
+    "description": "No description available",
+    "value": "completed,faulted",
+    "sysid": "50dbd06977b20110c23e1f130e5a9953"
+  },
+  {
+    "name": "sn_ci_analytics.ca.allow_broadcast",
+    "actualName": "sn_ci_analytics.ca.allow_broadcast",
+    "description": "This property determines whether or not to allow broadcast conversations.",
+    "value": "false",
+    "sysid": "2adef14053c020101dccddeeff7b120d"
+  },
+  {
+    "name": "sn_ci_analytics.ca.hide_customization",
+    "actualName": "sn_ci_analytics.ca.hide_customization",
+    "description": "No description available",
+    "value": "true",
+    "sysid": "51c36302737020107d804c9885f6a7fe"
+  },
+  {
+    "name": "sn_ci_analytics.ca.job_max_conversation_count",
+    "actualName": "sn_ci_analytics.ca.job_max_conversation_count",
+    "description": "No description available",
+    "value": "3000",
+    "sysid": "9e7b521d73a020107d804c9885f6a7aa"
+  },
+  {
+    "name": "sn_ci_analytics.ca.processing_enabled",
+    "actualName": "sn_ci_analytics.ca.processing_enabled",
+    "description": "No description available",
+    "value": "true",
+    "sysid": "289d7760c3f8f0104b8e88c7c840ddfc"
+  },
+  {
+    "name": "sn_ci_analytics.dashboard.enable_legacy_query_builder",
+    "actualName": "sn_ci_analytics.dashboard.enable_legacy_query_builder",
+    "description": "No description available",
+    "value": "false",
+    "sysid": "1331ff40c301b010a86b4fb9c840ddc7"
+  },
+  {
+    "name": "sn_ci_analytics.dashboard.export_limit",
+    "actualName": "sn_ci_analytics.dashboard.export_limit",
+    "description": "Maximum number of records that can be exported from the lists in VA Dashboard",
+    "value": "1000",
+    "sysid": "8a460ff0c32130104b8e88c7c840dd17"
+  },
+  {
+    "name": "sn_ci_analytics.logging.verbosity",
+    "actualName": "sn_ci_analytics.logging.verbosity",
+    "description": "Logging level - debug, info, warn, error",
+    "value": "warn",
+    "sysid": "16cb2358535520101dccddeeff7b12b7"
+  },
+  {
+    "name": "sn_ci_analytics.on_hold_conversations_wait_time",
+    "actualName": "sn_ci_analytics.on_hold_conversations_wait_time",
+    "description": "ETL wait time to process conversations that are in On Hold status. Time in milliseconds.",
+    "value": "600000",
+    "sysid": "ba208cfb771e0110c23e1f130e5a990b"
   },
   {
     "name": "sn_cmdb_ci_class.nids_key_fields",
@@ -22645,13 +22680,6 @@
     "sysid": "afbad4c95b510110693e7da52d81c7fa"
   },
   {
-    "name": "sn_cmp.Form Simplification",
-    "actualName": "sn_cmp.Form Simplification",
-    "description": "No description available",
-    "value": "true",
-    "sysid": "bdb7f209c7e3130021119c39dd97634d"
-  },
-  {
     "name": "sn_cmp.azure.change_enquiry.change_processing_batch_size",
     "actualName": "sn_cmp.azure.change_enquiry.change_processing_batch_size",
     "description": "The number of change payloads that can be processed in a batch when a scheduled job CPG Build Azure Changes IRE Payload is run ",
@@ -22692,6 +22720,13 @@
     "description": "The default domain to which the error or skipped events to be assigned when the system fails to identify the domain associated with the event. Provide sys_id of the domain to use to uniquely identify the domain.",
     "value": "global",
     "sysid": "40fb6591b7c31010d53b32c6ee11a9c3"
+  },
+  {
+    "name": "sn_cmp.Form Simplification",
+    "actualName": "sn_cmp.Form Simplification",
+    "description": "No description available",
+    "value": "true",
+    "sysid": "bdb7f209c7e3130021119c39dd97634d"
   },
   {
     "name": "sn_cmp.response_mapping.use_java_processor",
@@ -22769,13 +22804,6 @@
     "description": "When set to true, rules/filters from sn_query_rule table will be used to determine read access to customer service management related tables to the logged in user through query business rules and READ ACLs. When false, rules/filters from the CSMQueryBRUtilOOBConstants and it s extensions will be used. ",
     "value": "true",
     "sysid": "931020e1b3521010700b4d43c6a8dcb6"
-  },
-  {
-    "name": "sn_customerservice.FTS_flag_enabled",
-    "actualName": "sn_customerservice.FTS_flag_enabled",
-    "description": "Enable the follow the sun flag on the Customer Service case form.",
-    "value": "false",
-    "sysid": "be416373e793030068da6188d2f6a9e2"
   },
   {
     "name": "sn_customerservice.account_relationship_access_roles",
@@ -22862,6 +22890,13 @@
     "sysid": "d48e6f93532120100f16ddeeff7b12e3"
   },
   {
+    "name": "sn_customerservice.FTS_flag_enabled",
+    "actualName": "sn_customerservice.FTS_flag_enabled",
+    "description": "Enable the follow the sun flag on the Customer Service case form.",
+    "value": "false",
+    "sysid": "be416373e793030068da6188d2f6a9e2"
+  },
+  {
     "name": "sn_customerservice.glide.script.block.client.globals",
     "actualName": "sn_customerservice.glide.script.block.client.globals",
     "description": "No description available",
@@ -22904,13 +22939,6 @@
     "sysid": "c9bc8d26c7a0030089413952f0976393"
   },
   {
-    "name": "sn_dev_prg_pdi",
-    "actualName": "sn_dev_prg_pdi",
-    "description": "No description available",
-    "value": "true",
-    "sysid": "a9fe44862f1b5910bd54d5f62799b654"
-  },
-  {
     "name": "sn_devstudio.allow.multi.app.development",
     "actualName": "sn_devstudio.allow.multi.app.development",
     "description": "No description available",
@@ -22939,6 +22967,13 @@
     "sysid": "49224ac6b7425110ad22e2b9de11a9ee"
   },
   {
+    "name": "sn_dev_prg_pdi",
+    "actualName": "sn_dev_prg_pdi",
+    "description": "No description available",
+    "value": "true",
+    "sysid": "a9fe44862f1b5910bd54d5f62799b654"
+  },
+  {
     "name": "sn_disco_firewall.default.rule.task.approval.group",
     "actualName": "sn_disco_firewall.default.rule.task.approval.group",
     "description": "<b>Firewall Audits and Reporting </b> Name of the default approval group that is used to group users to approve the firewall rule tasks. This group should be contains the Approval User role.",
@@ -22953,11 +22988,39 @@
     "sysid": "e12187f33b1300108774cedf34efc486"
   },
   {
-    "name": "sn_em_ai.evt_mgmt.TimeRangeForAnomalyMetricsInHours",
-    "actualName": "sn_em_ai.evt_mgmt.TimeRangeForAnomalyMetricsInHours",
-    "description": "Defines the time range to query the metric base from the event creation time in hours. for example value =1 will query the metric base Total 2 hours - 1H prior and 1H after the event creation.",
-    "value": "1",
-    "sysid": "b51fbbf4534f1010cf0addeeff7b1235"
+    "name": "sn_employee.app_access_grant_stagger",
+    "actualName": "sn_employee.app_access_grant_stagger",
+    "description": "Time in seconds to stagger event queueing for granting access to employees",
+    "value": "30",
+    "sysid": "835ded8d77695110a956b9999a5a99a2"
+  },
+  {
+    "name": "sn_employee.app_access_revoke_stagger",
+    "actualName": "sn_employee.app_access_revoke_stagger",
+    "description": "Time in seconds to stagger event queueing for revoking access following grant access",
+    "value": "30",
+    "sysid": "c5a7657877a55110a956b9999a5a99d0"
+  },
+  {
+    "name": "sn_employee.employee_profile_enabled",
+    "actualName": "sn_employee.employee_profile_enabled",
+    "description": "No description available",
+    "value": "false",
+    "sysid": "9f7a476077b730104cdac0c23e5a998c"
+  },
+  {
+    "name": "sn_employee.max_users_per_grant_event",
+    "actualName": "sn_employee.max_users_per_grant_event",
+    "description": "Numbers of users to batch per event granting licenses to employees",
+    "value": "25000",
+    "sysid": "09e7c5fc77255110a956b9999a5a99e7"
+  },
+  {
+    "name": "sn_employee.refresh_app_event_stagger",
+    "actualName": "sn_employee.refresh_app_event_stagger",
+    "description": "Seconds to stagger events to refresh licensing for apps",
+    "value": "300",
+    "sysid": "abc6c9bc77255110a956b9999a5a99a7"
   },
   {
     "name": "sn_em_ai.evt_mgmt.disable_lists_auto_refresh",
@@ -22965,6 +23028,13 @@
     "description": "Disable auto-refresh of alerts list; alerts will update in Workspace only when user does so manually.",
     "value": "false",
     "sysid": "e580028cb76d7300b2fc8b96ce11a953"
+  },
+  {
+    "name": "sn_em_ai.evt_mgmt.TimeRangeForAnomalyMetricsInHours",
+    "actualName": "sn_em_ai.evt_mgmt.TimeRangeForAnomalyMetricsInHours",
+    "description": "Defines the time range to query the metric base from the event creation time in hours. for example value =1 will query the metric base Total 2 hours - 1H prior and 1H after the event creation.",
+    "value": "1",
+    "sysid": "b51fbbf4534f1010cf0addeeff7b1235"
   },
   {
     "name": "sn_em_arm.alert_management.num_of_jobs",
@@ -23021,41 +23091,6 @@
     "description": "A comma separated list of alert (em_alert) field names (not labels) to exclude from the fields list options that show when creating a new Alert Clustering Tag that its source is set to Alert field , e.g. type,event_class .",
     "value": "type,event_class",
     "sysid": "2982c05ab72a70107c038229ce11a9c1"
-  },
-  {
-    "name": "sn_employee.app_access_grant_stagger",
-    "actualName": "sn_employee.app_access_grant_stagger",
-    "description": "Time in seconds to stagger event queueing for granting access to employees",
-    "value": "30",
-    "sysid": "835ded8d77695110a956b9999a5a99a2"
-  },
-  {
-    "name": "sn_employee.app_access_revoke_stagger",
-    "actualName": "sn_employee.app_access_revoke_stagger",
-    "description": "Time in seconds to stagger event queueing for revoking access following grant access",
-    "value": "30",
-    "sysid": "c5a7657877a55110a956b9999a5a99d0"
-  },
-  {
-    "name": "sn_employee.employee_profile_enabled",
-    "actualName": "sn_employee.employee_profile_enabled",
-    "description": "No description available",
-    "value": "false",
-    "sysid": "9f7a476077b730104cdac0c23e5a998c"
-  },
-  {
-    "name": "sn_employee.max_users_per_grant_event",
-    "actualName": "sn_employee.max_users_per_grant_event",
-    "description": "Numbers of users to batch per event granting licenses to employees",
-    "value": "25000",
-    "sysid": "09e7c5fc77255110a956b9999a5a99e7"
-  },
-  {
-    "name": "sn_employee.refresh_app_event_stagger",
-    "actualName": "sn_employee.refresh_app_event_stagger",
-    "description": "Seconds to stagger events to refresh licensing for apps",
-    "value": "300",
-    "sysid": "abc6c9bc77255110a956b9999a5a99a7"
   },
   {
     "name": "sn_esign.min_admin_count",
@@ -23156,18 +23191,18 @@
     "sysid": "abd023de73332300612c273ffff6a704"
   },
   {
-    "name": "sn_flow_designer.max_action_steps",
-    "actualName": "sn_flow_designer.max_action_steps",
-    "description": "The maximum amount of allowed steps on an action.",
-    "value": "20",
-    "sysid": "c1cae8fec31113002841b63b12d3ae2e"
-  },
-  {
     "name": "sn_flow_designer.max_actions",
     "actualName": "sn_flow_designer.max_actions",
     "description": "The maximum number of actions allowed on a flow.",
     "value": "50",
     "sysid": "767aa4fec31113002841b63b12d3ae26"
+  },
+  {
+    "name": "sn_flow_designer.max_action_steps",
+    "actualName": "sn_flow_designer.max_action_steps",
+    "description": "The maximum amount of allowed steps on an action.",
+    "value": "20",
+    "sysid": "c1cae8fec31113002841b63b12d3ae2e"
   },
   {
     "name": "sn_flow_designer.max_decision_branches",
@@ -23210,13 +23245,6 @@
     "description": "No description available",
     "value": "{\\\"errorHandling\\\": false, \\\"stages\\\": true, \\\"dataStreamActions\\\": false, \\\"flowTypes\\\":[\\\"flow\\\", \\\"template\\\", \\\"subflow\\\"], \\\"triggerTypes\\\": [\\\"record_create\\\", \\\"record_update\\\", \\\"record_create_or_update\\\", \\\"daily\\\", \\\"weekly\\\",\\\"monthly\\\",\\\"run_once\\\", \\\"repeat\\\", \\\"email\\\", \\\"sla_task\\\", \\\"service_catalog\\\", \\\"kafka_flow_trigger\\\", \\\"metric\\\", \\\"rest_async\\\"], \\\"flowLogicTypes\\\": [\\\"IF\\\", \\\"ELSE\\\", \\\"ELSEIF\\\", \\\"FOREACH\\\", \\\"END\\\", \\\"TIMER\\\", \\\"GETFLOWOUTPUTS\\\", \\\"RUNDYNAMICFLOW\\\", \\\"RUNWORKFLOW\\\", \\\"SETFLOWVARIABLES\\\", \\\"PARALLEL\\\", \\\"PARALLELBLOCK\\\",\\\"DECISION\\\",\\\"DECISIONBLOCK\\\",\\\"ASSIGNSUBFLOWOUTPUTS\\\"]}",
     "sysid": "90601cfcb7323010388487c2de11a9b4"
-  },
-  {
-    "name": "sn_g_app_creator.ui.ie_minimum",
-    "actualName": "sn_g_app_creator.ui.ie_minimum",
-    "description": "No description available",
-    "value": "12",
-    "sysid": "42c4d6f27723230001fb4311a8106161"
   },
   {
     "name": "sn_gf.allow_goal_deletion",
@@ -23268,6 +23296,13 @@
     "sysid": "b1da0c620f603300bad14bb768767e75"
   },
   {
+    "name": "sn_grc.automatically_close_issue_when_all_tasks_closed",
+    "actualName": "sn_grc.automatically_close_issue_when_all_tasks_closed",
+    "description": "Automatically close a issue when all its related remediation tasks are closed",
+    "value": "true",
+    "sysid": "9ecb5ad49fb3320030581471367fcf6e"
+  },
+  {
     "name": "sn_grc.auto_create_indicator",
     "actualName": "sn_grc.auto_create_indicator",
     "description": "Automatically make indicators for item",
@@ -23287,13 +23322,6 @@
     "description": "Auto populate due date based on issue rating",
     "value": "true",
     "sysid": "3451d80ac7f020107e299e0703c26002"
-  },
-  {
-    "name": "sn_grc.automatically_close_issue_when_all_tasks_closed",
-    "actualName": "sn_grc.automatically_close_issue_when_all_tasks_closed",
-    "description": "Automatically close a issue when all its related remediation tasks are closed",
-    "value": "true",
-    "sysid": "9ecb5ad49fb3320030581471367fcf6e"
   },
   {
     "name": "sn_grc.batch_size_to_sync_entity_owner_field",
@@ -23450,18 +23478,11 @@
     "sysid": "eac983259fd01200b18a7feea57fcf14"
   },
   {
-    "name": "sn_hr_core.COE_ETTR_display_agent",
-    "actualName": "sn_hr_core.COE_ETTR_display_agent",
-    "description": "Display estimated time to resolve for agent, for the COEs mentioned in Value field.",
-    "value": "sn_hr_core_case,sn_hr_core_case_total_rewards,sn_hr_core_case_payroll,sn_hr_core_case_talent_management,sn_hr_core_case_operations,sn_hr_core_case_workforce_admin,sn_hr_le_case,sn_hr_er_case",
-    "sysid": "ef656132c7a620107da20b3703c260e7"
-  },
-  {
-    "name": "sn_hr_core.COE_ETTR_display_employee",
-    "actualName": "sn_hr_core.COE_ETTR_display_employee",
-    "description": "Display estimated time to resolve for employee, for the COEs mentioned in Value field.",
-    "value": "sn_hr_core_case,sn_hr_core_case_total_rewards,sn_hr_core_case_payroll,sn_hr_core_case_talent_management,sn_hr_core_case_operations,sn_hr_core_case_workforce_admin,sn_hr_le_case,sn_hr_er_case",
-    "sysid": "918d513ec76620107da20b3703c2602a"
+    "name": "sn_g_app_creator.ui.ie_minimum",
+    "actualName": "sn_g_app_creator.ui.ie_minimum",
+    "description": "No description available",
+    "value": "12",
+    "sysid": "42c4d6f27723230001fb4311a8106161"
   },
   {
     "name": "sn_hr_core.adobesign_template_group",
@@ -23504,6 +23525,20 @@
     "description": "Enable suggestions for auto case categorization(non email sources) on page load",
     "value": "false",
     "sysid": "943acd4777833300d0e310389a106107"
+  },
+  {
+    "name": "sn_hr_core.COE_ETTR_display_agent",
+    "actualName": "sn_hr_core.COE_ETTR_display_agent",
+    "description": "Display estimated time to resolve for agent, for the COEs mentioned in Value field.",
+    "value": "sn_hr_core_case,sn_hr_core_case_total_rewards,sn_hr_core_case_payroll,sn_hr_core_case_talent_management,sn_hr_core_case_operations,sn_hr_core_case_workforce_admin,sn_hr_le_case,sn_hr_er_case",
+    "sysid": "ef656132c7a620107da20b3703c260e7"
+  },
+  {
+    "name": "sn_hr_core.COE_ETTR_display_employee",
+    "actualName": "sn_hr_core.COE_ETTR_display_employee",
+    "description": "Display estimated time to resolve for employee, for the COEs mentioned in Value field.",
+    "value": "sn_hr_core_case,sn_hr_core_case_total_rewards,sn_hr_core_case_payroll,sn_hr_core_case_talent_management,sn_hr_core_case_operations,sn_hr_core_case_workforce_admin,sn_hr_le_case,sn_hr_er_case",
+    "sysid": "918d513ec76620107da20b3703c2602a"
   },
   {
     "name": "sn_hr_core.create_new_survey_instances",
@@ -23828,6 +23863,20 @@
     "sysid": "f7be60fd973905106c295d14a253af01"
   },
   {
+    "name": "sn_interview_temp.filter_attr_allowed_tables",
+    "actualName": "sn_interview_temp.filter_attr_allowed_tables",
+    "description": "List of tables allowed to create Template Tags from for interview question templates.",
+    "value": "sn_hr_er_allegation_subtype,sn_hr_er_allegation_type,sn_hr_core_service",
+    "sysid": "cc2b75e0c31220102920b8889d40ddff"
+  },
+  {
+    "name": "sn_interview_temp.template_limit",
+    "actualName": "sn_interview_temp.template_limit",
+    "description": "Number of interview question templates to be loaded at once. Maximum is 30. ",
+    "value": "20",
+    "sysid": "d0bcd19f53fe6010ff1fddeeff7b1215"
+  },
+  {
     "name": "sn_int_studio.nested_payload.mapping_reorder.disabled.list",
     "actualName": "sn_int_studio.nested_payload.mapping_reorder.disabled.list",
     "description": "A comma separated list of nested payload application feed ids for which entity mapping reordering is disabled when pulling/changing import set through IH-ETL.",
@@ -23854,20 +23903,6 @@
     "description": "Determine if ETL recommendation feature should be enabled for class and attribute mapping or both",
     "value": "",
     "sysid": "b830552553011010ee0dddeeff7b127c"
-  },
-  {
-    "name": "sn_interview_temp.filter_attr_allowed_tables",
-    "actualName": "sn_interview_temp.filter_attr_allowed_tables",
-    "description": "List of tables allowed to create Template Tags from for interview question templates.",
-    "value": "sn_hr_er_allegation_subtype,sn_hr_er_allegation_type,sn_hr_core_service",
-    "sysid": "cc2b75e0c31220102920b8889d40ddff"
-  },
-  {
-    "name": "sn_interview_temp.template_limit",
-    "actualName": "sn_interview_temp.template_limit",
-    "description": "Number of interview question templates to be loaded at once. Maximum is 30. ",
-    "value": "20",
-    "sysid": "d0bcd19f53fe6010ff1fddeeff7b1215"
   },
   {
     "name": "sn_irm_shared_cmn.config.get_gliderecord_limit",
@@ -24031,6 +24066,27 @@
     "sysid": "00207fd067121300d358bb2d07415ab6"
   },
   {
+    "name": "sn_kmf.crypto_module.access_policies.allow_unsigned_records",
+    "actualName": "sn_kmf.crypto_module.access_policies.allow_unsigned_records",
+    "description": "Allows upgrading of Runtime KMF Secure Modules",
+    "value": "true",
+    "sysid": "00cb5765c33230104f5cccbfea40dd99"
+  },
+  {
+    "name": "sn_kmf.resolution_framework.audit_source",
+    "actualName": "sn_kmf.resolution_framework.audit_source",
+    "description": "Controls where to log Resolution Framework records to TABLE -> Logs to sn_kmf_resolution_framework_log table LOG -> Logs to System Logs BOTH -> Logs to both TABLE and LOG ",
+    "value": "BOTH",
+    "sysid": "0a0aca8643821110110905c02bb8f2e4"
+  },
+  {
+    "name": "sn_kmf.resolution_framework.enabled",
+    "actualName": "sn_kmf.resolution_framework.enabled",
+    "description": "Toggles Auto resolution for KMF Plug-in issues",
+    "value": "true",
+    "sysid": "fe532a6243111110110905c02bb8f2d5"
+  },
+  {
     "name": "sn_km_portal.glide.knowman.serviceportal.enable_redirect",
     "actualName": "sn_km_portal.glide.knowman.serviceportal.enable_redirect",
     "description": "When set to true, users navigating to the listed Knowledge Management v2 or v3 pages - kb_home, kb_find, kb_view_customer, kb_list, kb_tree, $knowledge - will be redirected to the equivalent Knowledge Management Service Portal UI",
@@ -24057,27 +24113,6 @@
     "description": "Use document viewer to display attachments in knowledge service portal.",
     "value": "false",
     "sysid": "fa090e143b113200f298870044efc4f7"
-  },
-  {
-    "name": "sn_kmf.crypto_module.access_policies.allow_unsigned_records",
-    "actualName": "sn_kmf.crypto_module.access_policies.allow_unsigned_records",
-    "description": "Allows upgrading of Runtime KMF Secure Modules",
-    "value": "true",
-    "sysid": "00cb5765c33230104f5cccbfea40dd99"
-  },
-  {
-    "name": "sn_kmf.resolution_framework.audit_source",
-    "actualName": "sn_kmf.resolution_framework.audit_source",
-    "description": "Controls where to log Resolution Framework records to TABLE -> Logs to sn_kmf_resolution_framework_log table LOG -> Logs to System Logs BOTH -> Logs to both TABLE and LOG ",
-    "value": "BOTH",
-    "sysid": "0a0aca8643821110110905c02bb8f2e4"
-  },
-  {
-    "name": "sn_kmf.resolution_framework.enabled",
-    "actualName": "sn_kmf.resolution_framework.enabled",
-    "description": "Toggles Auto resolution for KMF Plug-in issues",
-    "value": "true",
-    "sysid": "fe532a6243111110110905c02bb8f2d5"
   },
   {
     "name": "sn_mab_api.mab.accessible.tables",
@@ -24206,18 +24241,18 @@
     "sysid": "3e65c1210763101023d02d4fedd300be"
   },
   {
-    "name": "sn_nlu_workbench.glide.nlu.batch_test.max_import_rows",
-    "actualName": "sn_nlu_workbench.glide.nlu.batch_test.max_import_rows",
-    "description": "Maximum number of rows in a batch test import file",
-    "value": "10000",
-    "sysid": "0af177d10794201028ef0a701ad300c5"
-  },
-  {
     "name": "sn_nlu_workbench.glide.nlu.batchtest.max_runs",
     "actualName": "sn_nlu_workbench.glide.nlu.batchtest.max_runs",
     "description": "Maximum runs an NLU definition can have",
     "value": "7",
     "sysid": "ab9ae06a0730201028ef0a701ad300e6"
+  },
+  {
+    "name": "sn_nlu_workbench.glide.nlu.batch_test.max_import_rows",
+    "actualName": "sn_nlu_workbench.glide.nlu.batch_test.max_import_rows",
+    "description": "Maximum number of rows in a batch test import file",
+    "value": "10000",
+    "sysid": "0af177d10794201028ef0a701ad300c5"
   },
   {
     "name": "sn_nlu_workbench.glide.nlu.conflict.critical_threshold",
@@ -24939,41 +24974,6 @@
     "description": "No description available",
     "value": "false",
     "sysid": "7ba6ae32535e0110ca84ddeeff7b12bf"
-  },
-  {
-    "name": "sncCommonMap.NODE_LABEL_WIDTH",
-    "actualName": "sncCommonMap.NODE_LABEL_WIDTH",
-    "description": "Maximal width of CI node labels in pixels. Relevant for any kind of labels (CI name, host name, cluster label etc.) This size also modifies horizontal space between CI elements. Applied to map view and exported PDF view. Not applicable to network/storage path maps. Default value 95. Minimal value is 20. Maximal value is 1000.",
-    "value": "95",
-    "sysid": "923ae183c30113008ebd1962c1d3aea5"
-  },
-  {
-    "name": "sncCommonMap.RENDER_FULL_LABELS",
-    "actualName": "sncCommonMap.RENDER_FULL_LABELS",
-    "description": "Render full labels on CIs on map. Applicable to all CI labels (CI name, host name, cluster label, etc.) Enabling this will disable labels truncation, and labels will most probably overlap with other map elements. Not applicable to network/storage path maps. Default disabled.",
-    "value": "none",
-    "sysid": "2d4ef50fc34113008ebd1962c1d3aeff"
-  },
-  {
-    "name": "snd_xplore.history.limit",
-    "actualName": "snd_xplore.history.limit",
-    "description": "The number of Xplore sessions to automatically store for historic backup per person. Default is 50.",
-    "value": "50",
-    "sysid": "c33775fddbb5a410d78869091396199d"
-  },
-  {
-    "name": "snd_xplore.log_request",
-    "actualName": "snd_xplore.log_request",
-    "description": "Log server side scripts that are run using /snd_xplore.do much the same that background scripts do.",
-    "value": "true",
-    "sysid": "7ab919cb0fee420094f3c09ce1050e41"
-  },
-  {
-    "name": "snd_xplore.production_access",
-    "actualName": "snd_xplore.production_access",
-    "description": "Allow Xplore server scripts to be executed in Production instances. Set this to false for real Production instances to be safe. This does not affect the read-only utilities in Xplore which will always work.",
-    "value": "true",
-    "sysid": "28f0585edb08d700b1307b5b8c961939"
   },
   {
     "name": "sorting.dialog.advanced.mode.enabled",

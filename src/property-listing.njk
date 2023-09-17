@@ -1,0 +1,44 @@
+---
+permalink: /assets/js/properties.js
+---
+var properties = []
+{% for prop in snPropertiesLocal %}
+    {% set nameSlug = prop.name | slugify %}
+    {% set propUrl = '/property/' + nameSlug + '/' %}
+properties.push({
+    link: '{{ propUrl }}',
+    title: '{{ prop.name }}',
+    currentPage: (()=>{
+        let url = window.location.href;
+        if(url.indexOf('{{ propUrl }}') > -1){
+            return "📌";
+        }else{
+            return "";
+        }
+    })()
+})
+{% endfor %}
+//grab the id=properties element and fill
+// it with the properties.title and properties.description
+// wait for the page to load
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    //build html from properties array
+    let html = (()=>{
+        let html = ``
+        properties.forEach((property)=>{
+            //on hover the property title will be displayed
+            html += `
+            <li class="list-none" title="${property.title}">
+                <div class="flex">
+                    <span>${property.currentPage}</span>
+                    <a href="${property.link}" class="">${property.title}</a>
+                </div>
+            </li>
+            `
+        })
+        html += ``
+        return html;
+    })()
+    document.querySelector("#active-list").innerHTML = html;
+});

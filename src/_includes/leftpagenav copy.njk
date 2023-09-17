@@ -23,7 +23,7 @@
                 {% set
 sortedList = (sortedList.push({title: post.data.title, url: post.url, order: post.data.order}),
 sortedList) %} {% endfor %}
-                <ul id="active-list">
+                <ul>
                     {% for thing in sortedList | sort(attribute='order')%}
                       {% set currentPage = thing.url === page.url %}
                       <li class="list-none">
@@ -35,10 +35,18 @@ sortedList) %} {% endfor %}
                     {% endfor %}
                     {% if pageLink.tag=='property' %}
                       <!--loop over properties-->
-                      <!--we're going to defer load teh json file and then loop over it-->
-                      <div id="properties"></div>
-                      <script src="/assets/js/properties.js"></script>
-                      
+                      <!--could i iframe this in-->
+                      {% for prop in snPropertiesLocal %}
+                      {% set currentPage = prop.url === page.url %}
+                      {% set nameSlug = prop.name | slugify %}
+                      {% set propUrl = '/property/' + nameSlug + '/' %}
+                        <li class="list-none">
+                          <div class="flex">
+                            <span>{% if propUrl === page.url %}📌{% endif %}</span>
+                            <a href="/property/{{prop.name | slugify}}/" class="">{{prop.name}}</a>
+                          </div>
+                        </li>
+                      {% endfor %}
                     {% endif %}
                 </ul>
               </details>
