@@ -3,11 +3,13 @@
     <nav class="text-sm font-semibold pt-8 pb-40 lg:py-12 pr-6 overflow-y-auto h-screen">
       <ul class="-mt-1 ml-2" data-controller="nav" data-nav-active="{{styles.background.primary.two}} {{styles.text.alt.four}} hover:{{styles.text.alt.four}}">
         {% for pageLink in meta.leftNavLinks %}
-          {% set tag = pageLink.name | lower %}
+          {% set tag = pageLink.name | lower | replace(' ', '') %}
+          
           <li class="mb-4">
             {% if page
               .url
-              .split('/')[1] === tag %}
+              .split('/')[1]
+              .replace('-', '') === tag %}
               <details open>
                 <summary>
                   <a alt="{{ pageLink.alt }}" href="{{ pageLink.url }}" class="flex items-center my-1 transition duration-100 {{styles.text.primary.one}} hover:{{styles.text.primary.three}} rounded">
@@ -34,11 +36,11 @@ sortedList) %} {% endfor %}
                       </li>
                     {% endfor %}
                     {% if pageLink.tag=='property' %}
-                      <!--loop over properties-->
-                      <!--we're going to defer load teh json file and then loop over it-->
-                      <div id="properties"></div>
-                      <script src="/assets/js/properties.js"></script>
-                      
+                      <script src="/assets/js/properties.js"></script>  
+                    {% endif %}                    
+                    {% if pageLink.tag=='scriptinclude' %}
+                    LOADING SCRIPT??? for {{pageLink.tag}}
+                      <script src="/assets/js/script-includes.js"></script>  
                     {% endif %}
                 </ul>
               </details>

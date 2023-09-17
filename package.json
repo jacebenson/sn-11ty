@@ -6,7 +6,8 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
-    "dev": "SET NODE_OPTIONS=--max_old_space_size=32700 && node ./scripts/getProperties.js && eleventy --serve"
+    "dev": "SET NODE_OPTIONS=--max_old_space_size=32700 && eleventy --serve",
+    "getThings": "node ./scripts/getProperties.js && node ./scripts/getScriptIncludes.js"
   },
   "repository": {
     "type": "git",

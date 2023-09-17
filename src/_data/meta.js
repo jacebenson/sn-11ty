@@ -24,7 +24,8 @@ module.exports = {
     links.files,
     links.schema,
     links.cookbooks,
-    links.proptery
+    links.proptery,
+    links.scriptInclude
   ],
   footerLinks: [
     links.contributing,

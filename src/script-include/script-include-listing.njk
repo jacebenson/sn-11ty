@@ -1,0 +1,45 @@
+---
+permalink: "/assets/js/script-includes.js"
+layout: "script"
+---
+var scriptIncludes = []
+{% for prop in snScriptIncludeLocal %}
+    {% set nameSlug = prop.api_name | slugify %}
+    {% set propUrl = '/script-include/' + nameSlug + '/' %}
+scriptIncludes.push({
+    link: '{{ propUrl }}',
+    title: '{{ prop.api_name }}',
+    currentPage: (()=>{
+        let url = window.location.href;
+        if(url.indexOf('{{ propUrl }}') > -1){
+            return "📌";
+        }else{
+            return "";
+        }
+    })()
+})
+{% endfor %}
+//grab the id=properties element and fill
+// it with the properties.title and properties.description
+// wait for the page to load
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    //build html from properties array
+    let html = (()=>{
+        let html = ``
+        scriptIncludes.forEach((record)=>{
+            //on hover the property title will be displayed
+            html += `
+            <li class="list-none" title="${record.title}">
+                <div class="flex">
+                    <span>${record.currentPage}</span>
+                    <a href="${record.link}" class="">${record.title}</a>
+                </div>
+            </li>
+            `
+        })
+        html += ``
+        return html;
+    })()
+    document.querySelector("#active-list").innerHTML = html;
+});

@@ -1,6 +1,3 @@
-//import fs from "fs";
-//import fetch from 'node-fetch';
-//import dotenv from "dotenv";
 let fs = require("fs");
 let fetch = require('node-fetch');
 let dotenv = require("dotenv");

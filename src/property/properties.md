@@ -8,6 +8,9 @@ tags: "property"
 ---
 {%- for item in pagination.items %}
 
+  ## Name
+  
+  `{{ item.name }}`
   ## Description
 
   {{ item.description }}
