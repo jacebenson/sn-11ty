@@ -3,6 +3,7 @@ const links = require('./links');
 const Cache = require("@11ty/eleventy-cache-assets");
 
 module.exports = async function () {
+  return "i"
   try {
     console.log("Fetching new github stargazers count…");
 

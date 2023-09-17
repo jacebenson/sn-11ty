@@ -27,19 +27,23 @@ sortedList) %} {% endfor %}
                     {% for thing in sortedList | sort(attribute='order')%}
                       {% set currentPage = thing.url === page.url %}
                       <li class="list-none">
-                        <a href="{{thing.url | url }}" class="">
-                          {{ thing.title }}
-                          {% if thing.url === page.url %}📌{% endif %}
-                        </a>
+                        <div class="flex">
+                          <span>{% if thing.url === page.url %}📌{% endif %}</span>
+                          <a href="{{thing.url | url }}" class="">{{ thing.title }}</a>
+                        </div>
                       </li>
                     {% endfor %}
                     {% if pageLink.tag=='property' %}
                       <!--loop over properties-->
-                      {% for page in snPropertiesLocal %}
+                      {% for prop in snPropertiesLocal %}
+                      {% set currentPage = prop.url === page.url %}
+                      {% set nameSlug = prop.name | slugify %}
+                      {% set propUrl = '/property/' + nameSlug + '/' %}
                         <li class="list-none">
-                          <a href="/property/{{page.name | slugify}}/" class="">
-                            {{page.name}}
-                          </a>
+                          <div class="flex">
+                            <span>{% if propUrl === page.url %}📌{% endif %}</span>
+                            <a href="/property/{{prop.name | slugify}}/" class="">{{prop.name}}</a>
+                          </div>
                         </li>
                       {% endfor %}
                     {% endif %}

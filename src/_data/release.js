@@ -3,6 +3,10 @@ const links = require('./links.js');
 const Cache = require("@11ty/eleventy-cache-assets");
 
 module.exports = async function () {
+  return {
+    name: "v?",
+    html_url: links.github.allReleases
+  };
   try {
   console.log( "Fetching new github TskrDocs release" );
   let json = await Cache(links.github.releasesApi, {
