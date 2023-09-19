@@ -1,31 +1,18 @@
 <div id="hero" class="hero">
   <div class="lg:flex lg:items-center max-w-screen-xl mx-auto px-8 py-12 md:py-32">
     <div class="hidden lg:block lg:w-1/3 pl-4">
-      <img src="/images/logo.svg" alt="Tskr Logo" class="w-4/5 mx-auto"/>
+      <img src="/images/logo.svg" alt="Logo" class="w-4/5 mx-auto"/>
     </div>
     <div class="w-full lg:w-2/3 lg:pr-4">
       <h2 class="text-3xl md:text-6xl text-center lg:text-left text-white font-semibold tracking-tight leading-10">
-        Low to <span class="{{styles.text.alt.two}}">no cost</span>.<br/>
-        Accessible <span class="{{styles.text.alt.two}}">automation</span>. <br/>
-        For <span class="{{styles.text.alt.two}}">anyone</span>.<br/>
-        With <span class="{{styles.text.alt.two}}">smart permissions</span>.
+        Simple <span class="{{styles.text.alt.two}}">docs</span><br/>
+        Focused on the <span class="{{styles.text.alt.two}}">foundations</span> <br/>
+        For <span class="{{styles.text.alt.two}}">developers</span><br/>
       </h2>
       <p class="max-w-2xl mx-auto lg:mx-0 text-center font-light lg:text-left md:text-lg xl:text-xl mt-6 xl:leading-8 text-white">
-        Have an idea for a new project?  Does getting the access, business logic, and automation drag on?  Tskr is a tool that makes it easy to get started with your project.  It's free, and it's open source.
+        I got tired of looking at the docs and developer pages on ServiceNow to find the same information in multiple ways that was hard to find.  So I built this site to help me find the information I need quickly and easily.
       </p>
       <ul class="flex flex-wrap mt-8 justify-center lg:justify-start lg:-ml-2 list-none">
-        <li class="px-2 whitespace-no-wrap">
-          <a
-            href="#"
-            class="block mt-2 {{styles.background.primary.five}} text-white px-4 py-3 font-semibold rounded hover:{{styles.background.primary.four}} transition duration-200 text-lg"
-            onclick="(()=>{
-              let dburl = document.querySelector('#database_url').value;
-              let sessionsecret = document.querySelector('#session_secret').value;
-              toggleModal('modal-example-large')
-              console.log(`{{links.netlify.url}}#DATABASE_URL=${dburl}&SESSION_SECRET=${sessionsecret}`)
-          })()"
-            >{{links.netlify.name}}</a>
-        </li>
         <li class="px-4 whitespace-no-wrap">
           <a
             href="{{links.docs.url}}"

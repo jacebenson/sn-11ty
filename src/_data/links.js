@@ -1,4 +1,4 @@
-let thisGitHubRepo = "tskrio/tskr";
+let thisGitHubRepo = "jacebenson/sn-11ty";
 module.exports = {
     docs: {
         tag: "docs",
@@ -8,18 +8,34 @@ module.exports = {
         svg: '<path d="M14 2v13h-10.5c-0.829 0-1.5-0.672-1.5-1.5s0.671-1.5 1.5-1.5h9.5v-12h-10c-1.1 0-2 0.9-2 2v12c0 1.1 0.9 2 2 2h12v-14h-1z"></path><path d="M3.501 13v0c-0 0-0.001 0-0.001 0-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5c0 0 0.001-0 0.001-0v0h9.498v-1h-9.498z"></path>',
         alt: "Read the Docs"
     },
-    files: {
-        tag: "files",
-        url: "/files",
-        name: "Files",
+    access: {
+        tag: "access",
+        url: "/access",
+        name: "Access",
         viewbox: "0 0 16 16",
         svg: '<path d="M7 2l2 2h7v11h-16v-13z"></path>',
         alt: "See the structure"
     },
-    schema: {
-        tag: "schema",
-        url: "/schema",
-        name: "Schema",
+    automations: {
+        tag: "automations",
+        url: "/automations",
+        name: "Automations",
+        viewbox: "0 0 16 16",
+        svg: '<path d="M7 2l2 2h7v11h-16v-13z"></path>',
+        alt: "See the structure"
+    },
+    userexperience: {
+        tag: "ux",
+        url: "/ux",
+        name: "UX",
+        viewbox: "0 0 16 16",
+        svg: '<path d="M7 2l2 2h7v11h-16v-13z"></path>',
+        alt: "See the structure"
+    },
+    reference: {
+        tag: "reference",
+        url: "/reference",
+        name: "Reference",
         viewbox: "0 0 12 16",
         svg: '<path fill-rule="evenodd" d="M6 15c-3.31 0-6-.9-6-2v-2c0-.17.09-.34.21-.5.67.86 3 1.5 5.79 1.5s5.12-.64 5.79-1.5c.13.16.21.33.21.5v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V7c0-.11.04-.21.09-.31.03-.06.07-.13.12-.19C.88 7.36 3.21 8 6 8s5.12-.64 5.79-1.5c.05.06.09.13.12.19.05.1.09.21.09.31v2c0 1.1-2.69 2-6 2zm0-4c-3.31 0-6-.9-6-2V3c0-1.1 2.69-2 6-2s6 .9 6 2v2c0 1.1-2.69 2-6 2zm0-5c-2.21 0-4 .45-4 1s1.79 1 4 1 4-.45 4-1-1.79-1-4-1z"></path>',
         
@@ -27,7 +43,7 @@ module.exports = {
     },
     about: {
         url: "/about",
-        name: "About us",
+        name: "About",
         viewbox: "0 0 24 24",
         svg: '<path d="M0 0h24v24H0V0z" fill="none"></path><path d="M5 18.31l3-1.16V5.45L5 6.46zm11 .24l3-1.01V5.69l-3 1.17z" opacity=".3"></path><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM8 17.15l-3 1.16V6.46l3-1.01v11.7zm6 1.38l-4-1.4V5.47l4 1.4v11.66zm5-.99l-3 1.01V6.86l3-1.16v11.84z"></path>',
         alt: "Path to 1.0"
@@ -46,7 +62,7 @@ module.exports = {
     logos: { 
         url: "/logos", 
         name: "Logos",
-        alt: "Tskr logo download and usage"
+        alt: "logo download and usage"
     },
     cookbooks: { 
         tag: "cookbooks",
@@ -54,7 +70,7 @@ module.exports = {
         name: "Cookbooks",
         viewbox: "0 0 18 16",
         svg: '<path d="M3.5 2h-3c-0.275 0-0.5 0.225-0.5 0.5v11c0 0.275 0.225 0.5 0.5 0.5h3c0.275 0 0.5-0.225 0.5-0.5v-11c0-0.275-0.225-0.5-0.5-0.5zM3 5h-2v-1h2v1z"></path><path d="M8.5 2h-3c-0.275 0-0.5 0.225-0.5 0.5v11c0 0.275 0.225 0.5 0.5 0.5h3c0.275 0 0.5-0.225 0.5-0.5v-11c0-0.275-0.225-0.5-0.5-0.5zM8 5h-2v-1h2v1z"></path><path d="M11.954 2.773l-2.679 1.35c-0.246 0.124-0.345 0.426-0.222 0.671l4.5 8.93c0.124 0.246 0.426 0.345 0.671 0.222l2.679-1.35c0.246-0.124 0.345-0.426 0.222-0.671l-4.5-8.93c-0.124-0.246-0.426-0.345-0.671-0.222z"></path><path d="M14.5 13.5c0 0.276-0.224 0.5-0.5 0.5s-0.5-0.224-0.5-0.5c0-0.276 0.224-0.5 0.5-0.5s0.5 0.224 0.5 0.5z"></path>',
-        alt: "Cooking with Tskr!"
+        alt: "Learn how to cook, erm make stuff!"
     },
     proptery: { 
         tag: "property",
@@ -78,7 +94,7 @@ module.exports = {
         name: "Videos",
         viewbox: "0 0 24 24",
         svg: '<path d="M0 0h24v24H0V0z" fill="none"></path><path d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm6 10h-4V5h4v14zm4-2h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"></path><path d="M10 5h4v14h-4z" opacity=".3"></path>',
-        alt: "Videos from Tskr!"
+        alt: "Videos!"
     },
     contributing: { url: "/contributing", name: "Contributing" },
     tutorials: {
@@ -91,28 +107,28 @@ module.exports = {
     community: {
         url: "https://community.example.com/",
         name: "Community",
-        alt: "Visit the Tskr Community",
-        tooltip: "<strong>Discourse Forums</strong><br>Long-form discussions about Tskr, troubleshooting, show & tell",
+        alt: "Visit the Community",
+        tooltip: "<strong>Discourse Forums</strong><br>Long-form discussions, troubleshooting, show & tell",
         viewbox: "0 0 32 32",
         svg: '<path d="M16.1357143,0 C7.37857143,0 0,7.03571429 0,15.7214286 C0,16 0.00714285714,32 0.00714285714,32 L16.1357143,31.9857143 C24.9,31.9857143 32,24.6785714 32,15.9928571 C32,7.30714286 24.9,0 16.1357143,0 Z M16,25.1428571 C14.6142857,25.1428571 13.2928571,24.8357143 12.1142857,24.2785714 L6.32142857,25.7142857 L7.95714286,20.3571429 C7.25714286,19.0642857 6.85714286,17.5785714 6.85714286,16 C6.85714286,10.95 10.95,6.85714286 16,6.85714286 C21.05,6.85714286 25.1428571,10.95 25.1428571,16 C25.1428571,21.05 21.05,25.1428571 16,25.1428571 Z"/>'
     },
     github: {
         url: `https://github.com/${thisGitHubRepo}`,
         name: "GitHub",
-        alt: "Go to the Tskrio GitHub repo",
-        tooltip: "<strong>GitHub</strong><br>Go to the Tskrio GitHub repo",
+        alt: "Go to the GitHub repo",
+        tooltip: "<strong>GitHub</strong><br>Go to the GitHub repo",
         stargazersApi:       `https://api.github.com/repos/${thisGitHubRepo}`,
         releasesApi:         `https://api.github.com/repos/${thisGitHubRepo}/releases?per_page=1`,
         contributorsApi:     `https://api.github.com/repos/${thisGitHubRepo}/contributors`,
-        docsContributorsApi: `https://api.github.com/repos/tskrio/docs/contributors`,
+        docsContributorsApi: `https://api.github.com/repos/${thisGitHubRepo}/docs/contributors`,
         allReleases:         `https://github.com/${thisGitHubRepo}/releases/`,
-        docs: `https://github.com/repos/tskrio/docs/`
+        docs: `https://github.com/repos/${thisGitHubRepo}/docs/`
     },
     twitter: {
-        url: "https://twitter.com/IoTskr",
+        url: "https://twitter.com/jacebenson",
         name: "Twitter",
-        alt: "Follow Tskr on Twitter",
-        tooltip: "<strong>Twitter</strong><br>Follow Tskr on Twitter",
+        alt: "Follow me on Twitter",
+        tooltip: "<strong>Twitter</strong><br>Follow me on Twitter",
     },
     discord: {
         url: "https://discord.gg",

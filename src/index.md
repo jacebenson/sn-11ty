@@ -1,5 +1,5 @@
 ---
-title: Tskr - Low to no cost starter to manage your app
+title: sn.jace.pro - A docs site just in case
 layout: home.njk
-description: Get started with Tskr, a low to no cost starter to manage your app
+description: Sometimes you just want to link to the fundamentals.  Here it is.
 ---

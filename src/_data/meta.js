@@ -3,16 +3,16 @@ module.exports = {
   // NOTE: `process.env.URL` is provided by Netlify, and may need
   // adjusted pending your host
   url: process.env.URL || "http://localhost:8080",
-  siteName: "Tskr",
+  siteName: "sn.jace.pro",
   siteDescription:
-    "Own your work, and your automation!",
+    "a copy of the docs for ServiceNow",
   siteImage: "images/opengraph-256.png",
-  siteURL: "https://tskr.io/",
-  twitterHandle: "@IoTskr",
-  siteTwitterTitle: "Tskr, track your work and your automation",
+  siteURL: "https://sn.jace.pro/",
+  twitterHandle: "@jacebenson",
+  siteTwitterTitle: "sn.jace.pro - a copy of the docs for ServiceNow",
   navLinks: [
     links.docs,
-    links.rest,
+    //links.rest,
     links.about,
   ],
   iconLinks: [
@@ -21,9 +21,11 @@ module.exports = {
   ],
   leftNavLinks: [
     links.docs,
-    links.files,
-    links.schema,
     links.cookbooks,
+    links.access,
+    links.automations,
+    links.userexperience,
+    links.reference,
     links.proptery,
     links.scriptInclude
   ],
