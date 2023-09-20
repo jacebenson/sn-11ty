@@ -130,6 +130,12 @@ module.exports = {
         alt: "Follow me on Twitter",
         tooltip: "<strong>Twitter</strong><br>Follow me on Twitter",
     },
+    linkedin: {
+        url: "https://linkedin.com/in/jacebenson",
+        name: "LinkedIn",
+        alt: "Connect on LinkedIn",
+        tooltip: "<strong>LinkedIn</strong><br>Connect on LinkedIn",
+    },
     discord: {
         url: "https://discord.gg",
         name: "Discord",
