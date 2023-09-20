@@ -1,11 +1,12 @@
 {
-  "name": "tskr-docs",
+  "name": "docs",
   "version": "1.0.0",
-  "description": "Tskr Marketing Site",
+  "description": "sn.jace.pro docs",
   "main": "index.html",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
+    "devlive": "netlify dev --live=local",
     "dev": "SET NODE_OPTIONS=--max_old_space_size=32700 && eleventy --serve",
     "getThings": "node ./scripts/getProperties.js && node ./scripts/getScriptIncludes.js"
   },

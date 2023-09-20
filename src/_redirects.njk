@@ -1,0 +1,13 @@
+---
+permalink: /_redirects
+eleventyExcludeFromCollections: true
+---
+# 301 permanent redirect
+# 302 temporary redirect
+# 404 file not found
+# 200 file found
+# https://sn.jace.pro/script-includes/assessmentutils/
+/script-includes/assessmentutils /script-include/global-assessmentutils 301
+# attempt global scope
+/script-includes/* /script-include/global-:splat 302
+
