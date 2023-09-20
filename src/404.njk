@@ -1,0 +1,23 @@
+---
+title: "Oops! I broke this link"
+permalink: /404.html
+layout: page.njk
+---
+<!-- now i need to log this.. i have umami and
+i do want to use it here 
+umami.track('Signup button');
+// but i want to track the url that was broken
+umami.track('404', { url: window.location.href })
+i also need to init umami
+-->
+  {% if meta.monitor != 'false' %}
+<script>
+    //wait for the page to load
+    document.addEventListener("DOMContentLoaded", function(event) {
+        umami(`${window.location.pathname} not found`);
+    });
+</script>
+{% endif %}
+
+<h1>Oops! I broke this link</h1>
+<p>Sorry about that. Please <a href="mailto:{{ site.email }}">let me know</a> so I can fix it.</p>
