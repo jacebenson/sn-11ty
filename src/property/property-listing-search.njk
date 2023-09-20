@@ -1,0 +1,41 @@
+---
+permalink: /assets/js/properties-search.js
+layout: script
+---
+var searchProperties = []
+{% for prop in snPropertiesLocal %}
+    {% set nameSlug = prop.name | slugify %}
+    {% set propUrl = '/property/' + nameSlug + '/' %}
+searchProperties.push({
+    link: '{{ propUrl }}',
+    title: '{{ prop.name }}'
+
+})
+{% endfor %}
+//grab the id=properties element and fill
+// it with the properties.title and properties.description
+// wait for the page to load
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    //build html from properties array
+    let html = (()=>{
+        let html = ``
+        searchProperties.forEach((property)=>{
+            //on hover the property title will be displayed
+            html += `<option value="${property.title}">Property</option>`
+        })
+        html += ``
+        return html;
+    })()
+    document.querySelector('datalist#search-choices').insertAdjacentHTML('beforeend', html);
+    document.querySelector('input#search-choice').addEventListener('change', (e)=>{
+        let link = e.target.value;
+        let innerText = e.target.innerText;
+        let isProperty = innerText === 'Property';
+        searchProperties.forEach((property)=>{
+            if(property.title === link && isProperty){
+                window.location.href = property.link;
+            }
+        })
+    })
+});

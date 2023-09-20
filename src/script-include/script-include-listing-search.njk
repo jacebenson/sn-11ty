@@ -1,0 +1,38 @@
+---
+permalink: "/assets/js/script-includes-search.js"
+layout: "script"
+---
+var searchScriptIncludes = []
+{% for prop in snScriptIncludeLocal %}
+    {% set nameSlug = prop.api_name | slugify %}
+    {% set propUrl = '/script-include/' + nameSlug + '/' %}
+searchScriptIncludes.push({
+    link: '{{ propUrl }}',
+    title: '{{ prop.api_name }}'
+})
+{% endfor %}
+//grab the id=properties element and fill
+// it with the properties.title and properties.description
+// wait for the page to load
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    //build html from properties array
+    let html = (()=>{
+        let html = ``
+        searchScriptIncludes.forEach((record)=>{
+            //on hover the property title will be displayed
+            html += `<option value="${record.title}">Script Include</option>`
+        })
+        return html;
+    })()
+    document.querySelector('datalist#search-choices').insertAdjacentHTML('beforeend', html);
+    document.querySelector('input#search-choice').addEventListener('change', (e)=>{
+        let link = e.target.value;
+        searchScriptIncludes.forEach((record)=>{
+            if(record.title === link){
+                window.location.href = record.link
+            }
+        })
+    })
+    
+});

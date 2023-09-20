@@ -3,6 +3,11 @@ module.exports = {
   // NOTE: `process.env.URL` is provided by Netlify, and may need
   // adjusted pending your host
   url: process.env.URL || "http://localhost:8080",
+  monitor: process.env.MONITOR || "false",
+  // pagesize is 0 for dev and 1 for prod// defualt to 1
+  pagesize: process.env.PAGESIZE || "1",
+  
+  
   siteName: "sn.jace.pro",
   siteDescription:
     "a copy of the docs for ServiceNow",

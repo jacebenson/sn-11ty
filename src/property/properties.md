@@ -2,7 +2,7 @@
 layout: "docspage.njk"
 pagination:
   data: snPropertiesLocal
-  size: 1
+  size: 0
 permalink: "property/{{ pagination.items[0].name | slugify }}/index.html"
 tags: "property"
 ---

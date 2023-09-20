@@ -1,0 +1,110 @@
+---
+permalink: /assets/js/all-search.js
+layout: script
+---
+/**
+meta.navLinks
+collections.reference
+collections.automations
+collections.access
+collections.cookbooks
+collections.docs
+collections.ux
+**/
+var references = [];
+var automations = [];
+var access = [];
+var cookbooks = [];
+var docs = [];
+var ux = [];
+{% for page in collections.reference %}
+    references.push({
+        title: "{{page.data.title}}",
+        url: "{{page.url}}"      
+    })
+{% endfor %}
+{% for page in collections.automations %}
+    automations.push({
+        title: "{{page.data.title}}",
+        url: "{{page.url}}"      
+    })
+{% endfor %}
+{% for page in collections.access %}
+    access.push({
+        title: "{{page.data.title}}",
+        url: "{{page.url}}"      
+    })
+{% endfor %}
+{% for page in collections.cookbooks %}
+    cookbooks.push({
+        title: "{{page.data.title}}",
+        url: "{{page.url}}"      
+    })
+{% endfor %}
+{% for page in collections.docs %}
+    docs.push({
+        title: "{{page.data.title}}",
+        url: "{{page.url}}"      
+    })
+{% endfor %}
+{% for page in collections.ux %}
+    ux.push({
+        title: "{{page.data.title}}",
+        url: "{{page.url}}"      
+    })
+{% endfor %}
+
+let options = [
+    ...references,
+    ...automations,
+    ...access,
+    ...cookbooks,
+    ...docs,
+    ...ux
+]
+/**do the rest in here **/
+
+/**end of the rest **/
+
+/** now add event listener **/
+// add the element to the search-choice input
+document.addEventListener("DOMContentLoaded", function(event) {
+    //build html from properties array
+    let html = (()=>{
+        let html = ``
+        references.forEach((item)=>{
+            html += `<option value="${item.title}">Reference</option>`
+        })
+        automations.forEach((item)=>{
+            html += `<option value="${item.title}">Automations</option>`
+        })
+        access.forEach((item)=>{
+            html += `<option value="${item.title}">Access</option>`
+        })
+        cookbooks.forEach((item)=>{
+            html += `<option value="${item.title}">Cookbooks</option>`
+        })
+        docs.forEach((item)=>{
+            html += `<option value="${item.title}">Docs</option>`
+        })
+        ux.forEach((item)=>{
+            html += `<option value="${item.title}">UX</option>`
+        })
+        
+        html += ``
+        return html;
+    })()
+    // add html to the element
+    document.querySelector('datalist#search-choices').insertAdjacentHTML('beforeend', html);
+    // add event listener to the input
+    document.querySelector('input#search-choice').addEventListener('change', (e)=>{
+        let link = e.target.value;
+        let innerText = e.target.innerText;
+        //console.log({link, optionZero: options[0]});
+        options.forEach((item)=>{
+            if(item.title === link){
+               window.location.href = item.url;
+            }
+        })
+    })
+});

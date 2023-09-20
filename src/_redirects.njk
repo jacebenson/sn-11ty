@@ -6,6 +6,10 @@ eleventyExcludeFromCollections: true
 # 302 temporary redirect
 # 404 file not found
 # 200 file found
+#
+/explaination/* /docs/:splat 301
+/guide/* /cookbooks/:splat 301
+/properties/* /property/:splat 301
 # https://sn.jace.pro/script-includes/assessmentutils/
 /script-includes/assessmentutils /script-include/global-assessmentutils 301
 # attempt global scope

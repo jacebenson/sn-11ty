@@ -2,7 +2,7 @@
 layout: "docspage.njk"
 pagination:
   data: snScriptIncludeLocal
-  size: 1
+  size: 0
 permalink: "script-include/{{ pagination.items[0].api_name | slugify }}/index.html"
 tags: "scriptinclude"
 ---

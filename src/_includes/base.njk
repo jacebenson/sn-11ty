@@ -16,8 +16,11 @@
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/images/opengraph-256.png">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+  {% if meta.monitor == 'true' %}
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atelier-forest-light.min.css">
   <script async defer data-website-id="b7db16f7-3b0d-4c78-99cd-c1a4cc83cd15" src="https://monitoring.jace.pro/minneapolis.js"></script>
+  {% endif %}
+  <meta name="monitor" content="{{meta.monitor}}">
 <style>
 :root {
   --color-background-one: {{styles.colors.primary.two}};
