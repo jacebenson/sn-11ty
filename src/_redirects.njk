@@ -7,12 +7,29 @@ eleventyExcludeFromCollections: true
 # 404 file not found
 # 200 file found
 #
+/classes/* /docs/:splat 301
 /explaination/* /docs/:splat 301
 /guide/* /cookbooks/:splat 301
 /properties/* /property/:splat 301
-# https://sn.jace.pro/script-includes/assessmentutils/
-/script-includes/assessmentutils /script-include/global-assessmentutils 301
-# attempt global scope
 /script-includes/* /script-include/global-:splat 302
-/classes/* /docs/:splat 301
+
+/script-includes/assessmentutils /script-include/global-assessmentutils 301
+/getting-started/GlideRecord /docs/gliderecord/ 301
 /other/email/ /reference/email/ 301
+
+
+
+/classes/glidedate/ /reference/glidedate/ 301
+/classes/glideduration/ /reference/glideduration/ 301
+/docs/glideduration/ /reference/glideduration/ 301
+
+# Missing need to find
+# /docs/restapirequest/ not found
+# /property/glide.soap.large_payload_log_threshold/
+# /classes/sputil/ not found
+# Not ready
+# /getting-started/Client_Scripts/ /docs/client-scripts/ 301
+# REmake
+# /getting-started/Developer_Cheat_Sheet_Quick_Refer
+# /getting-started/Widget_Tutorial/ not found
+
