@@ -3,19 +3,19 @@ title: GlideRecord
 description: GlideRecord is a class of object that represents a table & offers a scriptable API to access records on that table
 ---
 
-A `GlideRecord` is a class of object that represents a table & offers a
-scriptable API to access records on that table
+GlideRecord's are one of the simplest ways to automate in ServiceNow.
 
-`GlideRecord` is comprised of [`GlideElements`](docs/glideelement) as well
-as other methods and metadata that work together to allow you to query
-from and write to database tables
+## What is a GlideRecord?
 
-[`GlideElement`](docs/glideelement) is a class of object that represents a
-column on a table
+A `GlideRecord` is a class of object that represents a table & offers a scriptable API to access records on that table
 
-There are two versions of GlideRecord, the client side version, and the
-server side version.
-[docs](https://developer.servicenow.com/app.do#!/api_doc?v=jakarta&id=c_GlideRecordScopedAPI)
+`GlideRecord` is comprised of [`GlideElements`](docs/glideelement) as well as other methods and metadata that work together to allow you to query from and write to database tables
+
+[`GlideElement`](docs/glideelement) is a class of object that represents a column on a table
+
+There are two versions of GlideRecord, the client side version, and the server side version. [docs](https://developer.servicenow.com/dev.do#!/reference/api/latest/server/no-namespace/c_GlideRecordScopedAPI)
+
+## Methods available
 
 | Category | Method                                        | Brief Description                                                                                                                       |
 |----------|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
