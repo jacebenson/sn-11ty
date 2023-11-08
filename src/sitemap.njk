@@ -1,0 +1,10 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{% for page in collections.all %}
+  <url><loc>{{ page.url | url }}</loc><lastmod>{{ page.date | lastmodDate }}</lastmod></url>{% endfor %}{% for prop in snPropertiesLocal %}{% set nameSlug = prop.name | slugify %}{% set propUrl = '/property/' + nameSlug + '/' %}
+  <url><loc>{{ propUrl }}</loc></url>{% endfor %}{% for prop in snScriptIncludeLocal %}{% set nameSlug = prop.api_name | slugify %}{% set propUrl = '/script-include/' + nameSlug + '/' %}
+  <url><loc>{{ propUrl }}</loc></url>{% endfor %}
+</urlset>
