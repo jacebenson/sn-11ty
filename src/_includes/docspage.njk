@@ -10,11 +10,32 @@ layout: base.njk
   {% block aside %}
     {% include "leftpagenav.njk" %}
   {% endblock %}
-    <div class="flex w-full lg:w-3/5 ">
-      <article class="w-full max-w-4xl xl:w-4/4 my-8 lg:px-8 lg:mr-auto">
+    <div class="flex w-full lg:w-4/5 ">
+      <!-- on mobbile this should be full width -->
+      <!-- on desktop this should be 3/4 width -->
+      <article class="
+        xl:w-4/4
+        w-full
+        pl-6
+        pr-6
+        pt-8
+        pb-40
+        lg:py-12
+        overflow-y-auto
+        h-screen
+        sticky
+        top-0
+        lg:top-16
+        lg:pl-12
+        lg:pr-12
+        lg:pb-12
+        lg:pt-12
+      ">
         {{ content | safe }}
       </article>
-      <aside class="xl:w-4/4 hidden xl:block w-full pr-6 h-auto overflow-y-visible">
+      <!-- on mobbile this should be hidden -->
+      <!-- on desktop this should be 1/4 width -->
+      <aside class="hidden lg:block lg:w-1/4">
         <div class="overflow-y-auto sticky top-0 pl-6">
           <div class="text-sm font-semibold {{styles.text.primary.one}} pt-8 pb-40 lg:py-12 overflow-y-auto h-screen">
             <h4 class="text-xs uppercase text-gray-500">On this page</h4>

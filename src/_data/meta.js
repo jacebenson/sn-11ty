@@ -31,8 +31,10 @@ module.exports = {
     links.automations,
     links.userexperience,
     links.reference,
+    links.javascript,
     links.proptery,
-    links.scriptInclude
+    links.scriptInclude,
+    links.upgrades
   ],
   footerLinks: [
     links.contributing,

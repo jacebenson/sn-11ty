@@ -1,0 +1,17 @@
+[
+    
+  {
+    "name": "ace.content_blocks.fetch.mode.f80203e4c3020110fc869bc8a840dd17",
+    "actualName": "ace.content_blocks.fetch.mode.f80203e4c3020110fc869bc8a840dd17",
+    "description": "CI Console mode to fetch ACE Content Blocks",
+    "value": "bfs",
+    "sysid": "31651fbcc38011104b8e88c7c840dd99"
+  },
+  {
+    "name": "ais_enablemlframework",
+    "actualName": "ais_enablemlframework",
+    "description": "Property to enable the ml compliant framework to submit training and using ml_model_artifact for trained model storage",
+    "value": "false",
+    "sysid": "c05c377253213010ccd9ddeeff7b122b"
+  }
+]
