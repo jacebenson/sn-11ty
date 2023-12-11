@@ -102,3 +102,4 @@ What is a Hotfix?
 - [ServiceNow Pathcing Program FAQs](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0696901)
 - [Upgrade planning checklist](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0995167)
 - [Patching an Upgrade Release Cycle](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0547244)
+- [Upgrade Center](https://docs.servicenow.com/csh?topicname=uc-landing-page.html&version=latest)

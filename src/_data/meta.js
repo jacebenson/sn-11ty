@@ -34,7 +34,8 @@ module.exports = {
     links.javascript,
     links.proptery,
     links.scriptInclude,
-    links.upgrades
+    links.upgrades,
+    links.certs
   ],
   footerLinks: [
     links.contributing,
