@@ -3101,6 +3101,20 @@
     "sysid": "17532ec50f0230102a86e3d1df767ea2"
   },
   {
+    "name": "glide.pf.rest.response_payload_max_size",
+    "actualName": "glide.pf.rest.response_payload_max_size",
+    "description": "Controls the allowed payload size of responses to REST API calls. By default, the allowed payload size for a REST response is 5MB (5120KB). The max value allowed for this property is `10240` (10MB, or 10240KB). If the respective flow is configured to use a MID Server, you would add the respective property to the MID Server properties table and not [sys_properties]. Configuring this property may address error messages related to REST response payload size, however if the payload size exceeds the maximum 10MB, the payload must be saved as an attachment.",
+    "value": "5120",
+    "sysid": "-1"
+  },
+  {
+    "name": "glide.pf.soap.response_payload_max_size",
+    "actualName": "glide.pf.soap.response_payload_max_size",
+    "description": "Controls the allowed payload size of responses to SOAP API calls. By default, the allowed payload size for a SOAP response is 5MB (5120KB). The max value allowed for this property is `10240` (10MB, or 10240KB). If the respective flow is configured to use a MID Server, you would add the respective property to the MID Server properties table and not [sys_properties]. Configuring this property may address error messages related to SOAP response payload size, however if the payload size exceeds the maximum 10MB, the payload must be saved as an attachment.",
+    "value": "5120",
+    "sysid": "-1"
+  },
+  {
     "name": "com.glide.platform_ml.enable_sys_service_route",
     "actualName": "com.glide.platform_ml.enable_sys_service_route",
     "description": "Boolean system property for enabling/disabling sys_service route to get prediction server url for workflow capability.",
