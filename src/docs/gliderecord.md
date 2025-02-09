@@ -18,12 +18,13 @@ There are two versions of GlideRecord, the client side version, and the server s
 ## Methods available
 
 | Category | Method                                        | Brief Description                                                                                                                       |
-|----------|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| -------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | \*       | [getLastErrorMessage](#getlasterrormessage)   | Retrieves the last error message                                                                                                        |
 | \*       | [isValid](#isvalid)                           | Determines whether the table exists or not                                                                                              |
 | \*       | [operation](#operation)                       | Retrieves the current operation being performed, such as insert, update, or delete                                                      |
 | \*       | [setAbortAction](#setabortaction)             | Sets a flag to indicate if the next database action (insert, update, delete) is to be aborted                                           |
 | \*       | [setWorkflow](#setworkflow)                   | Flag to run or not run other business rules                                                                                             |
+| \*       | [setUseEngines](#setuseengines)               | Flag to run or not run the engines                                                                                                      |
 | Access   | [canCreate](#cancreate)                       | Determines if the Access Control Rules which include the user's roles permit inserting new records in this table                        |
 | Access   | [canDelete](#candelete)                       | Determines if the Access Control Rules which include the user's roles permit deleting records in this table                             |
 | Access   | [canRead](#canread)                           | Determines if the Access Control Rules which include the user's roles permit reading records in this table                              |
@@ -37,7 +38,7 @@ There are two versions of GlideRecord, the client side version, and the server s
 | Query    | [chooseWindow](#choosewindow)                 | Sets a range of rows to be returned by subsequent queries. If forceCount is true, getRowCount() method will return all possible records |
 | Query    | [get](#get)                                   | Get's a single record                                                                                                                   |
 | Query    | [getEncodedQuery](#getencodedquery)           | Returns the query in it's encoded form                                                                                                  |
-| Query    | [getRowCount](#getrowcount)                   | Gets the number of rows, not recomeneded, use [GlideAggregate](docs/glideaggregate) instead                                                 |
+| Query    | [getRowCount](#getrowcount)                   | Gets the number of rows, not recomeneded, use [GlideAggregate](docs/glideaggregate) instead                                             |
 | Query    | [hasNext](#hasnext)                           | Determines if there are any more records in the GlideRecord                                                                             |
 | Query    | [next](#next)                                 | Moves to the next record in the GlideRecord                                                                                             |
 | Query    | [orderBy](#orderby)                           | Sets the order by to A-Z on the specified field                                                                                         |
@@ -114,6 +115,20 @@ var incident = new GlideRecord('incident');
 incident.newRecord();
 incident.setValue('short_description','This is text');
 incident.setWorkflow(false);//default is true
+incident.insert();//returns the sys_id string of inserted record
+```
+
+### setUseEngines
+
+Enables or disables the running of script engines.
+
+[Here you can see the engines called out on the docs.](https://www.servicenow.com/docs/csh?topicname=execution-order-scripts-engines.html&version=latest)
+
+```js
+var incident = new GlideRecord('incident');
+incident.newRecord();
+incident.setValue('short_description','This is text');
+incident.setUseEngines(false);//default is true
 incident.insert();//returns the sys_id string of inserted record
 ```
 
@@ -587,7 +602,7 @@ Came up on sndevs slack. According to sources there this does;
 ## Operators
 
 | Operator label           | Equivalent query operator | Example query                                                                 |
-|--------------------------|---------------------------|-------------------------------------------------------------------------------|
+| ------------------------ | ------------------------- | ----------------------------------------------------------------------------- |
 | is not                   | `!=`                      | `short_description!=Network storage unavailable`                              |
 | and                      | `^`                       | `active=true^CallerISNOTEMPTY`                                                |
 | OR filter (new query)    | `^NQ`                     | `active=true^NQactive=false`                                                  |
