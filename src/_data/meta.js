@@ -6,13 +6,13 @@ module.exports = {
   monitor: process.env.MONITOR || "false",
   // pagesize is 0 for dev and 1 for prod// defualt to 1
   pagesize: process.env.PAGESIZE || "1",
-  
-  
+
+
   siteName: "sn.jace.pro",
   siteDescription:
     "a copy of the docs for ServiceNow",
   siteImage: "images/opengraph-256.png",
-  siteURL: "https://sn.jace.pro/",
+  siteURL: "https://sn.jace.pro",
   twitterHandle: "@jacebenson",
   siteTwitterTitle: "sn.jace.pro - a copy of the docs for ServiceNow",
   navLinks: [
